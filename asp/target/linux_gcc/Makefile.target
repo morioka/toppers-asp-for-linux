@@ -11,7 +11,7 @@
 #
 #  GNU開発環境の標準設定を使えないので，TOOLを"gcc_"としている．
 #
-SYS = macosx
+SYS = linux
 TOOL = gcc_
 
 #
@@ -24,10 +24,10 @@ CXX = g++
 AS = as
 LD = ld
 AR = ar
-NM = gnm
+NM = nm
 RANLIB = ranlib
-OBJCOPY = gobjcopy
-OBJDUMP = gobjdump
+OBJCOPY = objcopy
+OBJDUMP = objdump
 
 #
 #  makeoffsetは使用しない
@@ -41,8 +41,12 @@ INCLUDES := $(INCLUDES) -I$(TARGETDIR)
 ifdef KERNEL_FUNCOBJS
   COPTS := $(COPTS) -m32
 else
-  COPTS := $(COPTS) -Werror -m32
+#  COPTS := $(COPTS) -Werror -m32
+  COPTS := $(COPTS) -m32
 endif
+COPTS := $(COPTS) -Wno-missing-braces
+
+OMIT_OPTIMIZATION = 1
 
 #
 #  カーネルに関する定義

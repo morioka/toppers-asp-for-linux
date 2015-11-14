@@ -1,4 +1,4 @@
-E_PACKAGE asp_macosx_gcc
+E_PACKAGE asp_linux_gcc
 VERSION %date
 
 INCLUDE ../../MANIFEST

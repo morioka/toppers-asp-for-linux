@@ -115,29 +115,37 @@
 /*
  *  アーキテクチャ（プロセッサ）依存の定義
  */
-#if defined(__ppc__)
+#if defined(__i386__)
 
-#define JMPBUF_PC				21			/* jmp_buf中でのPCの位置 */
-#define JMPBUF_SP				0			/* jmp_buf中でのSPの位置 */
-#define TASK_STACK_MERGIN		4U
-#define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
-
-#elif defined(__i386__)
-
-#define JMPBUF_PC				12			/* jmp_buf中でのPCの位置 */
-#define JMPBUF_SP				9			/* jmp_buf中でのSPの位置 */
+#define JMPBUF_PC				5			/* jmp_buf中でのPCの位置 */
+#define JMPBUF_SP				4			/* jmp_buf中でのSPの位置 */
 #define TASK_STACK_MERGIN		4U 
 #define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
+#define PTR_MANGLE(var) asm volatile ("xorl %%gs:0x18,%0;"	\
+				"roll $9,%0;"			\
+				:"=r"(var) :"0"(var))
+ 
+#define PTR_DEMANGLE(var) asm volatile ("rorl $9, %0;"		\
+				"xorl %%gs:0x18, %0;"		\
+				:"=r"(var) :"0"(var))
+
 #elif defined(__x86_64__)
 
-#error architecture not supported
 #define JMPBUF_PC				7			/* jmp_buf中でのPCの位置 */
-#define JMPBUF_SP				2			/* jmp_buf中でのSPの位置 */
+#define JMPBUF_SP				6			/* jmp_buf中でのSPの位置 */
 #define TASK_STACK_MERGIN		8U 
 #define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
-#else
+#define PTR_MANGLE(var) asm volatile ("xor %%fs:0x30,%0;"	\
+				"rol $17, %0;"			\
+				:"=r"(var) :"0"(var))
+
+#define PTR_DEMANGLE(var) asm volatile ("ror $17, %0;"		\
+				"xor %%fs:0x30,%0;"		\
+				:"=r"(var) :"0"(var))
+
+else
 #error architecture not supported
 #endif
 
@@ -180,9 +188,9 @@ extern const INHINIB	inhinib_table[];
 /*
  *  シグナルセット操作マクロ
  */
-#define sigequalset(set1, set2)		(*(set1) == *(set2))
-#define sigassignset(set1, set2)	(*(set1) = *(set2))
-#define sigjoinset(set1, set2)		(*(set1) |= *(set2))
+#define sigequalset(set1, set2)		(((set1)->__val[0]) == ((set2)->__val[0]))
+#define sigassignset(set1, set2)	(((set1)->__val[0]) =  ((set2)->__val[0]))
+#define sigjoinset(set1, set2)		(((set1)->__val[0]) |= ((set2)->__val[0]))
 
 /*
  *  割込み優先度マスクによるシグナルマスク（kernel_cfg.c）
@@ -224,7 +232,7 @@ sense_context(void)
 	stack_t	ss;
 
 	sigaltstack(NULL, &ss);
-	return((ss.ss_flags & SA_ONSTACK) != 0);
+	return((ss.ss_flags & SS_ONSTACK) != 0);
 }
 
 /*
@@ -485,14 +493,22 @@ extern void call_exit_kernel(void) NoReturn;
  */
 extern void	start_r(void);
 
-#define activate_context(p_tcb)											\
-{																		\
-	((intptr_t *) &((p_tcb)->tskctxb.env))[JMPBUF_PC]					\
-											= (intptr_t) start_r;		\
-	((intptr_t *) &((p_tcb)->tskctxb.env))[JMPBUF_SP]					\
-						= ((((intptr_t)((char *)((p_tcb)->p_tinib->stk)	\
-								+ (p_tcb)->p_tinib->stksz)) & ~0x0f)	\
-								- TASK_STACK_MERGIN);					\
+#define activate_context(p_tcb)					\
+{								\
+	intptr_t pc;						\
+	intptr_t sp;						\
+								\
+	pc = (intptr_t) start_r;				\
+	PTR_MANGLE(pc);						\
+								\
+	(p_tcb)->tskctxb.env[0].__jmpbuf[JMPBUF_PC] = pc;	\
+								\
+	sp = ((((intptr_t)((char *)((p_tcb)->p_tinib->stk)	\
+		+ (p_tcb)->p_tinib->stksz)) & ~0x0f)		\
+		- TASK_STACK_MERGIN);				\
+	PTR_MANGLE(sp);						\
+								\
+	(p_tcb)->tskctxb.env[0].__jmpbuf[JMPBUF_SP] = sp;	\
 }
 
 /*
@@ -613,7 +629,10 @@ void _kernel_##exchdr##_##excno(int sig,								\
 Inline bool_t
 exc_sense_context(void *p_excinf)
 {
+/*
 	return(((ucontext_t *) p_excinf)->uc_onstack != 0);
+*/
+	return false;
 }
 
 /*

@@ -148,9 +148,9 @@ $FOREACH intpri { 0, -1,..., -6 }$
 			$intmask = intmask | (1 << (intno - 1))$
 		$END$
 	$END$
-	$TAB$UINT32_C($FORMAT("0x%08x", intmask)$),$NL$
+	$TAB${ {UINT32_C($FORMAT("0x%08x", intmask)$), 0, 0, 0} },$NL$
 $END$
-$TAB$UINT32_C($FORMAT("0x%08x", intmask)$)$NL$
+$TAB${ {UINT32_C($FORMAT("0x%08x", intmask)$), 0, 0, 0} }$NL$
 };$NL$
 
 $ 
@@ -163,5 +163,6 @@ $FOREACH intno INT.ORDER_LIST$
 	$END$
 $END$
 $NL$
-const sigset_t	_kernel_sigmask_disint_init = 
-		UINT32_C($FORMAT("0x%08x", sigmask_disint_init)$);$NL$
+const sigset_t	_kernel_sigmask_disint_init = {$NL$
+$TAB${UINT32_C($FORMAT("0x%08x", sigmask_disint_init)$), 0, 0, 0}$NL$
+};$NL$
