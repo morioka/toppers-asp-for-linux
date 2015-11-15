@@ -145,7 +145,7 @@
 				"xor %%fs:0x30,%0;"		\
 				:"=r"(var) :"0"(var))
 
-else
+#else
 #error architecture not supported
 #endif
 

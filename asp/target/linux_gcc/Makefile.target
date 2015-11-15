@@ -42,7 +42,8 @@ ifdef KERNEL_FUNCOBJS
   COPTS := $(COPTS) -m32
 else
 #  COPTS := $(COPTS) -Werror -m32
-  COPTS := $(COPTS) -m32
+#  COPTS := $(COPTS) -m32
+  COPTS := $(COPTS) -m64
 endif
 COPTS := $(COPTS) -Wno-missing-braces
 
