@@ -45,9 +45,8 @@ else
 #  COPTS := $(COPTS) -m32
   COPTS := $(COPTS) -m64
 endif
-COPTS := $(COPTS) -Wno-missing-braces
 
-OMIT_OPTIMIZATION = 1
+COPTS := $(COPTS) -U_FORTIFY_SOURCE
 
 #
 #  カーネルに関する定義
