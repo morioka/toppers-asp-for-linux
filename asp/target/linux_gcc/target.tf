@@ -1,5 +1,5 @@
 $ 
-$ 		パス2のターゲット依存テンプレート（Mac OS X用）
+$ 		パス2のターゲット依存テンプレート（Linux用）
 $ 
 
 $ 
@@ -50,7 +50,7 @@ $
 $INCLUDE "kernel/kernel.tf"$
 
 /*$NL$
-$SPC$*  Target-dependent Definitions (Mac OS X)$NL$
+$SPC$*  Target-dependent Definitions (Linux)$NL$
 $SPC$*/$NL$
 $NL$
 
@@ -148,9 +148,9 @@ $FOREACH intpri { 0, -1,..., -6 }$
 			$intmask = intmask | (1 << (intno - 1))$
 		$END$
 	$END$
-	$TAB${ {UINT32_C($FORMAT("0x%08x", intmask)$), 0, 0, 0} },$NL$
+	$TAB${ {UINT32_C($FORMAT("0x%08x", intmask)$), 0} },$NL$
 $END$
-$TAB${ {UINT32_C($FORMAT("0x%08x", intmask)$), 0, 0, 0} }$NL$
+$TAB${ {UINT32_C($FORMAT("0x%08x", intmask)$), 0} }$NL$
 };$NL$
 
 $ 
@@ -164,5 +164,5 @@ $FOREACH intno INT.ORDER_LIST$
 $END$
 $NL$
 const sigset_t	_kernel_sigmask_disint_init = {$NL$
-$TAB${UINT32_C($FORMAT("0x%08x", sigmask_disint_init)$), 0, 0, 0}$NL$
+$TAB${UINT32_C($FORMAT("0x%08x", sigmask_disint_init)$), 0}$NL$
 };$NL$

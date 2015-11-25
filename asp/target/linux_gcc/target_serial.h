@@ -39,7 +39,7 @@
  */
 
 /*
- *		シリアルI/Oデバイス（SIO）ドライバ（Mac OS X用）
+ *		シリアルI/Oデバイス（SIO）ドライバ（Linux用）
  */
 
 #ifndef TOPPERS_TARGET_SERIAL_H

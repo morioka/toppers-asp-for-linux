@@ -5,6 +5,7 @@
  * 
  *  Copyright (C) 2006-2014 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
+ *  Copyright (C) 2015 by Yasuhiro Morioka, JAPAN
  * 
  *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
  *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
@@ -39,7 +40,7 @@
  */
 
 /*
- *		ターゲット依存モジュール（Mac OS X用）
+ *		ターゲット依存モジュール（Linux用）
  *
  *  カーネルのターゲット依存部のインクルードファイル．kernel_impl.hのター
  *  ゲット依存部の位置付けとなる．
@@ -188,9 +189,38 @@ extern const INHINIB	inhinib_table[];
 /*
  *  シグナルセット操作マクロ
  */
-#define sigequalset(set1, set2)		(((set1)->__val[0]) == ((set2)->__val[0]))
-#define sigassignset(set1, set2)	(((set1)->__val[0]) =  ((set2)->__val[0]))
-#define sigjoinset(set1, set2)		(((set1)->__val[0]) |= ((set2)->__val[0]))
+#   define sigequalset(set1, set2) \
+  (__extension__ ({ int __cnt = _SIGSET_NWORDS;                               \
+                    const sigset_t *__set1 = (const sigset_t *)(set1);        \
+                    const sigset_t *__set2 = (const sigset_t *)(set2);        \
+                    int __ret = 1;                                            \
+                    while (--__cnt >= 0) {                                    \
+                      if (__set1->__val[__cnt] != __set2->__val[__cnt]) {     \
+                        __ret = 0;                                            \
+                        break;                                                \
+                      }                                                       \
+                    };                                                        \
+                    __ret; }))
+
+
+#   define sigassignset(set1, set2) \
+  (__extension__ ({ int __cnt = _SIGSET_NWORDS;                               \
+                    sigset_t *__set1 = (sigset_t *)(set1);                    \
+                    const sigset_t *__set2 = (const sigset_t *)(set2);        \
+                    while (--__cnt >= 0) {                                    \
+                      __set1->__val[__cnt] = __set2->__val[__cnt];            \
+                    };                                                        \
+                    0; }))
+
+
+#   define sigjoinset(set1, set2) \
+  (__extension__ ({ int __cnt = _SIGSET_NWORDS;                               \
+                    sigset_t *__set1 = (sigset_t *)(set1);                    \
+                    const sigset_t *__set2 = (const sigset_t *)(set2);        \
+                    while (--__cnt >= 0) {                                    \
+                      __set1->__val[__cnt] |= __set2->__val[__cnt];           \
+                    };                                                        \
+                    0; }))
 
 /*
  *  割込み優先度マスクによるシグナルマスク（kernel_cfg.c）
@@ -361,7 +391,7 @@ x_disable_int(INTNO intno)
 				|| !sigismember(&(sigmask_table[7]), intno)) {
 		return(false);
 	}
-	sigaddset(&sigmask_disint, intno);
+	sigaddset((sigset_t *)&sigmask_disint, intno);
 	set_sigmask();
 	return(true);
 }
@@ -382,7 +412,7 @@ x_enable_int(INTNO intno)
 				|| !sigismember(&(sigmask_table[7]), intno)) {
 		return(false);
 	}
-	sigdelset(&sigmask_disint, intno);
+	sigdelset((sigset_t *)&sigmask_disint, intno);
 	set_sigmask();
 	return(true);
 }
@@ -552,7 +582,7 @@ x_define_exc(EXCNO excno, FP exc_entry)
 
 	assert(VALID_EXCNO_DEFEXC(excno));
 	sigact.sa_sigaction =
-				(void (*)(int, struct __siginfo *, void *))(exc_entry);
+				(void (*)(int, siginfo_t *, void *))(exc_entry);
 	sigact.sa_flags = (SA_ONSTACK | SA_SIGINFO | SA_NODEFER);
 	sigemptyset(&(sigact.sa_mask));
 	sigaddset(&(sigact.sa_mask), SIGUSR2);
@@ -600,7 +630,7 @@ void _kernel_##inthdr##_##inhno(void)							\
 
 #define EXCHDR_ENTRY(excno, excno_num, exchdr)							\
 void _kernel_##exchdr##_##excno(int sig,								\
-						struct __siginfo *p_info, void *p_ctx)			\
+						siginfo_t *p_info, void *p_ctx)			\
 {																		\
 	bool_t		saved_lock_flag;										\
 																		\
@@ -629,10 +659,14 @@ void _kernel_##exchdr##_##excno(int sig,								\
 Inline bool_t
 exc_sense_context(void *p_excinf)
 {
-/*
+#if 0
 	return(((ucontext_t *) p_excinf)->uc_onstack != 0);
-*/
+#else
 	return false;
+/*
+	return ((((ucontext_t *) p_excinf)->uc_stack.ss_flags & SS_ONSTACK) != 0);
+*/
+#endif
 }
 
 /*

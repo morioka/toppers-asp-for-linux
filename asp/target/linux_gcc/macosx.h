@@ -39,7 +39,7 @@
  */
 
 /*
- *		Mac OS XのOS获富の年盗
+ *		LinuxのOS获富の年盗
  */
 
 #ifndef TOPPERS_MACOSX_H

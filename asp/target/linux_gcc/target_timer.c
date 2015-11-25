@@ -39,7 +39,7 @@
  */
 
 /*
- *		タイマドライバ（Mac OS X用）
+ *		タイマドライバ（Linux用）
  */
 
 #include "kernel_impl.h"

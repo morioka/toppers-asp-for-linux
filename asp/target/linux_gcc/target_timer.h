@@ -41,7 +41,7 @@
  */
 
 /*
- *		タイマドライバ（Mac OS X用）
+ *		タイマドライバ（Linux用）
  */
 
 #ifndef TOPPERS_TARGET_TIMER_H
@@ -71,7 +71,7 @@ typedef uint32_t	CLOCK;
 /*
  *  タイマ値の内部表現とミリ秒・マイクロ秒単位との変換
  *
- *  Mac OS Xでは，インターバルタイマは1マイクロ秒毎にカウントアップする．
+ *  Linuxでは，インターバルタイマは1マイクロ秒毎にカウントアップする．
  */
 #define TIMER_CLOCK				1000U
 #define TO_CLOCK(nume, deno)	((CLOCK)(TIMER_CLOCK * (nume) / (deno)))

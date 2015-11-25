@@ -5,6 +5,7 @@
  * 
  *  Copyright (C) 2006-2011 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
+ *  Copyright (C) 2015 by Yasuhiro Morioka, JAPAN
  * 
  *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
  *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
@@ -39,7 +40,7 @@
  */
 
 /*
- *		ターゲット依存モジュール（Mac OS X用）
+ *		ターゲット依存モジュール（Linux用）
  */
 
 #include "kernel_impl.h"
@@ -160,7 +161,7 @@ dispatch(void)
  *  最高優先順位タスクへのディスパッチ（シグナルハンドラ用）
  */
 static void
-dispatch_handler(int sig, struct __siginfo *p_info, void *p_ctx)
+dispatch_handler(int sig, siginfo_t *p_info, void *p_ctx)
 {
 #ifdef TOPPERS_SUPPORT_OVRHDR
 	/*

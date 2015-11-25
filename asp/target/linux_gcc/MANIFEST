@@ -1,5 +1,5 @@
-PACKAGE asp_target_macosx_gcc
-VERSION 1.9.1
+PACKAGE asp_target_linux_gcc
+VERSION 1.9.2
 
 E_PACKAGE
 MANIFEST
