@@ -24,8 +24,8 @@ INCLUDES := $(INCLUDES) -I$(TARGETDIR)
 ifdef KERNEL_FUNCOBJS
   COPTS := $(COPTS) -m32
 else
-#  COPTS := $(COPTS) -Werror -m32
-  COPTS := $(COPTS) -Werror -m64
+  COPTS := $(COPTS) -Werror -m32
+#  COPTS := $(COPTS) -Werror -m64
 endif
 
 COPTS := $(COPTS) -U_FORTIFY_SOURCE
