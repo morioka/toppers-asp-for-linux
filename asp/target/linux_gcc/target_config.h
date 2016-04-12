@@ -373,7 +373,7 @@ x_get_ipm(void)
 /*
  *  割込み番号の範囲の判定
  */
-#define	VALID_INTNO(intno)	(1 <= (intno) && (intno) <= 30 \
+#define	VALID_INTNO(intno)	(1 <= (intno) && (intno) <= 31 \
 								&& (intno) != SIGKILL && (intno) != SIGSTOP)
 #define	VALID_INTNO_CREISR(intno)	VALID_INTNO(intno)
 #define	VALID_INTNO_DISINT(intno)	VALID_INTNO(intno)
@@ -659,14 +659,7 @@ void _kernel_##exchdr##_##excno(int sig,								\
 Inline bool_t
 exc_sense_context(void *p_excinf)
 {
-#if 0
-	return(((ucontext_t *) p_excinf)->uc_onstack != 0);
-#else
-	return false;
-/*
 	return ((((ucontext_t *) p_excinf)->uc_stack.ss_flags & SS_ONSTACK) != 0);
-*/
-#endif
 }
 
 /*
