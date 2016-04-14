@@ -33,13 +33,13 @@ A user can run the TOPPERS apps, like this:
 
 After the vulnerability CVE-2015-8777 was reported and fixed, the LD_POINTER_GUARD environment variable 
 can no longer be used to disable the pointer guard feature. The pointer guard feature is always 
-enabled at least glibc-2.23 or later (,and some prior version in some Linux distributeions).
+enabled at least glibc-2.23 or later (,and some prior versions in some Linux distributions).
 
 * [CVE - CVE-2015-8777](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8777)
 * [The GNU C Library version 2.23 is now available](https://www.sourceware.org/ml/libc-alpha/2016-02/msg00502.html)
 * [ld.so(8) - Linux manual page](http://man7.org/linux/man-pages/man8/ld.so.8.html)
 
-We have to emulate the behavior of the pointer guard feature by adding the following;
+We have to emulate the behavior of the pointer guard feature by adding the following compile option;
 
     -DWORKAROUND_CVE_2015_8777_FIX     (in target/linux_gcc/Makefile.target)
 
