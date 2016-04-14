@@ -2,6 +2,7 @@
 
 This is TOPPERS/ASP 1.9.2 Linux_gcc version.
 
+* [TOPPERS/ASP kernel](http://toppers.jp/en/asp-kernel.html) is a real-time kernel based on the standard profile of uITRON4.0.
 * Add a new target "linux_gcc" based on "macosx_gcc."
 * Test & pass "sample1" and test programs on Ubuntu 14.04LTS (x86 and x86_64).
 
