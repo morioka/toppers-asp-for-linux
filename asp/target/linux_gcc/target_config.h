@@ -123,6 +123,7 @@
 #define TASK_STACK_MERGIN		4U 
 #define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
+#ifdef	WORKAROUND_CVE_2015_8777_FIX
 #define PTR_MANGLE(var) asm volatile ("xorl %%gs:0x18,%0;"	\
 				"roll $9,%0;"			\
 				:"=r"(var) :"0"(var))
@@ -130,6 +131,7 @@
 #define PTR_DEMANGLE(var) asm volatile ("rorl $9, %0;"		\
 				"xorl %%gs:0x18, %0;"		\
 				:"=r"(var) :"0"(var))
+#endif
 
 #elif defined(__x86_64__)
 
@@ -138,6 +140,7 @@
 #define TASK_STACK_MERGIN		8U 
 #define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
+#ifdef	WORKAROUND_CVE_2015_8777_FIX
 #define PTR_MANGLE(var) asm volatile ("xor %%fs:0x30,%0;"	\
 				"rol $17, %0;"			\
 				:"=r"(var) :"0"(var))
@@ -145,6 +148,7 @@
 #define PTR_DEMANGLE(var) asm volatile ("ror $17, %0;"		\
 				"xor %%fs:0x30,%0;"		\
 				:"=r"(var) :"0"(var))
+#endif
 
 #else
 #error architecture not supported
@@ -523,6 +527,7 @@ extern void call_exit_kernel(void) NoReturn;
  */
 extern void	start_r(void);
 
+#ifdef	WORKAROUND_CVE_2015_8777_FIX
 #define activate_context(p_tcb)					\
 {								\
 	intptr_t pc;						\
@@ -540,6 +545,17 @@ extern void	start_r(void);
 								\
 	(p_tcb)->tskctxb.env[0].__jmpbuf[JMPBUF_SP] = sp;	\
 }
+#else
+#define activate_context(p_tcb)							\
+{														\
+	(p_tcb)->tskctxb.env[0].__jmpbuf[JMPBUF_PC]			\
+								= (intptr_t) start_r;	\
+	(p_tcb)->tskctxb.env[0].__jmpbuf[JMPBUF_SP]			\
+		= ((((intptr_t)((char *)((p_tcb)->p_tinib->stk)	\
+		+ (p_tcb)->p_tinib->stksz)) & ~0x0f)			\
+		- TASK_STACK_MERGIN);							\
+}
+#endif
 
 /*
  *  割込みハンドラ番号とCPU例外ハンドラ番号の範囲の判定

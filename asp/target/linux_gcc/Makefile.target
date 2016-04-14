@@ -30,6 +30,21 @@ endif
 
 COPTS := $(COPTS) -U_FORTIFY_SOURCE
 
+COPTS := $(COPTS) -DWORKAROUND_CVE_2015_8777_FIX
+# The pointer guard feature should be disabled to
+# rewrite the setjmp/longjmp stack for task-switching.
+# The pointer guard feature was disabled, when
+# the LD_POINTER_GUARD enviornment variable value was 0.
+# But, after the vulnerability CVE-2015-8777 was fixed,
+# the LD_POINTER_GUARD environment variable can 
+# no longer be used to disable the pointer guard feature. 
+# The pointer guard feature is always enabled.
+# In such system, we have to simulate the behavior of 
+# the pointer guard feature by copying the pointer 
+# mangling/de-mangling code from the glibc source code.
+# This may make the whole code (or at least the target 
+# dependent part) GPL'ed?
+
 #
 #  カーネルに関する定義
 #
