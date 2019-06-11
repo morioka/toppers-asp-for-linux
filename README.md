@@ -6,6 +6,15 @@ This is TOPPERS/ASP 1.9.2 Linux_gcc version.
 * Add a new target "linux_gcc" based on "macosx_gcc."
 * Test & pass "sample1" and test programs on Ubuntu 14.04LTS (x86 and x86_64).
 
+## Required packages
+* git
+* gcc-multilib
+* libboost-dev
+* libboost-system-dev 
+* libboost-filesystem-dev 
+* libboost-program-options-dev 
+* libboost-regex-dev
+
 ## Quick Start (sample1)
     sudo apt-get install git gcc-multilib libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-regex-dev
     git clone https://github.com/morioka/toppers-asp-for-linux
