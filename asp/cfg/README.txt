@@ -1,82 +1,82 @@
 
-	TOPPERS�����奫���ͥ��ѥ���ե�����졼����Release 1.9.4��
+	TOPPERS新世代カーネル用コンフィギュレータ（Release 1.9.4）
 
 
-TOPPERS�����奫���ͥ��ѥ���ե�����졼���ϡ������ͥ�䥽�եȥ���������
-�ι����������֤�������������ƥॳ��ե�����졼�����ե�������ᤷ��
-�����ƥ���ۤ�����ɬ�פʥե����������������TOPPERS�����奫���ͥ���
-�Υġ���Ǥ���
+TOPPERS新世代カーネル用コンフィギュレータは、カーネルやソフトウェア部品
+の構成や初期状態を定義したシステムコンフィギュレーションファイルを解釈し、
+システムを構築する上で必要なファイル類を生成するTOPPERS新世代カーネル用
+のツールです。
 
-����ե�����졼���ϡ�����ѥ���䥢����֥����Ȥ��볫ȯ�ġ����Ʊ�͡�
-PC���γ�ȯ�ѥ���ԥ塼�����ư��륳�ޥ�ɥ饤��ץ������Ǥ���������
-�äơ�����ե�����졼�����Τ�Τ��ǽ�Ū�����ʤ��Ȥ߹��ޤ�뤳�Ȥϡ���§
-�Ȥ��Ƥ���ޤ��󡣥���ե�����졼���ϥ��ޥ�ɥ饤��ġ���ʤΤǡ������
-�������Ȥ���¾�Υ��ޥ�ɥ饤��ġ�����Ȥ߹�碌�ƻ��Ѥ��뤳�Ȥ�����
-�Ȥ��Ƥ��ޤ������������桼������Ŭ�ڤ������Ԥ����Ȥǡ�¿�������糫ȯ��
-������ƤӽФ��ޤ��� 
+コンフィギュレータは、コンパイラやアセンブラを初めとする開発ツールと同様、
+PC等の開発用コンピュータ上で動作するコマンドラインプログラムです。したが
+って、コンフィギュレータそのものが最終的な製品に組み込まれることは、原則
+としてありません。コンフィギュレータはコマンドラインツールなので、コンパ
+イラを初めとした他のコマンドラインツールと組み合わせて使用することを前提
+としています。しかし、ユーザーが適切に設定を行うことで、多くの統合開発環
+境から呼び出せます。 
 
 
-�ڥ���ե�����졼���ι�����ˡ��ITRON�ϡˡ�
+【コンフィギュレータの構築方法（ITRON系）】
 
-�����ͥ���ۤ������ˡ��ޤ�������ե�����졼���򥳥�ѥ��뤹��ɬ�פ�
-����ޤ��ʥ���ե�����졼����Х��ʥ�����ꤷ�����ˤϡ����Υ��ƥå�
-��ɬ�פϤ���ޤ���ˡ�
-����ե�����졼���ι��ۤˤ�Boost C++ Libraries 1.42.0�ʾ夬ɬ�פǤ���
-��ȯ�����Ǥ�Boost C++ Libraries�κǿ��Ǥ�1.52.0���Ǥ��ꡢ����ʹߤΥС�
-�����ˤĤ��Ƥ�ư���ǧ��ԤäƤ��ޤ���
+カーネルを構築する前に、まず、コンフィギュレータをコンパイルする必要が
+あります（コンフィギュレータをバイナリで入手した場合には、このステップ
+は必要はありません）。
+コンフィギュレータの構築にはBoost C++ Libraries 1.42.0以上が必要です。
+開発時点でのBoost C++ Librariesの最新版は1.52.0、であり、それ以降のバー
+ジョンについては動作確認を行っていません。
 
-Boost C++ Libraries�ϡ�����URL�������ꤹ�뤳�Ȥ��Ǥ��ޤ���
+Boost C++ Librariesは、下記URLから入手することができます。
 http://www.boost.org/
 
-��ư���ǧ�ѤߤδĶ�
+・動作確認済みの環境
 Windows 7 (x64) SP1 + Cygwin 1.7.17 + GCC 4.5.3 + Boost 1.48.0
 
 Windows XP SP3 + MinGW 1.0.17 + GCC 4.6.2 + Boost 1.48.0 
 
 Windows 7 (x64) SP1 + MinGW 1.0.17 + GCC 4.6.1 + Boost 1.52.0
 
-=== GNU��ȯ�Ķ����Ѥ���������ˡ ===
+=== GNU開発環境を用いた構築方法 ===
 
-����ե�����졼����cfg�ץ������ˤ��ۤ���ˤϡ�cfg�ǥ��쥯�ȥ�˰�ư
-����configure�����make���ޥ�ɤ�¹Ԥ��ޤ���
+コンフィギュレータ（cfgプログラム）を構築するには、cfgディレクトリに移動
+し、configureおよびmakeコマンドを実行します。
 
 	% cd cfg
 	% ./configure
 	% make
 
-��������Boost�򥤥󥹥ȡ��뤷���ǥ��쥯�ȥꤪ���̾�Τ���ɸ������ꤷ��
-�����ΤȰ㤦���ˤϡ�configure��--with-headers�����--with-libraries
-���ץ����ˤ�ꥤ�󥯥롼�ɤ���ӥ饤�֥��Υǥ��쥯�ȥ����ꤷ�Ƥ���
-������
-�ޤ����ۥ��ȥ����ƥ�ˤ�äƤϡ���Ŭ����٥��夲�������������ѥ����
-���ʤ����Ȥ��Τ��Ƥ��ޤ������Τ褦�ʾ��ˤϡ���Ŭ����٥�򲼤��뤫��
-��Ŭ�����޻ߤ���褦�ˡ�Makefile��������ɬ�פ�����ޤ���
+ただし、Boostをインストールしたディレクトリおよび名称が、標準で想定して
+いるものと違う場合には、configureに--with-headersおよび--with-libraries
+オプションによりインクルードおよびライブラリのディレクトリを指定してくだ
+さい。
+また、ホストシステムによっては、最適化レベルを上げると正しくコンパイルで
+きないことが知られています。そのような場合には、最適化レベルを下げるか、
+最適化を抑止するように、Makefileを修正する必要があります。
 
-ʣ���ΥС�������Boost C++ Libraries�����󥹥ȡ��뤵��Ƥ����������
-Ⱦü�˥��󥤥󥹥ȡ��뤵�줿����ޤ�ˡ�configure�˼��Ԥ����ǽ������
-��ޤ������ξ��ϼ��Ȥ�Makefile.config�������Ƥ���������
-�ޤ������٥���ե�����졼���ι��ۤ�Ԥä��塢����ѥ����饤�֥���
-���åץǡ��Ȥ�Ԥä����ˤϡ�make realclean��¹Ԥ���configure������
-ľ���Ƥ���������
+複数のバージョンのBoost C++ Librariesがインストールされている場合（中途
+半端にアンインストールされた場合を含む）、configureに失敗する可能性があ
+ります。その場合は手作業でMakefile.configを修正してください。
+また、一度コンフィギュレータの構築を行った後、コンパイラやライブラリの
+アップデートを行った場合には、make realcleanを実行し、configureからやり
+直してください。
 
 
-�ڥ���ե�����졼���ι�����ˡ��AUTOSAR�ϡˡ�
+【コンフィギュレータの構築方法（AUTOSAR系）】
 
-�����ͥ���ۤ������ˡ��ޤ�������ե�����졼���򥳥�ѥ��뤹��ɬ�פ�
-����ޤ��ʥ���ե�����졼����Х��ʥ�����ꤷ�����ˤϡ����Υ��ƥå�
-��ɬ�פϤ���ޤ���ˡ�
-����ե�����졼���ι��ۤˤ�Boost C++ Libraries 1.42.0�ʾ太���Xerces C++
-3.1.1�ʾ夬ɬ�פǤ���
-��ȯ�����Ǥ�Boost C++ Libraries�κǿ��Ǥ�1.52.0��Xerces C++�κǿ��Ǥ�3.1.1
-�Ǥ��ꡢ����ʹߤΥС������ˤĤ��Ƥ�ư���ǧ��ԤäƤ��ޤ���
+カーネルを構築する前に、まず、コンフィギュレータをコンパイルする必要が
+あります（コンフィギュレータをバイナリで入手した場合には、このステップ
+は必要はありません）。
+コンフィギュレータの構築にはBoost C++ Libraries 1.42.0以上およびXerces C++
+3.1.1以上が必要です。
+開発時点でのBoost C++ Librariesの最新版は1.52.0、Xerces C++の最新版は3.1.1
+であり、それ以降のバージョンについては動作確認を行っていません。
 
-Boost C++ Libraries�ϡ�����URL�������ꤹ�뤳�Ȥ��Ǥ��ޤ���
+Boost C++ Librariesは、下記URLから入手することができます。
 http://www.boost.org/
 
-Xerces C++�ϡ�����URL�������ꤹ�뤳�Ȥ��Ǥ��ޤ���
+Xerces C++は、下記URLから入手することができます。
 http://xerces.apache.org/xerces-c/
 
-��ư���ǧ�ѤߤδĶ�
+・動作確認済みの環境
 Windows 7 (x64) SP1 + Cygwin 1.7.17 + GCC 4.5.3 + Boost 1.48.0
 	+ Xerces C++ 3.1.1 + ICU 4.8.1
 
@@ -86,134 +86,134 @@ Windows XP SP3 + MinGW 1.0.17 + GCC 4.6.2 + Boost 1.48.0
 Windows 7 (x64) SP1 + MinGW 1.0.17 + GCC 4.6.1 + Boost 1.52.0
 	+ Xerces C++ 3.1.1 + ICU 50.1
 
-=== GNU��ȯ�Ķ����Ѥ���������ˡ ===
+=== GNU開発環境を用いた構築方法 ===
 
-����ե�����졼����cfg�ץ������ˤ��ۤ���ˤϡ�cfg�ǥ��쥯�ȥ�˰�ư
-����configure�����make���ޥ�ɤ�¹Ԥ��ޤ���
-configure��--with-xml����ꤹ�뤳�Ȥǡ�AUTOSAR XML�б���ǽ���ɲä���
-���Ȥ��Ǥ��ޤ���
+コンフィギュレータ（cfgプログラム）を構築するには、cfgディレクトリに移動
+し、configureおよびmakeコマンドを実行します。
+configureに--with-xmlを指定することで、AUTOSAR XML対応機能を追加する
+ことができます。
 
 	% cd cfg
 	% ./configure --with-xml
 	% make
 
-��������Boost�򥤥󥹥ȡ��뤷���ǥ��쥯�ȥꤪ���̾�Τ���ɸ������ꤷ��
-�����ΤȰ㤦���ˤϡ�configure��--with-headers�����--with-libraries
-���ץ����ˤ�ꥤ�󥯥롼�ɤ���ӥ饤�֥��Υǥ��쥯�ȥ����ꤷ�Ƥ���
-������
-�ޤ����ۥ��ȥ����ƥ�ˤ�äƤϡ���Ŭ����٥��夲�������������ѥ����
-���ʤ����Ȥ��Τ��Ƥ��ޤ������Τ褦�ʾ��ˤϡ���Ŭ����٥�򲼤��뤫��
-��Ŭ�����޻ߤ���褦�ˡ�Makefile��������ɬ�פ�����ޤ���
+ただし、Boostをインストールしたディレクトリおよび名称が、標準で想定して
+いるものと違う場合には、configureに--with-headersおよび--with-libraries
+オプションによりインクルードおよびライブラリのディレクトリを指定してくだ
+さい。
+また、ホストシステムによっては、最適化レベルを上げると正しくコンパイルで
+きないことが知られています。そのような場合には、最適化レベルを下げるか、
+最適化を抑止するように、Makefileを修正する必要があります。
 
-ʣ���ΥС�������Boost C++ Libraries�����󥹥ȡ��뤵��Ƥ����������
-Ⱦü�˥��󥤥󥹥ȡ��뤵�줿����ޤ�ˡ�configure�˼��Ԥ����ǽ������
-��ޤ������ξ��ϼ��Ȥ�Makefile.config�������Ƥ���������
-�ޤ������٥���ե�����졼���ι��ۤ�Ԥä��塢����ѥ����饤�֥���
-���åץǡ��Ȥ�Ԥä����ˤϡ�make realclean��¹Ԥ���configure������
-ľ���Ƥ���������
-
-
-��Mekefile.config��������
-
-configure���ޥ�ɤˤ�ä����������Makefile.config�Ǥϼ��Υѥ�᡼����
-�������ޤ���
-
-��LIBBOOST_SUFFIX
-Boost C+ Libraries�Υ饤�֥��ե�����Υ��ե��å���
-���Ȥ��С��饤�֥��ե����뤬libboost_system-mt.a�Τ褦�ʷ����Ǥ���С�
-LIBBOOST_SUFFIX�ˤ�-mt�����ꤵ��ޤ���
-
-��BOOST_VERSION
-Boost C++ Libraries�ΥС������
-�С������1.43.0�Ǥ���С�BOOST_VERSION�ˤ�1_43�����ꤵ��ޤ���
-
-��BOOST_DIR=/usr/include
-Boost C++ Libraries�Υإå��ե����뤬����ǥ��쥯�ȥ�
-��ʬ��Boost C++ Libraries�򥤥󥹥ȡ��뤷����硢�̾�/usr/local/include
-�����ꤵ��ޤ���
-
-��LIBBOOST_DIR
-Boost C++ Libraries�Υ饤�֥��ե����뤬����ǥ��쥯�ȥ�
-��ʬ��Boost C++ Libraries�򥤥󥹥ȡ��뤷����硢�̾�/usr/local/lib������
-����ޤ���
-
-��XERCES_DIR
-Xerces C++�Υإå��ե����뤬����ǥ��쥯�ȥ�
-
-��LIBXERCES_DIR
-Xerces C++�Υ饤�֥��ե����뤬����ǥ��쥯�ȥ�
-
-��OPTIONS
-����ѥ�����ɲå��ץ����
-���̤ϲ������ꤵ��ޤ���
-
-��HAS_CFG_XML
-AUTOSAR XML�б���̵ͭ
-configure��--with-xml����ꤷ������1���������ޤ���
+複数のバージョンのBoost C++ Librariesがインストールされている場合（中途
+半端にアンインストールされた場合を含む）、configureに失敗する可能性があ
+ります。その場合は手作業でMakefile.configを修正してください。
+また、一度コンフィギュレータの構築を行った後、コンパイラやライブラリの
+アップデートを行った場合には、make realcleanを実行し、configureからやり
+直してください。
 
 
-�ڥ���ե�����졼���λȤ�����
+【Mekefile.configの説明】
 
-����ե�����졼����cfg�ˤϡ�TOPPERS�����奫���ͥ�������ͽ��2.12.5��
-�ε��Ҥ��̤ꡢ3�ġʤޤ���4�ġˤΥѥ��ǹ�������ޤ���
+configureコマンドによって生成されるMakefile.configでは次のパラメータが
+定義されます。
 
-����ե�����졼���ϡ������ƥॳ��ե�����졼�����ե�����̾��ѥ�᡼
-���˼�ꡢ�ʲ��Υ��ץ���������ޤ��ʽ��פʤ�ΤΤߡˡ�
+・LIBBOOST_SUFFIX
+Boost C+ Librariesのライブラリファイルのサフィックス
+たとえば、ライブラリファイルがlibboost_system-mt.aのような形式であれば、
+LIBBOOST_SUFFIXには-mtが設定されます。
+
+・BOOST_VERSION
+Boost C++ Librariesのバージョン
+バージョン1.43.0であれば、BOOST_VERSIONには1_43が設定されます。
+
+・BOOST_DIR=/usr/include
+Boost C++ Librariesのヘッダファイルがあるディレクトリ
+自分でBoost C++ Librariesをインストールした場合、通常/usr/local/include
+が設定されます。
+
+・LIBBOOST_DIR
+Boost C++ Librariesのライブラリファイルがあるディレクトリ
+自分でBoost C++ Librariesをインストールした場合、通常/usr/local/libが設定
+されます。
+
+・XERCES_DIR
+Xerces C++のヘッダファイルがあるディレクトリ
+
+・LIBXERCES_DIR
+Xerces C++のライブラリファイルがあるディレクトリ
+
+・OPTIONS
+コンパイラの追加オプション
+普通は何も設定されません。
+
+・HAS_CFG_XML
+AUTOSAR XML対応の有無
+configureに--with-xmlを指定した場合は1に定義されます。
+
+
+【コンフィギュレータの使い方】
+
+コンフィギュレータ（cfg）は、TOPPERS新世代カーネル統合仕様書の2.12.5節
+の記述の通り、3つ（または4つ）のパスで構成されます。
+
+コンフィギュレータは、システムコンフィギュレーションファイル名をパラメー
+タに取り、以下のオプションを持ちます（重要なもののみ）。
 
 	--help
-		���ץ����Υꥹ�Ȥ�������ɽ�����롣
+		オプションのリストと説明を表示する。
 
-	-v��--version��
-		����ե�����졼���ΥС�������ɽ�����롣
+	-v［--version］
+		コンフィギュレータのバージョンを表示する。
 
-	-k��--kernel��<�����ͥ�̾>
-		�����ͥ��̾�Τ���ꤹ�롣�ǥե���Ȥ�asp��
+	-k［--kernel］<カーネル名>
+		カーネルの名称を指定する。デフォルトはasp。
 
-	-p��--pass��<�ѥ��ֹ�>
-		�ѥ��ֹ����ꤹ�롣1��3�Τ����줫��
+	-p［--pass］<パス番号>
+		パス番号を指定する。1〜3のいずれか。
 
-	-I��--include-path��<���󥯥롼�ɥѥ�̾>
-		INCLUDE�ǥ��쥯�ƥ��֤ˤ����ơ����󥯥롼�ɤ��륳��ե�����졼
-		�����ե������õ���ѥ�̾����ꤹ�롣
+	-I［--include-path］<インクルードパス名>
+		INCLUDEディレクティブにおいて、インクルードするコンフィギュレー
+		ションファイルを探すパス名を指定する。
 
-	-T��--template-file��<�ƥ�ץ졼�ȥե�����̾>
-		�ƥ�ץ졼�ȥե������̾�Τ���ꤹ�롣�ѥ�2�ȥѥ�3��ͭ����
+	-T［--template-file］<テンプレートファイル名>
+		テンプレートファイルの名称を指定する。パス2とパス3で有効。
 
-	--api-table <��ŪAPI�ơ��֥�ե�����̾>
-		��ŪAPI�ơ��֥�Υե�����̾����ꤹ�롣
+	--api-table <静的APIテーブルファイル名>
+		静的APIテーブルのファイル名を指定する。
 
-	--cfg1-def-table <�ͼ�������ܥ�ơ��֥�ե�����̾>
-		�ͼ�������ܥ�ơ��֥�Υե�����̾����ꤹ�롣
+	--cfg1-def-table <値取得シンボルテーブルファイル名>
+		値取得シンボルテーブルのファイル名を指定する。
 
-	-r��--rom-image��<�����ɥ⥸�塼��̾>
-		�����ɥ⥸�塼���S�쥳���ɥե����ޥåȤη����Ѵ������ե������
-		̾�Τ���ꤹ�롣�ѥ�3�ǤΤ�ͭ����
+	-r［--rom-image］<ロードモジュール名>
+		ロードモジュールをSレコードフォーマットの形に変換したファイルの
+		名称を指定する。パス3でのみ有効。
 
-	-s [--symbol-table] <����ܥ�ե�����̾>
-		�����ɥ⥸�塼����γƥ���ܥ�ȥ��ɥ쥹���б�ɽ��ޤॷ��ܥ�
-		�ե������̾�Τ���ꤹ�롣�ѥ�3�ǤΤ�ͭ����
+	-s [--symbol-table] <シンボルファイル名>
+		ロードモジュール中の各シンボルとアドレスの対応表を含むシンボル
+		ファイルの名称を指定する。パス3でのみ有効。
 
-	--id-output-file <ID�ֹ���ϥե�����̾>
-		���֥������Ȥ�ID�ֹ�γ��դ���̤򡢻��ꤷ��̾���Υե�����˽�
-		���Ф����ѥ�2�ǤΤ�ͭ����
+	--id-output-file <ID番号出力ファイル名>
+		オブジェクトのID番号の割付け結果を、指定した名前のファイルに書
+		き出す。パス2でのみ有効。
 
-	--id-input-file <ID�ֹ����ϥե�����̾>
-		���֥������Ȥ�ID�ֹ�γ��դ��򡢻��ꤷ��̾���Υե����뤫����
-		���ࡣ�ѥ�2�ǤΤ�ͭ����
+	--id-input-file <ID番号入力ファイル名>
+		オブジェクトのID番号の割付けを、指定した名前のファイルから取り
+		込む。パス2でのみ有効。
 
 	--external-id
-		���֥������Ȥ�ID�ֹ���ݻ������ѿ���������������롣�ѥ�2�ǤΤ�
-		ͭ����
+		オブジェクトのID番号を保持する変数の定義を生成する。パス2でのみ
+		有効。
 
-	-M��--print-dependencies��<�������åȥ���ܥ�>
-		�����ƥॳ��ե�����졼�����ե�����ΰ�¸�ط�����Ϥ��롣
-		Makefile��ΰ�¸�ط�����������ݤ��Ѥ��롣
+	-M［--print-dependencies］<ターゲットシンボル>
+		システムコンフィギュレーションファイルの依存関係を出力する。
+		Makefile中の依存関係を生成する際に用いる。
 
-	--ini-file <����ե�����̾>
-		AUTOSAR XML�б����ˤ����ơ�����ե��������ꤹ�롣
+	--ini-file <設定ファイル名>
+		AUTOSAR XML対応時において、設定ファイルを指定する。
 
-����ե�����졼���ξܺٻ��ͤˤĤ��Ƥϡ�����PDF�ե�����η������ۤ��Ƥ�
-���TOPPERS�����奫���ͥ��ѥ���ե�����졼�����͡פ򻲾Ȥ��Ƥ���������
-�ƥ�ץ졼�ȥե�����κ����ˤ����äƤϡ���TOPPERS�����奫���ͥ��ѥ����
-������졼����¢�ޥ����ץ����å����ͽ�פ򻲾Ȥ��Ƥ���������
+コンフィギュレータの詳細仕様については、別途PDFファイルの形で配布してい
+る「TOPPERS新世代カーネル用コンフィギュレータ仕様」を参照してください。
+テンプレートファイルの作成にあたっては、「TOPPERS新世代カーネル用コンフ
+ィギュレータ内蔵マクロプロセッサ仕様書」を参照してください。
 

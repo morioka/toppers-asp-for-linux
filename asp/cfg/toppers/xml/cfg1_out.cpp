@@ -16,39 +16,39 @@
  *  Copyright (C) 2011-2014 by TOSHIBA CORPOTATION, JAPAN
  *  Copyright (C) 2011-2014 by Witz Corporation, JAPAN
  *  
- *  ¾åµ­Ãøºî¸¢¼Ô¤Ï¡¤°Ê²¼¤Î(1)¡Á(4)¤Î¾ò·ï¤òËş¤¿¤¹¾ì¹ç¤Ë¸Â¤ê¡¤ËÜ¥½¥Õ¥È¥¦¥§
- *  ¥¢¡ÊËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò²şÊÑ¤·¤¿¤â¤Î¤ò´Ş¤à¡¥°Ê²¼Æ±¤¸¡Ë¤ò»ÈÍÑ¡¦Ê£À½¡¦²ş
- *  ÊÑ¡¦ºÆÇÛÉÛ¡Ê°Ê²¼¡¤ÍøÍÑ¤È¸Æ¤Ö¡Ë¤¹¤ë¤³¤È¤òÌµ½ş¤ÇµöÂú¤¹¤ë¡¥
- *  (1) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò¥½¡¼¥¹¥³¡¼¥É¤Î·Á¤ÇÍøÍÑ¤¹¤ë¾ì¹ç¤Ë¤Ï¡¤¾åµ­¤ÎÃøºî
- *      ¸¢É½¼¨¡¤¤³¤ÎÍøÍÑ¾ò·ï¤ª¤è¤Ó²¼µ­¤ÎÌµÊİ¾Úµ¬Äê¤¬¡¤¤½¤Î¤Ş¤Ş¤Î·Á¤Ç¥½¡¼
- *      ¥¹¥³¡¼¥ÉÃæ¤Ë´Ş¤Ş¤ì¤Æ¤¤¤ë¤³¤È¡¥
- *  (2) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò¡¤¥é¥¤¥Ö¥é¥ê·Á¼°¤Ê¤É¡¤Â¾¤Î¥½¥Õ¥È¥¦¥§¥¢³«È¯¤Ë»È
- *      ÍÑ¤Ç¤­¤ë·Á¤ÇºÆÇÛÉÛ¤¹¤ë¾ì¹ç¤Ë¤Ï¡¤ºÆÇÛÉÛ¤ËÈ¼¤¦¥É¥­¥å¥á¥ó¥È¡ÊÍøÍÑ
- *      ¼Ô¥Ş¥Ë¥å¥¢¥ë¤Ê¤É¡Ë¤Ë¡¤¾åµ­¤ÎÃøºî¸¢É½¼¨¡¤¤³¤ÎÍøÍÑ¾ò·ï¤ª¤è¤Ó²¼µ­
- *      ¤ÎÌµÊİ¾Úµ¬Äê¤ò·ÇºÜ¤¹¤ë¤³¤È¡¥
- *  (3) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò¡¤µ¡´ï¤ËÁÈ¤ß¹ş¤à¤Ê¤É¡¤Â¾¤Î¥½¥Õ¥È¥¦¥§¥¢³«È¯¤Ë»È
- *      ÍÑ¤Ç¤­¤Ê¤¤·Á¤ÇºÆÇÛÉÛ¤¹¤ë¾ì¹ç¤Ë¤Ï¡¤¼¡¤Î¤¤¤º¤ì¤«¤Î¾ò·ï¤òËş¤¿¤¹¤³
- *      ¤È¡¥
- *    (a) ºÆÇÛÉÛ¤ËÈ¼¤¦¥É¥­¥å¥á¥ó¥È¡ÊÍøÍÑ¼Ô¥Ş¥Ë¥å¥¢¥ë¤Ê¤É¡Ë¤Ë¡¤¾åµ­¤ÎÃø
- *        ºî¸¢É½¼¨¡¤¤³¤ÎÍøÍÑ¾ò·ï¤ª¤è¤Ó²¼µ­¤ÎÌµÊİ¾Úµ¬Äê¤ò·ÇºÜ¤¹¤ë¤³¤È¡¥
- *    (b) ºÆÇÛÉÛ¤Î·ÁÂÖ¤ò¡¤ÊÌ¤ËÄê¤á¤ëÊıË¡¤Ë¤è¤Ã¤Æ¡¤TOPPERS¥×¥í¥¸¥§¥¯¥È¤Ë
- *        Êó¹ğ¤¹¤ë¤³¤È¡¥
- *  (4) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ÎÍøÍÑ¤Ë¤è¤êÄ¾ÀÜÅª¤Ş¤¿¤Ï´ÖÀÜÅª¤ËÀ¸¤¸¤ë¤¤¤«¤Ê¤ëÂ»
- *      ³²¤«¤é¤â¡¤¾åµ­Ãøºî¸¢¼Ô¤ª¤è¤ÓTOPPERS¥×¥í¥¸¥§¥¯¥È¤òÌÈÀÕ¤¹¤ë¤³¤È¡¥
- *      ¤Ş¤¿¡¤ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Î¥æ¡¼¥¶¤Ş¤¿¤Ï¥¨¥ó¥É¥æ¡¼¥¶¤«¤é¤Î¤¤¤«¤Ê¤ëÍı
- *      Í³¤Ë´ğ¤Å¤¯ÀÁµá¤«¤é¤â¡¤¾åµ­Ãøºî¸¢¼Ô¤ª¤è¤ÓTOPPERS¥×¥í¥¸¥§¥¯¥È¤ò
- *      ÌÈÀÕ¤¹¤ë¤³¤È¡¥
+ *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã®(1)ã€œ(4)ã®æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§
+ *  ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼ä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹
+ *  å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œåˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼
+ *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
+ *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
+ *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼
+ *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
+ *      è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
+ *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
+ *      ã¨ï¼
+ *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
+ *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
+ *        å ±å‘Šã™ã‚‹ã“ã¨ï¼
+ *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
+ *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼
+ *      ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®ãƒ¦ãƒ¼ã‚¶ã¾ãŸã¯ã‚¨ãƒ³ãƒ‰ãƒ¦ãƒ¼ã‚¶ã‹ã‚‰ã®ã„ã‹ãªã‚‹ç†
+ *      ç”±ã«åŸºã¥ãè«‹æ±‚ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’
+ *      å…è²¬ã™ã‚‹ã“ã¨ï¼
  *
- *  ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Ï¡¤AUTOSAR¡ÊAUTomotive Open System ARchitecture¡Ë»Å
- *  ÍÍ¤Ë´ğ¤Å¤¤¤Æ¤¤¤ë¡¥¾åµ­¤ÎµöÂú¤Ï¡¤AUTOSAR¤ÎÃÎÅªºâ»º¸¢¤òµöÂú¤¹¤ë¤â¤Î¤Ç
- *  ¤Ï¤Ê¤¤¡¥AUTOSAR¤Ï¡¤AUTOSAR»ÅÍÍ¤Ë´ğ¤Å¤¤¤¿¥½¥Õ¥È¥¦¥§¥¢¤ò¾¦ÍÑÌÜÅª¤ÇÍø
- *  ÍÑ¤¹¤ë¼Ô¤ËÂĞ¤·¤Æ¡¤AUTOSAR¥Ñ¡¼¥È¥Ê¡¼¤Ë¤Ê¤ë¤³¤È¤òµá¤á¤Æ¤¤¤ë¡¥
+ *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼ŒAUTOSARï¼ˆAUTomotive Open System ARchitectureï¼‰ä»•
+ *  æ§˜ã«åŸºã¥ã„ã¦ã„ã‚‹ï¼ä¸Šè¨˜ã®è¨±è«¾ã¯ï¼ŒAUTOSARã®çŸ¥çš„è²¡ç”£æ¨©ã‚’è¨±è«¾ã™ã‚‹ã‚‚ã®ã§
+ *  ã¯ãªã„ï¼AUTOSARã¯ï¼ŒAUTOSARä»•æ§˜ã«åŸºã¥ã„ãŸã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’å•†ç”¨ç›®çš„ã§åˆ©
+ *  ç”¨ã™ã‚‹è€…ã«å¯¾ã—ã¦ï¼ŒAUTOSARãƒ‘ãƒ¼ãƒˆãƒŠãƒ¼ã«ãªã‚‹ã“ã¨ã‚’æ±‚ã‚ã¦ã„ã‚‹ï¼
  *
- *  ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Ï¡¤ÌµÊİ¾Ú¤ÇÄó¶¡¤µ¤ì¤Æ¤¤¤ë¤â¤Î¤Ç¤¢¤ë¡¥¾åµ­Ãøºî¸¢¼Ô¤ª
- *  ¤è¤ÓTOPPERS¥×¥í¥¸¥§¥¯¥È¤Ï¡¤ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Ë´Ø¤·¤Æ¡¤ÆÃÄê¤Î»ÈÍÑÌÜÅª
- *  ¤ËÂĞ¤¹¤ëÅ¬¹çÀ­¤â´Ş¤á¤Æ¡¤¤¤¤«¤Ê¤ëÊİ¾Ú¤â¹Ô¤ï¤Ê¤¤¡¥¤Ş¤¿¡¤ËÜ¥½¥Õ¥È¥¦¥§
- *  ¥¢¤ÎÍøÍÑ¤Ë¤è¤êÄ¾ÀÜÅª¤Ş¤¿¤Ï´ÖÀÜÅª¤ËÀ¸¤¸¤¿¤¤¤«¤Ê¤ëÂ»³²¤Ë´Ø¤·¤Æ¤â¡¤¤½
- *  ¤ÎÀÕÇ¤¤òÉé¤ï¤Ê¤¤¡¥
+ *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼ä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
+ *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œç‰¹å®šã®ä½¿ç”¨ç›®çš„
+ *  ã«å¯¾ã™ã‚‹é©åˆæ€§ã‚‚å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§
+ *  ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œã
+ *  ã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼
  * 
  *  $Id: cfg1_out.cpp 179 2014-03-17 05:01:16Z nces-mtakada $
  */
@@ -78,8 +78,8 @@
 #include <boost/foreach.hpp>
 
 /*!
- *  \brief  ¥ª¥Ö¥¸¥§¥¯¥ÈIDÈÖ¹æ¤Î³äÉÕ¤±
- *  \param[in]  api_map   ¥½¡¼¥¹¤Ëµ­½Ò¤µ¤ì¤¿ÀÅÅªAPI¤òÅĞÏ¿¤·¤¿¥³¥ó¥Æ¥Ê
+ *  \brief  ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆIDç•ªå·ã®å‰²ä»˜ã‘
+ *  \param[in]  api_map   ã‚½ãƒ¼ã‚¹ã«è¨˜è¿°ã•ã‚ŒãŸé™çš„APIã‚’ç™»éŒ²ã—ãŸã‚³ãƒ³ãƒ†ãƒŠ
  */
 void child_assign_id(toppers::xml::container::object * pObj, int fixed_id)
 {
@@ -107,7 +107,7 @@ void assign_id( toppers::xml::cfg1_out::xml_obj_map const& xml_map)
   for(p = xml_map.begin() ; p != xml_map.end() ; p++)
   {
     serial = 1;
-    // ¥ª¥Ö¥¸¥§¥¯¥È¤´¤È¤ËID³äÅö¤Æ
+    // ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã”ã¨ã«IDå‰²å½“ã¦
     for(q = (*p).second.begin() ; q != (*p).second.end() ; q++)
     {
       (*q)->setId( serial );
@@ -124,7 +124,7 @@ void assign_id( toppers::xml::cfg1_out::xml_obj_map const& xml_map)
 
 }
 
-//  Ê¸»úÎó¤òÃÖ´¹¤¹¤ë
+//  æ–‡å­—åˆ—ã‚’ç½®æ›ã™ã‚‹
 std::string Replace( std::string String1, std::string String2, std::string String3 )
 {
     std::string::size_type  Pos( String1.find( String2 ) );
@@ -142,12 +142,12 @@ namespace toppers
 {
   namespace xml
   {
-    //! cfg_out ¥¯¥é¥¹¤Î¼ÂÁõ¾ÜºÙ
+    //! cfg_out ã‚¯ãƒ©ã‚¹ã®å®Ÿè£…è©³ç´°
     struct cfg1_out::implementation
     {
     protected:
       output_file ofile_;
-	  std::vector< toppers::xml::container::object* > container_array_; /*  xml¤«¤é¥Ñ¡¼¥¹¤·¤¿À¸¥Ç¡¼¥¿ only xml */
+	  std::vector< toppers::xml::container::object* > container_array_; /*  xmlã‹ã‚‰ãƒ‘ãƒ¼ã‚¹ã—ãŸç”Ÿãƒ‡ãƒ¼ã‚¿ only xml */
       std::map< std::string, std::string > info_rmap_; /*   xml */
 
       std::string cfg1_out_list_;
@@ -186,16 +186,16 @@ namespace toppers
                   "const uint32 TOPPERS_cfg_sizeof_pointer = sizeof(const volatile void*);\n"
                   "\n";
 
-        if ( def_table_ != 0 )	// ¡ÖÃÍ¼èÆÀ¥·¥ó¥Ü¥ë¥Æ¡¼¥Ö¥ë¡×
+        if ( def_table_ != 0 )	// ã€Œå€¤å–å¾—ã‚·ãƒ³ãƒœãƒ«ãƒ†ãƒ¼ãƒ–ãƒ«ã€
         {
           for ( cfg1_def_table::const_iterator iter( def_table_->begin() ), last( def_table_->end() );
                 iter != last;
                 ++iter )
           {
-            // ¼°¤ÎºÇ½é¤Ë # ¤¬¤¢¤ì¤Ğ¡¢¤½¤ì¤Ï¥Ş¥¯¥íÄêµÁ¤ÎÈ½Äê
-            // ¡úÃí°Õ¡ú #@ ¤Ç»Ï¤Ş¤ë½ñ¼°¤ÏÇÑ»ß 2010/07/23
+            // å¼ã®æœ€åˆã« # ãŒã‚ã‚Œã°ã€ãã‚Œã¯ãƒã‚¯ãƒ­å®šç¾©ã®åˆ¤å®š
+            // â˜…æ³¨æ„â˜… #@ ã§å§‹ã¾ã‚‹æ›¸å¼ã¯å»ƒæ­¢ 2010/07/23
             bool is_pp = ( iter->expression[ 0 ] == '#' );
-            if ( !iter->value1.empty() || !iter->value2.empty() ) // ¡ÊCSV¤Î¡Ë4ÈÖÌÜ¤Ş¤¿¤Ï5ÈÖÌÜ¤ÎÃÍ¤¬¤¢¤ì¤Ğ...
+            if ( !iter->value1.empty() || !iter->value2.empty() ) // ï¼ˆCSVã®ï¼‰4ç•ªç›®ã¾ãŸã¯5ç•ªç›®ã®å€¤ãŒã‚ã‚Œã°...
             {
               is_pp = true;
             }
@@ -216,7 +216,7 @@ namespace toppers
                           "(" + value2 + ");\n"
                           "#endif\n";
             }
-            else if ( iter->expression[ 0 ] == '@' )  // '@'¤Ç»Ï¤Ş¤ì¤Ğ¥¢¥É¥ì¥¹
+            else if ( iter->expression[ 0 ] == '@' )  // '@'ã§å§‹ã¾ã‚Œã°ã‚¢ãƒ‰ãƒ¬ã‚¹
             {
               definition = "const volatile void* const TOPPERS_cfg_" + iter->name + " = (" + ( iter->expression.c_str() + 1 ) + ");\n";
             }
@@ -253,9 +253,9 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥³¥ó¥¹¥È¥é¥¯¥¿
-     *  \param[in]  filename    cfg1_out.c ¤Ş¤¿¤Ï cfg1_out.srec ¼ã¤·¤¯¤Ï¤½¤ì¤é¤ÎÂåÂØÌ¾
-     *  \param[in]  def_table   cfg1_out.c À¸À®ÍÑ¤ÎÄêµÁ¥Æ¡¼¥Ö¥ë
+     *  \brief  ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+     *  \param[in]  filename    cfg1_out.c ã¾ãŸã¯ cfg1_out.srec è‹¥ã—ãã¯ãã‚Œã‚‰ã®ä»£æ›¿å
+     *  \param[in]  def_table   cfg1_out.c ç”Ÿæˆç”¨ã®å®šç¾©ãƒ†ãƒ¼ãƒ–ãƒ«
      */
     cfg1_out::cfg1_out( std::string const& filename, cfg1_def_table const* def_table )
       : pimpl_( new implementation( filename, std::ios_base::out, def_table ) )
@@ -263,15 +263,15 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥³¥Ô¡¼¥³¥ó¥¹¥È¥é¥¯¥¿
-     *  \param[in]  other   ¥³¥Ô¡¼¸µ
+     *  \brief  ã‚³ãƒ”ãƒ¼ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+     *  \param[in]  other   ã‚³ãƒ”ãƒ¼å…ƒ
      */
     cfg1_out::cfg1_out( cfg1_out const& other )
       : pimpl_( other.pimpl_->do_clone() )
     {
     }
 
-    //! ¥Ç¥¹¥È¥é¥¯¥¿
+    //! ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
     cfg1_out::~cfg1_out()
     {
 	  del_containers();
@@ -280,10 +280,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥·¥¹¥Æ¥à¥³¥ó¥Õ¥£¥®¥å¥ì¡¼¥·¥ç¥ó¥Õ¥¡¥¤¥ë¤Î¥í¡¼¥É
-     *  \param[in]  input_file  ÆşÎÏ¥Õ¥¡¥¤¥ëÌ¾
-     *  \param[in]  codeset     Ê¸»ú¥³¡¼¥É
-     *  \param[in]  obj_info    ¥ª¥Ö¥¸¥§¥¯¥È¾ğÊó¤ÎÏ¢ÁÛÇÛÎó
+     *  \brief  ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ³ãƒ•ã‚£ã‚®ãƒ¥ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰
+     *  \param[in]  input_file  å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«å
+     *  \param[in]  codeset     æ–‡å­—ã‚³ãƒ¼ãƒ‰
+     *  \param[in]  obj_info    ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é€£æƒ³é…åˆ—
      */
     void cfg1_out::load_cfg( std::string const& input_file, codeset_t codeset, 
     		std::map<std::string, toppers::xml::info> const& info_map )
@@ -291,7 +291,7 @@ namespace toppers
       return pimpl_->do_load_cfg( input_file, codeset, info_map );
     }
 
-    // ¥Ñ¥é¥á¡¼¥¿¤Î·¿¤¬ECUC-NUMERICAL-PARAM-VALUE¤Ê¤Î¤ËÀ°¿ô¡¦ÉâÆ°¾®¿ôÅÀ¤Ç¤Ê¤¤¾ì¹ç¤Ï¥Ş¥¯¥íÌ¾¤È¤·¤Æ¡¢cfg_out.c¤Ø½ĞÎÏ¤¹¤ë
+    // ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å‹ãŒECUC-NUMERICAL-PARAM-VALUEãªã®ã«æ•´æ•°ãƒ»æµ®å‹•å°æ•°ç‚¹ã§ãªã„å ´åˆã¯ãƒã‚¯ãƒ­åã¨ã—ã¦ã€cfg_out.cã¸å‡ºåŠ›ã™ã‚‹
     string cfg1_out::implementation::do_out_macro_name( std::vector< toppers::xml::container::parameter* >::const_iterator pPara, int serial,
       std::map<std::string, toppers::xml::info> const& info_map )
     {
@@ -372,9 +372,9 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥¤¥ó¥¯¥ë¡¼¥É¥³¥ó¥Æ¥Ê¾ğÊó¤òÃê½Ğ¤¹¤ë
-     *  \param[in]  objects  XML¤Ç¥Ñ¡¼¥¹¤·¤¿¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó
-     *  \param[in]  include_container Ãê½Ğ¤¹¤ë¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹Ì¾
+     *  \brief  ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã‚’æŠ½å‡ºã™ã‚‹
+     *  \param[in]  objects  XMLã§ãƒ‘ãƒ¼ã‚¹ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ—
+     *  \param[in]  include_container æŠ½å‡ºã™ã‚‹ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹å
      */
     void cfg1_out::implementation::do_search_includes(std::vector< toppers::xml::container::object* > const& objects,
         std::string include_container, std::list< string > *incstr )
@@ -401,8 +401,8 @@ namespace toppers
     }
 
     /*! 
-     *  \brief  ¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹Ì¾¤ò¼èÆÀ¤¹¤ë
-     *  \param[in]  searchObj  ¼èÆÀ¤¹¤ë¥³¥ó¥Æ¥Ê¥ª¥Ö¥¸¥§¥¯¥È
+     *  \brief  ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹åã‚’å–å¾—ã™ã‚‹
+     *  \param[in]  searchObj  å–å¾—ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒŠã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
      */
      string cfg1_out::implementation::search_value_path( toppers::xml::container::object* searchObj )
      {
@@ -424,13 +424,13 @@ namespace toppers
     }
 
     /*! 
-     *  \brief  Â¿½ÅÅÙ¾ğÊó¤ò½¸·×¤¹¤ë
-     *  \param[in]  objects  XML¤Ç¥Ñ¡¼¥¹¤·¤¿¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó
-     *  \param[in]  multi_info_map ¥Ş¡¼¥¸¤ò¹Ô¤¦¤¿¤á¤Ë¥³¥ó¥Æ¥Ê¾ğÊó¤È¥·¥ç¡¼¥È¥Í¡¼¥à¤Î¥Õ¥ë¥Ñ¥¹¤ò¥·¥ê¥¢¥é¥¤¥º¤·¤¿Ï¢ÁÛÇÛÎó 
+     *  \brief  å¤šé‡åº¦æƒ…å ±ã‚’é›†è¨ˆã™ã‚‹
+     *  \param[in]  objects  XMLã§ãƒ‘ãƒ¼ã‚¹ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ—
+     *  \param[in]  multi_info_map ãƒãƒ¼ã‚¸ã‚’è¡Œã†ãŸã‚ã«ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã¨ã‚·ãƒ§ãƒ¼ãƒˆãƒãƒ¼ãƒ ã®ãƒ•ãƒ«ãƒ‘ã‚¹ã‚’ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã—ãŸé€£æƒ³é…åˆ— 
      */
     void cfg1_out::implementation::total_multiplicity( toppers::xml::container::object* object, t_multi_info_map &multi_info_map )
     {
-      // ¼«¥³¥ó¥Æ¥Ê¤Î¥Ñ¥é¥á¡¼¥¿¤ÎÂ¿½ÅÅÙ¤ò½¸·×¤¹¤ë
+      // è‡ªã‚³ãƒ³ãƒ†ãƒŠã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å¤šé‡åº¦ã‚’é›†è¨ˆã™ã‚‹
       for ( std::vector<toppers::xml::container::parameter*>::const_iterator pPara = object->getParams()->begin() ;
         pPara != object->getParams()->end();
         ++pPara )
@@ -438,7 +438,7 @@ namespace toppers
         std::string Containerpath = search_value_path( (*pPara)->getParent() );
         t_multi_info_map::iterator multi_it = multi_info_map.find( boost::str(boost::format( "%s::%s" ) % (*pPara)->getDefName() % Containerpath ));
 
-        //¥Ñ¥é¥á¡¼¥¿¥Ñ¥¹¤¬multi_info_map¤ËÌµ¤¤¾ì¹ç¤ÏÄÉ²Ã¤¹¤ë
+        //ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ‘ã‚¹ãŒmulti_info_mapã«ç„¡ã„å ´åˆã¯è¿½åŠ ã™ã‚‹
         if( multi_it == multi_info_map.end() )
         {
           multi_info mi;
@@ -451,7 +451,7 @@ namespace toppers
         }
       }
 
-      // ¼«¥³¥ó¥Æ¥Ê¤Î¥µ¥Ö¥³¥ó¥Æ¥Ê¤ÎÂ¿½ÅÅÙ¤ò½¸·×¤¹¤ë
+      // è‡ªã‚³ãƒ³ãƒ†ãƒŠã®ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã®å¤šé‡åº¦ã‚’é›†è¨ˆã™ã‚‹
       for ( std::vector< toppers::xml::container::object* >::iterator pObj = object->getSubcontainers()->begin() ;
         pObj != object->getSubcontainers()->end();
         ++pObj )
@@ -460,7 +460,7 @@ namespace toppers
         std::string Parentpath = search_value_path( (*pObj)->getParent() );
         t_multi_info_map::iterator multi_it = multi_info_map.find( boost::str(boost::format( "%s::%s" ) %(*pObj)->getDefName() %Parentpath) );
 
-        // ¥³¥ó¥Æ¥Ê¥Ñ¥¹¤¬multi_info_map¤ËÌµ¤¤¾ì¹ç¤Ï¡¤ÄÉ²Ã¤¹¤ë
+        // ã‚³ãƒ³ãƒ†ãƒŠãƒ‘ã‚¹ãŒmulti_info_mapã«ç„¡ã„å ´åˆã¯ï¼Œè¿½åŠ ã™ã‚‹
         if( multi_it == multi_info_map.end() )
         {
           multi_info mi;
@@ -470,7 +470,7 @@ namespace toppers
         }
         else
         {
-          // ¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹¤¬°ã¤¦¾ì¹ç¤ÏÄÉ²Ã¤·¤Æ¡¤Â¿½ÅÅÙ¤òÁı¤ä¤¹¡£
+          // ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹ãŒé•ã†å ´åˆã¯è¿½åŠ ã—ã¦ï¼Œå¤šé‡åº¦ã‚’å¢—ã‚„ã™ã€‚
           std::vector< std::string >::iterator it = find( multi_it->second.shortname.begin(), multi_it->second.shortname.end(), (*pObj)->getObjName() );
           if( it == multi_it->second.shortname.end() )
           {
@@ -480,7 +480,7 @@ namespace toppers
         }
       }
 
-      // ¥µ¥Ö¥³¥ó¥Æ¥Ê¤Î¥Á¥§¥Ã¥¯
+      // ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã®ãƒã‚§ãƒƒã‚¯
       for (  std::vector<toppers::xml::container::object*>::const_iterator pSub = object->getSubcontainers()->begin() ;
         pSub != object->getSubcontainers()->end();
         ++pSub )
@@ -490,9 +490,9 @@ namespace toppers
     }
      
     /*! 
-     *  \brief  Â¿½ÅÅÙ¾ğÊó¤ò¸¡¾Ú¤¹¤ë 
-     *  \param[in]  objects  XML¤Ç¥Ñ¡¼¥¹¤·¤¿¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó 
-     *  \param[in]  info_map ATK2¤Ç»ØÄê¤¹¤ë¥³¥ó¥Æ¥Ê¾ğÊó¤ÎÏ¢ÁÛÇÛÎó 
+     *  \brief  å¤šé‡åº¦æƒ…å ±ã‚’æ¤œè¨¼ã™ã‚‹ 
+     *  \param[in]  objects  XMLã§ãƒ‘ãƒ¼ã‚¹ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ— 
+     *  \param[in]  info_map ATK2ã§æŒ‡å®šã™ã‚‹ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã®é€£æƒ³é…åˆ— 
      */
     void cfg1_out::implementation::validate_multiplicity( toppers::xml::container::object* object,
       std::map<std::string, toppers::xml::info> const& info_map )
@@ -501,17 +501,17 @@ namespace toppers
       std::map<std::string, toppers::xml::info> search_map;
       std::map<std::string, unsigned int> multi_map;
 
-      // ¼«¥³¥ó¥Æ¥Ê¤Î¥Ñ¥é¥á¡¼¥¿¤È¥µ¥Ö¥³¥ó¥Æ¥Ê¤ÎÂ¿½ÅÅÙÄêµÁ¾ğÊó¤òinfo_map¤«¤é¼èÆÀ¤¹¤ë
+      // è‡ªã‚³ãƒ³ãƒ†ãƒŠã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¨ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã®å¤šé‡åº¦å®šç¾©æƒ…å ±ã‚’info_mapã‹ã‚‰å–å¾—ã™ã‚‹
       for( std::map<std::string, toppers::xml::info>::const_iterator pInfo = info_map.begin() ;
         pInfo != info_map.end() ;
         ++pInfo )
       {
-        // objPath¤ÈÆ±¤¸Ê¸»úÎó¤¬¤¢¤ë¾ì¹ç¡Ê¸å¤Ë¤Ä¤Å¤¯¥Ñ¥¹¤¬¤¢¤Ã¤Æ¤â¤è¤¤¡Ë
+        // objPathã¨åŒã˜æ–‡å­—åˆ—ãŒã‚ã‚‹å ´åˆï¼ˆå¾Œã«ã¤ã¥ããƒ‘ã‚¹ãŒã‚ã£ã¦ã‚‚ã‚ˆã„ï¼‰
         if( pInfo->first.find(objPath) != string::npos )
         {
-          // objPath¤Î¤¢¤È¤ËÂ³¤¯Ê¸»úÎó¤ò¼èÆÀ
+          // objPathã®ã‚ã¨ã«ç¶šãæ–‡å­—åˆ—ã‚’å–å¾—
           std::string str( pInfo->first.substr(objPath.size()) );
-          // str¤Î¥Ñ¥¹¾ğÊó¤¬1¤Ä¤·¤«¤Ê¤¤¾ì¹ç¤Ï¼«¥³¥ó¥Æ¥Ê¤Î¥Ñ¥é¥á¡¼¥¿¤«¥µ¥Ö¥³¥ó¥Æ¥Ê¤Ç¤¢¤ë
+          // strã®ãƒ‘ã‚¹æƒ…å ±ãŒ1ã¤ã—ã‹ãªã„å ´åˆã¯è‡ªã‚³ãƒ³ãƒ†ãƒŠã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‹ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã§ã‚ã‚‹
           if( 0 == (int)str.rfind("/") )
           {
             search_map.insert(make_pair(pInfo->first, pInfo->second ));
@@ -519,7 +519,7 @@ namespace toppers
         }
       }
 
-      // ¼«¥³¥ó¥Æ¥Ê¤Î¥Ñ¥é¥á¡¼¥¿¤ÎÂ¿½ÅÅÙ¤ò½¸·×¤¹¤ë
+      // è‡ªã‚³ãƒ³ãƒ†ãƒŠã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å¤šé‡åº¦ã‚’é›†è¨ˆã™ã‚‹
       for ( std::vector<toppers::xml::container::parameter*>::const_iterator pPara = object->getParams()->begin() ;
         pPara != object->getParams()->end();
         ++pPara )
@@ -534,7 +534,7 @@ namespace toppers
           pMulti->second++;
         }
       }
-      // ¼«¥³¥ó¥Æ¥Ê¤Î¥µ¥Ö¥³¥ó¥Æ¥Ê¤ÎÂ¿½ÅÅÙ¤ò½¸·×¤¹¤ë
+      // è‡ªã‚³ãƒ³ãƒ†ãƒŠã®ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã®å¤šé‡åº¦ã‚’é›†è¨ˆã™ã‚‹
       for ( std::vector< toppers::xml::container::object* >::iterator pObj = object->getSubcontainers()->begin() ;
         pObj != object->getSubcontainers()->end();
         ++pObj )
@@ -550,7 +550,7 @@ namespace toppers
         }
       }
 
-      // Â¿½ÅÅÙ¾ğÊó¤ò¥Á¥§¥Ã¥¯¤¹¤ë
+      // å¤šé‡åº¦æƒ…å ±ã‚’ãƒã‚§ãƒƒã‚¯ã™ã‚‹
       for (  std::map<std::string, toppers::xml::info>::const_iterator pSearch = search_map.begin() ;
         pSearch != search_map.end();
         ++pSearch )
@@ -572,7 +572,7 @@ namespace toppers
         }
       }
       
-      // ¥µ¥Ö¥³¥ó¥Æ¥Ê¤Î¥Á¥§¥Ã¥¯¤ò¹Ô¤¦
+      // ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã®ãƒã‚§ãƒƒã‚¯ã‚’è¡Œã†
       for (  std::vector<toppers::xml::container::object*>::const_iterator pSub = object->getSubcontainers()->begin() ;
         pSub != object->getSubcontainers()->end();
         ++pSub )
@@ -582,9 +582,9 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥³¥ó¥Æ¥Ê¤Î¥Ñ¥é¥á¡¼¥¿¤Î·¿¾ğÊó¤ò¸¡¾Ú¤¹¤ë
-     *  \param[in]  objects  XML¤Ç¥Ñ¡¼¥¹¤·¤¿¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó
-     *  \param[in]  info_map ATK2¤Ç»ØÄê¤¹¤ë¥³¥ó¥Æ¥Ê¾ğÊó¤ÎÏ¢ÁÛÇÛÎó
+     *  \brief  ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å‹æƒ…å ±ã‚’æ¤œè¨¼ã™ã‚‹
+     *  \param[in]  objects  XMLã§ãƒ‘ãƒ¼ã‚¹ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ—
+     *  \param[in]  info_map ATK2ã§æŒ‡å®šã™ã‚‹ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã®é€£æƒ³é…åˆ—
      */
     void cfg1_out::implementation::validate_type(std::vector< toppers::xml::container::object* > const& objects,
       std::map<std::string, toppers::xml::info> const& info_map )
@@ -626,12 +626,12 @@ namespace toppers
           }
           else
           {
-            // ·¿¤Î¾å½ñ¤­
+            // å‹ã®ä¸Šæ›¸ã
             if('+' == pInfo->second.type[0])
             {
                 (*pPara)->setType( pInfo->second.type_enum ) ;
             }
-            // ¥Ñ¥é¥á¡¼¥¿¤Î·¿¥Á¥§¥Ã¥¯
+            // ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å‹ãƒã‚§ãƒƒã‚¯
             else if( (*pPara)->getType() != pInfo->second.type_enum )
             {
               int line = (*pPara)->getLine();
@@ -639,7 +639,7 @@ namespace toppers
             }
           }
         }
-        // ¥µ¥Ö¥³¥ó¥Æ¥Ê¤¬¤¢¤ë¾ì¹ç
+        // ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠãŒã‚ã‚‹å ´åˆ
          for (  std::vector<toppers::xml::container::object*>::iterator pSub = (*pObj)->getSubcontainers()->begin() ;
           pSub != (*pObj)->getSubcontainers()->end();
           ++pSub )
@@ -650,9 +650,9 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥³¥ó¥Æ¥Ê¥ª¥Ö¥¸¥§¥¯¥È¤ÎÃµº÷
-     *  \param[in]  objects  XML¤Ç¥Ñ¡¼¥¹¤·¤¿¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó
-     *  \param[in]  searchPath Ãµº÷¤ò¹Ô¤¦¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹Ì¾
+     *  \brief  ã‚³ãƒ³ãƒ†ãƒŠã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ¢ç´¢
+     *  \param[in]  objects  XMLã§ãƒ‘ãƒ¼ã‚¹ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ—
+     *  \param[in]  searchPath æ¢ç´¢ã‚’è¡Œã†ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹å
      */
      toppers::xml::container::object* cfg1_out::implementation::search_container( std::vector< toppers::xml::container::object*> const &objects,
       std::string searchPath )
@@ -672,29 +672,29 @@ namespace toppers
           return search_container( *(*pObj)->getSubcontainers(), searchPath );
         }
       }
-      // Ãµº÷¤·¤¿¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹Ì¾¤¬Ìµ¤¤¾ì¹ç¤ÏNULL
+      // æ¢ç´¢ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹åãŒç„¡ã„å ´åˆã¯NULL
       return NULL; 
     }
 
     /*!
-     *  \brief  ¥³¥ó¥Æ¥Ê¥ª¥Ö¥¸¥§¥¯¥È¤Î¥Ş¡¼¥¸
-     *  \param[in]  rootContainer  XML¤Ç¥Ñ¡¼¥¹¤·¤¿¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó¡Ê¥Ş¡¼¥¸¤µ¤ì¤ëÏ¢ÁÛÇÛÎó¡Ë
-     *  \param[in]  mergeContainer ¥Ş¡¼¥¸¤¹¤ë¥³¥ó¥Æ¥Ê¥ª¥Ö¥¸¥§¥¯¥È
+     *  \brief  ã‚³ãƒ³ãƒ†ãƒŠã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ãƒãƒ¼ã‚¸
+     *  \param[in]  rootContainer  XMLã§ãƒ‘ãƒ¼ã‚¹ã—ãŸã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ—ï¼ˆãƒãƒ¼ã‚¸ã•ã‚Œã‚‹é€£æƒ³é…åˆ—ï¼‰
+     *  \param[in]  mergeContainer ãƒãƒ¼ã‚¸ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒŠã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
      */
      void cfg1_out::implementation::merge_container(std::vector< toppers::xml::container::object*> &rootContainers, toppers::xml::container::object* mergeContainer )
      {
-      // ¥³¥ó¥Æ¥Ê¾ğÊó¤Î½ĞÎÏ
+      // ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã®å‡ºåŠ›
       toppers::xml::container::object* searchedObj = search_container( rootContainers, search_value_path( mergeContainer ) ); 
       if( searchedObj != NULL)
       {
         for( std::vector<toppers::xml::container::parameter*>::iterator pPara = mergeContainer->getParams()->begin() ;
          pPara != mergeContainer->getParams()->end() ; ++pPara )
         {
-          // ¥Ş¥Ã¥Á¤·¤¿¥³¥ó¥Æ¥Ê¤Ë¥³¥ó¥Æ¥Ê¤Î¥Ñ¥é¥á¡¼¥¿¤òÄÉ²Ã¤µ¤»¤ë
+          // ãƒãƒƒãƒã—ãŸã‚³ãƒ³ãƒ†ãƒŠã«ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’è¿½åŠ ã•ã›ã‚‹
           searchedObj->getParams()->push_back( *pPara );     
         }
 
-        // ¥µ¥Ö¥³¥ó¥Æ¥Ê¤¬¤¢¤ë¾ì¹ç
+        // ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠãŒã‚ã‚‹å ´åˆ
         for ( std::vector<toppers::xml::container::object*>::iterator pSub = mergeContainer->getSubcontainers()->begin() ;
           pSub != mergeContainer->getSubcontainers()->end();
           ++pSub )
@@ -704,33 +704,33 @@ namespace toppers
       }
       else
       {
-        // ¥Ş¡¼¥¸¤¹¤ë¥³¥ó¥Æ¥Ê¤Î¿Æ¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹Ì¾¡Ê¿Æ¥³¥ó¥Æ¥Ê¤Ï¾å¤Îif¤Ç´û¤ËÂ¸ºß¤·¤Æ¤ë¤Ï¤º¡Ë
+        // ãƒãƒ¼ã‚¸ã™ã‚‹ã‚³ãƒ³ãƒ†ãƒŠã®è¦ªã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹åï¼ˆè¦ªã‚³ãƒ³ãƒ†ãƒŠã¯ä¸Šã®ifã§æ—¢ã«å­˜åœ¨ã—ã¦ã‚‹ã¯ãšï¼‰
         std::string addParentPath = search_value_path( mergeContainer->getParent() );
-        // ¥Ş¡¼¥¸¤µ¤ì¤ë¥³¥ó¥Æ¥Ê¥ª¥Ö¥¸¥§¥¯¥È
+        // ãƒãƒ¼ã‚¸ã•ã‚Œã‚‹ã‚³ãƒ³ãƒ†ãƒŠã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
         toppers::xml::container::object* addObj =  search_container( rootContainers, addParentPath );
         if( addObj == NULL )
         {
-          // ¥Ş¡¼¥¸¤¹¤ë¿Æ¥³¥ó¥Æ¥Ê¤¬¤Ê¤¤¡©¡Ê¥³¥ó¥Æ¥Ê¤Î¥È¥Ã¥×¡Ë
+          // ãƒãƒ¼ã‚¸ã™ã‚‹è¦ªã‚³ãƒ³ãƒ†ãƒŠãŒãªã„ï¼Ÿï¼ˆã‚³ãƒ³ãƒ†ãƒŠã®ãƒˆãƒƒãƒ—ï¼‰
           rootContainers.push_back( mergeContainer );
         }
         else
         {
-          //¥µ¥Ö¥³¥ó¥Æ¥Ê¤òÄÉ²Ã¤¹¤ë¾ì¹ç
+          //ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã‚’è¿½åŠ ã™ã‚‹å ´åˆ
           addObj->getSubcontainers()->push_back( mergeContainer );
         }
       }
     }
 
     /*!
-     *  \brief  ¥·¥¹¥Æ¥à¥³¥ó¥Õ¥£¥®¥å¥ì¡¼¥·¥ç¥ó¥Õ¥¡¥¤¥ë¤Î¥í¡¼¥É½èÍı¤Î¼ÂÂÎ
-     *  \param[in]  input_file  ÆşÎÏ¥Õ¥¡¥¤¥ëÌ¾
-     *  \param[in]  codeset     Ê¸»ú¥³¡¼¥É
-     *  \param[in]  obj_info    ¥ª¥Ö¥¸¥§¥¯¥È¾ğÊó¤ÎÏ¢ÁÛÇÛÎó
+     *  \brief  ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ³ãƒ•ã‚£ã‚®ãƒ¥ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ­ãƒ¼ãƒ‰å‡¦ç†ã®å®Ÿä½“
+     *  \param[in]  input_file  å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«å
+     *  \param[in]  codeset     æ–‡å­—ã‚³ãƒ¼ãƒ‰
+     *  \param[in]  obj_info    ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é€£æƒ³é…åˆ—
      */
     void cfg1_out::implementation::do_load_cfg( std::string const& input_file, 
                 codeset_t codeset, std::map<std::string, toppers::xml::info> const& info_map )
     {
-      // XML¥Õ¥¡¥¤¥ë¤Î¥Ñ¡¼¥¹½èÍı
+      // XMLãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ãƒ¼ã‚¹å‡¦ç†
       std::vector< toppers::xml::container::object*> container_array_temp;
       std::list<std::string> xmlfiles;
       boost::split( xmlfiles, input_file, boost::is_space() );
@@ -744,7 +744,7 @@ namespace toppers
         }
       }
 
-      // ¥¤¥ó¥¯¥ë¡¼¥É¥³¥ó¥Æ¥Ê¤Î¥Õ¥ë¥Ñ¥¹Ì¾¤ò¼èÆÀ
+      // ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã‚³ãƒ³ãƒ†ãƒŠã®ãƒ•ãƒ«ãƒ‘ã‚¹åã‚’å–å¾—
       std::string include_container;
       std::string s1;
       for( std::map<std::string, toppers::xml::info>::const_iterator pInfo = info_map.begin() ;
@@ -758,7 +758,7 @@ namespace toppers
       if ( include_container.empty() )
         include_container = "/AUTOSAR/EcucDefs/Os/OsInclude/OsIncludeFileName";
 
-      //¥¤¥ó¥¯¥ë¡¼¥É¥³¥ó¥Æ¥Ê¾ğÊó¤ò¼èÆÀ
+      //ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã‚’å–å¾—
       std::list< string > incstr;
       do_search_includes( container_array_temp, include_container, &incstr );
 
@@ -775,7 +775,7 @@ namespace toppers
       std::string container_path( get_global_string( "XML_ContainerPath" ) );
       std::list<std::string> moduleNames;
       boost::split(moduleNames, get_global_string( "XML_ModuleName" ), boost::is_any_of(",") );
-      // XML_ModuleName¤ÇÀßÄê¤µ¤ì¤Æ¤¤¤Ê¤¤¥â¥¸¥å¡¼¥ë¤Ïºï½ü¤¹¤ë
+      // XML_ModuleNameã§è¨­å®šã•ã‚Œã¦ã„ãªã„ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã¯å‰Šé™¤ã™ã‚‹
       for( std::vector< toppers::xml::container::object* >::iterator pObj = container_array_temp.begin() ;
         pObj != container_array_temp.end();
         ++pObj)
@@ -795,7 +795,7 @@ namespace toppers
         }
       }
 
-      // Â¿½ÅÅÙ¤Î¸¡¾Ú
+      // å¤šé‡åº¦ã®æ¤œè¨¼
       toppers::xml::container::object *obj = new toppers::xml::container::object();
       obj->setSubcontainers(container_array_temp);
       obj->setDefName( container_path );
@@ -803,7 +803,7 @@ namespace toppers
       total_multiplicity(obj, multi_info_map);
       validate_multiplicity(obj, info_map);
 
-      // ·¿¾ğÊó¤Î¸¡¾Ú
+      // å‹æƒ…å ±ã®æ¤œè¨¼
       for ( std::vector< toppers::xml::container::object* >::iterator pObj = container_array_temp.begin() ;
         pObj != container_array_temp.end();
         ++pObj )
@@ -811,7 +811,7 @@ namespace toppers
         validate_type(*(*pObj)->getSubcontainers(), info_map);
       }
 
-      // api-table¤ÎÃ»½ÌÌ¾¤ÈURIÌ¾¤ÎÏ¢ÁÛÇÛÎó(info_rmap_)¤òºîÀ®
+      // api-tableã®çŸ­ç¸®åã¨URIåã®é€£æƒ³é…åˆ—(info_rmap_)ã‚’ä½œæˆ
       for( std::map<std::string, toppers::xml::info>::const_iterator pInfo = info_map.begin() ;
         pInfo != info_map.end() ;
         ++pInfo)
@@ -819,10 +819,10 @@ namespace toppers
         info_rmap_.insert( pair<std::string, std::string>(pInfo->second.tfname, pInfo->first));
       }
 
-      // XML¥Ñ¡¼¥¹¤Î¥Ñ¥é¥á¡¼¥¿¤Ç¥Ş¥¯¥í¤Ë¤Ê¤Ã¤Æ¤¤¤ë¤â¤Î¤ò½ĞÎÏ¤¹¤ë
+      // XMLãƒ‘ãƒ¼ã‚¹ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã§ãƒã‚¯ãƒ­ã«ãªã£ã¦ã„ã‚‹ã‚‚ã®ã‚’å‡ºåŠ›ã™ã‚‹
       oss << do_search_macro(container_array_temp, info_map);
           
-      // ¥Ç¡¼¥¿¥á¥ó¥Ğ¤Ø¤ÎÈ¿±Ç
+      // ãƒ‡ãƒ¼ã‚¿ãƒ¡ãƒ³ãƒã¸ã®åæ˜ 
       std::string cfg1_list_temp( oss.str() );
       std::string includes_temp( includes_oss.str() );
 
@@ -832,8 +832,8 @@ namespace toppers
     }
 
     /*!
-     *  \brief  cfg1_out.c ¤ÎÆâÍÆÀ¸À®
-     *  \param[in]  type  ÇÛÎó cfg1_out[] ¤ÎÍ×ÁÇ·¿¡£¶õ¥İ¥¤¥ó¥¿¤Î¾ì¹ç¤Ï uint32_t ¤È¤·¤Æ°·¤ï¤ì¤ë¡£
+     *  \brief  cfg1_out.c ã®å†…å®¹ç”Ÿæˆ
+     *  \param[in]  type  é…åˆ— cfg1_out[] ã®è¦ç´ å‹ã€‚ç©ºãƒã‚¤ãƒ³ã‚¿ã®å ´åˆã¯ uint32_t ã¨ã—ã¦æ‰±ã‚ã‚Œã‚‹ã€‚
      */
     void cfg1_out::generate( char const* type ) const
     {
@@ -847,8 +847,8 @@ namespace toppers
       pimpl_->do_generate_includes();
       pimpl_->ofile_ << pimpl_->includes_ << '\n';
 
-      // int128_t¤Ï¸Î°Õ¤ËÌµ»ë
-      // int128_t¤ËÂ·¤¨¤ë¤È½èÍı¤¬½Å¤¯¤Ê¤ê¤¹¤®¤ë¤¿¤á
+      // int128_tã¯æ•…æ„ã«ç„¡è¦–
+      // int128_tã«æƒãˆã‚‹ã¨å‡¦ç†ãŒé‡ããªã‚Šã™ãã‚‹ãŸã‚
       pimpl_->ofile_ << "\n#ifdef INT64_MAX\n"
                         "  typedef sint64 signed_t;\n"
                         "  typedef uint64 unsigned_t;\n"
@@ -864,15 +864,15 @@ namespace toppers
     }
 
     /*!
-     *  \brief  #include»ØÎá¤ÎÊÂ¤Ó¤ò¼èÆÀ¤¹¤ë
-     *  \return #include»ØÎá¤ÎÊÂ¤Ó
+     *  \brief  #includeæŒ‡ä»¤ã®ä¸¦ã³ã‚’å–å¾—ã™ã‚‹
+     *  \return #includeæŒ‡ä»¤ã®ä¸¦ã³
      *
-     *  ¤³¤Î¥á¥ó¥Ğ´Ø¿ô¤Ï¡¢
+     *  ã“ã®ãƒ¡ãƒ³ãƒé–¢æ•°ã¯ã€
      *  \code
      *  #include <...>
      *  #include "..."
      *  \endcode
-     *  ¤È¤¤¤Ã¤¿#include»ØÎá¤ÎÊÂ¤Ó¤òÊ¸»úÎó¤È¤·¤ÆÊÖ¤¹¡£
+     *  ã¨ã„ã£ãŸ#includeæŒ‡ä»¤ã®ä¸¦ã³ã‚’æ–‡å­—åˆ—ã¨ã—ã¦è¿”ã™ã€‚
      */
     std::string const& cfg1_out::get_includes() const
     {
@@ -880,7 +880,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  S¥ì¥³¡¼¥É¤Î¥í¡¼¥É
+     *  \brief  Sãƒ¬ã‚³ãƒ¼ãƒ‰ã®ãƒ­ãƒ¼ãƒ‰
      */
     void cfg1_out::load_srec()
     {
@@ -925,7 +925,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  "cfg1_out.srec" ¤«¤éÆÉ¤ß¼è¤Ã¤¿¾ğÊó¤Î»²¾È
+     *  \brief  "cfg1_out.srec" ã‹ã‚‰èª­ã¿å–ã£ãŸæƒ…å ±ã®å‚ç…§
      */
     std::tr1::shared_ptr< s_record > cfg1_out::get_srec() const
     {
@@ -933,7 +933,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  "cfg1_out.syms" ¤«¤éÆÉ¤ß¼è¤Ã¤¿¾ğÊó¤Î»²¾È
+     *  \brief  "cfg1_out.syms" ã‹ã‚‰èª­ã¿å–ã£ãŸæƒ…å ±ã®å‚ç…§
      */
     std::tr1::shared_ptr< nm_symbol > cfg1_out::get_syms() const
     {
@@ -953,10 +953,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥³¥ó¥Æ¥Ê¤´¤È¤ËXML¥³¥ó¥Æ¥Ê¾ğÊó¤ò¤Ş¤È¤á¤ë
-     *  \return ¥³¥ó¥Æ¥Ê¾ğÊó
+     *  \brief  ã‚³ãƒ³ãƒ†ãƒŠã”ã¨ã«XMLã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã‚’ã¾ã¨ã‚ã‚‹
+     *  \return ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±
      *
-     *  ¤³¤Î´Ø¿ô¤Ï¡¢"OsOS"¤ä"OsTask"¤È¤¤¤Ã¤¿¼ïÊÌ¤ò¥­¡¼¤È¤·¤Æ¡¢¤½¤Î¼ïÊÌ¤ËÊ¬Îà¤µ¤ì¤ë¥³¥ó¥Æ¥Ê¾ğÊó¤ÎÏ¢ÁÛÇÛÎó¤òÀ¸À®¤¹¤ë¡£
+     *  ã“ã®é–¢æ•°ã¯ã€"OsOS"ã‚„"OsTask"ã¨ã„ã£ãŸç¨®åˆ¥ã‚’ã‚­ãƒ¼ã¨ã—ã¦ã€ãã®ç¨®åˆ¥ã«åˆ†é¡ã•ã‚Œã‚‹ã‚³ãƒ³ãƒ†ãƒŠæƒ…å ±ã®é€£æƒ³é…åˆ—ã‚’ç”Ÿæˆã™ã‚‹ã€‚
      */
     void cfg1_out::do_sub_merge(std::vector< toppers::xml::container::object* > objects, xml_obj_map & xml_map,
       std::map<std::string, toppers::xml::info> const& info_map ) const
@@ -969,7 +969,7 @@ namespace toppers
         {
           do_sub_merge( *(*pObj)->getSubcontainers(), xml_map, info_map);
         }
-        // XML¤Î¥Õ¥ë¥Ñ¥¹¾ğÊó¤òÃ»½ÌÊ¸»úÎó¤ØÃÖ¤­´¹¤¨¤ë
+        // XMLã®ãƒ•ãƒ«ãƒ‘ã‚¹æƒ…å ±ã‚’çŸ­ç¸®æ–‡å­—åˆ—ã¸ç½®ãæ›ãˆã‚‹
         string str = replase_xml_pathname(pObj, info_map);
         xml_map[ str ].push_back( *pObj );
       }
@@ -993,7 +993,7 @@ namespace toppers
     cfg1_out::xml_obj_map cfg1_out::do_merge(std::vector< toppers::xml::container::object* > objects,
       std::map<std::string, toppers::xml::info> const& info_map ) const
     {
-      xml_obj_map result; // ¥³¥ó¥Æ¥Ê¤ÎÏ¢ÁÛÇÛÎó
+      xml_obj_map result; // ã‚³ãƒ³ãƒ†ãƒŠã®é€£æƒ³é…åˆ—
 
       for ( std::vector< toppers::xml::container::object* >::iterator pModule = objects.begin() ;
           pModule != objects.end();
@@ -1008,7 +1008,7 @@ namespace toppers
             result[ str ].push_back( *pObj );
           }
         }
-        // ¥µ¥Ö¥³¥ó¥Æ¥Ê¤òÏ¢ÁÛÇÛÎó¤ØÅĞÏ¿
+        // ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã‚’é€£æƒ³é…åˆ—ã¸ç™»éŒ²
         for ( std::vector< toppers::xml::container::object* >::iterator pObj = (*pModule)->getSubcontainers()->begin() ;
               pObj != (*pModule)->getSubcontainers()->end();
               ++pObj )
@@ -1020,10 +1020,10 @@ namespace toppers
         }
       }
 
-      // IDÈÖ¹æ¤Î³äÉÕ¤±
+      // IDç•ªå·ã®å‰²ä»˜ã‘
       assign_id(result);
 
-      // ·»Äï¥³¥ó¥Æ¥Ê¤Î¿ô¤òÃê½Ğ
+      // å…„å¼Ÿã‚³ãƒ³ãƒ†ãƒŠã®æ•°ã‚’æŠ½å‡º
       int SiblingsNumber = 0;
       for ( std::map< std::string, std::vector<toppers::xml::container::object*> >::iterator pObj = result.begin() ;
           pObj != result.end();
@@ -1034,7 +1034,7 @@ namespace toppers
             p != pObj->second.end();
             ++p )
         {
-          // ¥µ¥Ö¥³¥ó¥Æ¥Ê¤Î·»Äï¥³¥ó¥Æ¥Ê¿ô¤òÃê½Ğ
+          // ã‚µãƒ–ã‚³ãƒ³ãƒ†ãƒŠã®å…„å¼Ÿã‚³ãƒ³ãƒ†ãƒŠæ•°ã‚’æŠ½å‡º
           int SubcontinersSiblings = (*p)->getSubcontainers()->size();
           if( SubcontinersSiblings != 0)
           {
@@ -1048,7 +1048,7 @@ namespace toppers
     }
 
     /*
-     * ¥³¥ó¥Æ¥Ê¡¢¥Ñ¥é¥á¡¼¥¿URIÌ¾¤òapi-table¤Çµ­½Ò¤·¤¿Ì¾¾Î¤ËÃÖ¤­´¹¤¨¤ë
+     * ã‚³ãƒ³ãƒ†ãƒŠã€ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿URIåã‚’api-tableã§è¨˜è¿°ã—ãŸåç§°ã«ç½®ãæ›ãˆã‚‹
      */
     string cfg1_out::replase_xml_pathname(std::vector< toppers::xml::container::object* >::iterator pObj, 
       std::map<std::string, toppers::xml::info> const& info_map ) const
@@ -1075,10 +1075,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ¥ê¥È¥ë¥¨¥ó¥Ç¥£¥¢¥ó¤«¤É¤¦¤«¤ÎÈ½Äê
-     *  \retval     true  ¥ê¥È¥ë¥¨¥ó¥Ç¥£¥¢¥ó
-     *  \retval     false ¥Ó¥Ã¥°¥¨¥ó¥Ç¥£¥¢¥ó
-     *  \attention  load_srec ¸Æ¤Ó½Ğ¤·Á°¤ÏÀµ¤·¤¤·ë²Ì¤òÆÀ¤é¤ì¤Ê¤¤¡£
+     *  \brief  ãƒªãƒˆãƒ«ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³ã‹ã©ã†ã‹ã®åˆ¤å®š
+     *  \retval     true  ãƒªãƒˆãƒ«ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³
+     *  \retval     false ãƒ“ãƒƒã‚°ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³
+     *  \attention  load_srec å‘¼ã³å‡ºã—å‰ã¯æ­£ã—ã„çµæœã‚’å¾—ã‚‰ã‚Œãªã„ã€‚
      */
     bool cfg1_out::is_little_endian() const
     {
@@ -1086,7 +1086,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ÀÅÅªAPI¤Î¥Ñ¥é¥á¡¼¥¿¤ËS¥ì¥³¡¼¥É¤«¤é¼èÆÀ¤·¤¿ÃÍ¤òÂåÆş¤¹¤ë
+     *  \brief  é™çš„APIã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«Sãƒ¬ã‚³ãƒ¼ãƒ‰ã‹ã‚‰å–å¾—ã—ãŸå€¤ã‚’ä»£å…¥ã™ã‚‹
      */
     void cfg1_out::implementation::do_assign_params()
     {

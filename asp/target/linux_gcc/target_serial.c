@@ -6,40 +6,40 @@
  *  Copyright (C) 2006-2011 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  *  @(#) $Id: target_serial.c 2247 2011-08-26 22:59:55Z ertl-hiro $
  */
 
 /*
- *		���ꥢ��I/O�ǥХ�����SIO�˥ɥ饤�С�Linux�ѡ�
+ *		シリアルI/Oデバイス（SIO）ドライバ（Linux用）
  */
 
 #include "macosx.h"
@@ -52,52 +52,52 @@
 #include "target_serial.h"
 
 /*
- *  ���ꥢ��I/O�ݡ��Ƚ�����֥��å������
+ *  シリアルI/Oポート初期化ブロックの定義
  */
 typedef struct sio_port_initialization_block {
-	char		*path;			/* �ե�����Υѥ�̾ */
+	char		*path;			/* ファイルのパス名 */
 } SIOPINIB;
 
 /*
- *  ���ꥢ��I/O�ݡ��ȴ����֥��å������
+ *  シリアルI/Oポート管理ブロックの定義
  */
 struct sio_port_control_block {
-	const SIOPINIB *p_siopinib;	/* ���ꥢ��I/O�ݡ��Ƚ�����֥��å� */
-	intptr_t	exinf;			/* ��ĥ���� */
-	bool_t		openflag;		/* �����ץ�Ѥߥե饰 */
-	struct termios saved_term;	/* ����ü��������� */
+	const SIOPINIB *p_siopinib;	/* シリアルI/Oポート初期化ブロック */
+	intptr_t	exinf;			/* 拡張情報 */
+	bool_t		openflag;		/* オープン済みフラグ */
+	struct termios saved_term;	/* 元の端末制御情報 */
 
-	int_t		read_fd;		/* �ɽФ��ѥե�����ǥ�������ץ� */
-	bool_t		rcv_flag;		/* ����ʸ���Хåե�ͭ���ե饰 */
-	char		rcv_buf;		/* ����ʸ���Хåե� */
-	bool_t		rcv_rdy;		/* �������Υ�����Хå����ĥե饰 */
+	int_t		read_fd;		/* 読出し用ファイルディスクリプタ */
+	bool_t		rcv_flag;		/* 受信文字バッファ有効フラグ */
+	char		rcv_buf;		/* 受信文字バッファ */
+	bool_t		rcv_rdy;		/* 受信通知コールバック許可フラグ */
 
-	int_t		write_fd;		/* ������ѥե�����ǥ�������ץ� */
-	bool_t		snd_flag;		/* ����ʸ���Хåե�ͭ���ե饰 */
-	char		snd_buf;		/* ����ʸ���Хåե� */
-	bool_t		snd_rdy;		/* �������Υ�����Хå����ĥե饰 */
+	int_t		write_fd;		/* 書込み用ファイルディスクリプタ */
+	bool_t		snd_flag;		/* 送信文字バッファ有効フラグ */
+	char		snd_buf;		/* 送信文字バッファ */
+	bool_t		snd_rdy;		/* 送信通知コールバック許可フラグ */
 };
 
 /*
- *  ���ꥢ��I/O�ݡ��Ƚ�����֥��å�
+ *  シリアルI/Oポート初期化ブロック
  */
 const SIOPINIB siopinib_table[TNUM_SIOP] = {
 	{ NULL }
 };
 
 /*
- *  ���ꥢ��I/O�ݡ��ȴ����֥��å��Υ��ꥢ
+ *  シリアルI/Oポート管理ブロックのエリア
  */
 SIOPCB	siopcb_table[TNUM_SIOP];
 
 /*
- *  ���ꥢ��I/O�ݡ���ID��������֥��å�����Ф�����Υޥ���
+ *  シリアルI/OポートIDから管理ブロックを取り出すためのマクロ
  */
 #define INDEX_SIOP(siopid)	((uint_t)((siopid) - 1))
 #define get_siopcb(siopid)	(&(siopcb_table[INDEX_SIOP(siopid)]))
 
 /*
- *  SIO�ɥ饤�Фν����
+ *  SIOドライバの初期化
  */
 void
 sio_initialize(intptr_t exinf)
@@ -106,7 +106,7 @@ sio_initialize(intptr_t exinf)
 	uint_t	i;
 
 	/*
-	 *  ���ꥢ��I/O�ݡ��ȴ����֥��å��ν����
+	 *  シリアルI/Oポート管理ブロックの初期化
 	 */
 	for (i = 0; i < TNUM_SIOP; i++) {
 		p_siopcb = &(siopcb_table[i]);
@@ -116,7 +116,7 @@ sio_initialize(intptr_t exinf)
 }
 
 /*
- *  SIO�ɥ饤�Фν�λ����
+ *  SIOドライバの終了処理
  */
 void
 sio_terminate(intptr_t exinf)
@@ -125,7 +125,7 @@ sio_terminate(intptr_t exinf)
 	uint_t	i;
 
 	/*
-	 *  �����ץ󤵤�Ƥ��륷�ꥢ��I/O�ݡ��ȤΥ�������
+	 *  オープンされているシリアルI/Oポートのクローズ
 	 */
 	for (i = 0; i < TNUM_SIOP; i++) {
 		p_siopcb = &(siopcb_table[i]);
@@ -136,7 +136,7 @@ sio_terminate(intptr_t exinf)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��ȤΥ����ץ�
+ *  シリアルI/Oポートのオープン
  */
 SIOPCB *
 sio_opn_por(ID siopid, intptr_t exinf)
@@ -156,7 +156,7 @@ sio_opn_por(ID siopid, intptr_t exinf)
 		p_siopcb->write_fd = fd;
 	}
 	else {
-		fd = STDIN_FILENO;					/* ɸ�������Ϥ�Ȥ� */
+		fd = STDIN_FILENO;					/* 標準入出力を使う */
 		p_siopcb->read_fd = STDIN_FILENO;
 		p_siopcb->write_fd = STDOUT_FILENO;
 	}
@@ -178,7 +178,7 @@ sio_opn_por(ID siopid, intptr_t exinf)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��ȤΥ�������
+ *  シリアルI/Oポートのクローズ
  */
 void
 sio_cls_por(SIOPCB *p_siopcb)
@@ -196,7 +196,7 @@ sio_cls_por(SIOPCB *p_siopcb)
 }
 
 /*
- *  SIO�γ���ߥ����ӥ��롼����
+ *  SIOの割込みサービスルーチン
  */
 void
 sio_isr(intptr_t exinf)
@@ -223,7 +223,7 @@ sio_isr(intptr_t exinf)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥؤ�ʸ������
+ *  シリアルI/Oポートへの文字送信
  */
 bool_t
 sio_snd_chr(SIOPCB *p_siopcb, char c)
@@ -247,7 +247,7 @@ sio_snd_chr(SIOPCB *p_siopcb, char c)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥ����ʸ������
+ *  シリアルI/Oポートからの文字受信
  */
 int_t
 sio_rcv_chr(SIOPCB *p_siopcb)
@@ -269,7 +269,7 @@ sio_rcv_chr(SIOPCB *p_siopcb)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥ���Υ�����Хå��ε���
+ *  シリアルI/Oポートからのコールバックの許可
  */
 void
 sio_ena_cbr(SIOPCB *p_siopcb, uint_t cbrtn)
@@ -285,7 +285,7 @@ sio_ena_cbr(SIOPCB *p_siopcb, uint_t cbrtn)
 }
 
 /*
- *  ���ꥢ��I/O�ݡ��Ȥ���Υ�����Хå��ζػ�
+ *  シリアルI/Oポートからのコールバックの禁止
  */
 void
 sio_dis_cbr(SIOPCB *p_siopcb, uint_t cbrtn)

@@ -4,34 +4,34 @@
  *
  *  Copyright (C) 2007-2011 by TAKAGI Nobuhisa
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  */
 #include <fstream>
@@ -56,7 +56,7 @@ namespace
     Factory factory( kernel );
     global( "factory" ) = &factory;
 
-    // *.cfg��cfg1_out.srec���ɤ߹���
+    // *.cfgとcfg1_out.srecの読み込み
     std::string input_file;
     try
     {
@@ -83,17 +83,17 @@ namespace
     {
       mproc = factory.create_macro_processor( *cfg1_out, component_ptr );
     }
-    else  // ������͡ʥ��եȥ������������б���
+    else  // 従来仕様（ソフトウェア部品非対応）
     {
       mproc = factory.create_macro_processor( *cfg1_out );
     }
 
-    // �ƥ�ץ졼�Ƚ���
+    // テンプレート処理
     boost::any template_file( global( "template-file" ) );
     namespace fs = boost::filesystem;
-    fs::path cfg_dir( get_global_string( "cfg-directory" ) );  // filesystem3�б�
+    fs::path cfg_dir( get_global_string( "cfg-directory" ) );  // filesystem3対応
     std::vector< std::string > include_paths = get_global< std::vector< std::string > >( "include-path" );
-    include_paths.push_back( cfg_dir.empty() ? "." : cfg_dir.string() );  // filesystem3�б�
+    include_paths.push_back( cfg_dir.empty() ? "." : cfg_dir.string() );  // filesystem3対応
     if ( !template_file.empty() )
     {
       toppers::text in_text;
@@ -110,20 +110,20 @@ namespace
       macro_processor::preprocess( in_text, pp_text );
       mproc->evaluate( pp_text );
     }
-    else  // �ƥ�ץ졼�ȥե����뤬���ꤵ��Ƥ��ʤ��Τǡ�������ʬ��kernel.tf�ˤΤߤ����
+    else  // テンプレートファイルが指定されていないので、共通部分（kernel.tf）のみを処理
     {
       fs::path kernel_cfg_template_file( cfg_dir/fs::path( "../../kernel/kernel.tf" ) );
       if ( !fs::exists( kernel_cfg_template_file ) )
       {
-        error( _( "cannot open file `%1%\'" ), kernel_cfg_template_file.string() );  // filesystem3�б�
+        error( _( "cannot open file `%1%\'" ), kernel_cfg_template_file.string() );  // filesystem3対応
       }
       else
       {
         toppers::text in_text;
         toppers::text pp_text;
 
-        in_text.set_line( kernel_cfg_template_file.string(), 1 );  // filesystem3�б�
-        std::ifstream ifs( kernel_cfg_template_file.string().c_str() );  // filesystem3�б�
+        in_text.set_line( kernel_cfg_template_file.string(), 1 );  // filesystem3対応
+        std::ifstream ifs( kernel_cfg_template_file.string().c_str() );  // filesystem3対応
         in_text.append( ifs );
         macro_processor::preprocess( in_text, pp_text );
         mproc->evaluate( pp_text );
@@ -140,9 +140,9 @@ namespace
 }
 
 /*!
- *  \brief  �ѥ�������
- *  \retval true  ����
- *  \retval false ����
+ *  \brief  パス２処理
+ *  \retval true  成功
+ *  \retval false 失敗
  */
 bool cfg2_main()
 {

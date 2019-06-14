@@ -16,39 +16,39 @@
  *  Copyright (C) 2011-2014 by TOSHIBA CORPOTATION, JAPAN
  *  Copyright (C) 2011-2014 by Witz Corporation, JAPAN
  *  
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  *
- *  �ܥ��եȥ������ϡ�AUTOSAR��AUTomotive Open System ARchitecture�˻�
- *  �ͤ˴�Ť��Ƥ��롥�嵭�ε����ϡ�AUTOSAR����Ū�⻺������������Τ�
- *  �Ϥʤ���AUTOSAR�ϡ�AUTOSAR���ͤ˴�Ť������եȥ�����������Ū����
- *  �Ѥ���Ԥ��Ф��ơ�AUTOSAR�ѡ��ȥʡ��ˤʤ뤳�Ȥ���Ƥ��롥
+ *  本ソフトウェアは，AUTOSAR（AUTomotive Open System ARchitecture）仕
+ *  様に基づいている．上記の許諾は，AUTOSARの知的財産権を許諾するもので
+ *  はない．AUTOSARは，AUTOSAR仕様に基づいたソフトウェアを商用目的で利
+ *  用する者に対して，AUTOSARパートナーになることを求めている．
  *
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  *  $Id: factory.cpp 179 2014-03-17 05:01:16Z nces-mtakada $
  */
@@ -88,7 +88,7 @@ namespace toppers
         std::vector< container::object* >::const_iterator q, q2;
         int fObject = 0;
 
-        // ̾�������פ��륪�֥������Ȥ򸡺�
+        // 名前が一致するオブジェクトを検索
         string::size_type index = name.find_last_of("/");
         string container_name = name.substr(0,index);
         string parameter_name = name.substr(index+1);
@@ -100,12 +100,12 @@ namespace toppers
             if( parameter_name == (*q)->getObjName() )
             {
               string defname = cfg1out.search_info_pathname( (*q)->getDefName() );
-              // �ե�ѥ��Υ���ƥ�̾������å�
+              // フルパスのコンテナ名をチェック
               if ( defname.find( name ) != string::npos )
               {
                 return (*q);
               }
-              // �ե�ѥ��Ȱ��פ��ʤ��Ƥ⥪�֥�������̾�����פ��Ƥ���Τ���¸
+              // フルパスと一致しなくてもオブジェクト名が一致しているので保存
               q2 = q;
               fObject++;
             }
@@ -185,7 +185,7 @@ namespace toppers
        factory::tf_e &tfvalue, std::string &befortype, int &childnum, std::string groupname = "", int index = 0)
       {
         //std::cout << "dom_xml_parse Node name is " << XMLString::transcode( cnode->getNodeName() ) << "." << std::endl;
-        // �����������ѥ���tf�ѿ�̾��������(NORMAL/PARENT/CHILD)�ʳ��ε��Ҥ�����Ƥ�����ϥ�˥󥰤�Ф���õ����Ԥ�ʤ�
+        // ロケーションパス，tf変数名，タイプ(NORMAL/PARENT/CHILD)以外の記述がされている場合はワーニングを出して探索を行わない
         std::string evaltype = get_csvtype(d_iter, d_last);
 
         if( (befortype == "NORMAL" && evaltype == "CHILD") || (befortype == "PARENT" && evaltype == "NORMAL") )
@@ -194,7 +194,7 @@ namespace toppers
           return;
         }
 
-        // �����Ǥ���Τ�ɤ�
+        // 子要素からのもどり
         if( (befortype == "CHILD" && evaltype == "NORMAL") || (befortype == "CHILD" && evaltype == "PARENT") || (befortype == "PARENT" && evaltype == "PARENT"))
         {
           childnum = 0;
@@ -205,7 +205,7 @@ namespace toppers
         }
 
         //std::cout << "dom_xml_parse start beforetype=[" << befortype << "] evaltype=[" << evaltype <<  "] name=[" << groupname << "] Str=[" << ( *d_iter )[ 0 ] << "]" << std::endl;
-        // XML��ɾ��
+        // XMLの評価
         XMLCh* xpathStr = XMLString::transcode( ( *d_iter )[ 0 ].c_str() );
         try
         {
@@ -311,7 +311,7 @@ namespace toppers
         XMLString::release(&xpathStr);
       }
 
-      // �����ͥ륪�֥��������������������ŪAPI�γƥѥ�᡼����ޥ����ץ����å����ѿ��Ȥ������ꤹ�롣
+      // カーネルオブジェクト生成・定義用静的APIの各パラメータをマクロプロセッサの変数として設定する。
       void set_object_vars( cfg1_out const& cfg1out, cfg1_out::xml_obj_map const& xml_map, macro_processor& mproc )
       {
         typedef macro_processor::element element;
@@ -344,7 +344,7 @@ namespace toppers
           long obj_id;
           long param_id;
 
-          // �ѥ�᡼����������
+          // パラメータの値代入
           for(q = (*p).second.begin() ; q != (*p).second.end() ; q++)
           {
             std::map< std::string, var_t > obj_parameter;
@@ -354,14 +354,14 @@ namespace toppers
             std::map<std::string , long> id_count;
             std::map<std::string , long>::iterator id_iter;
 
-            // �ͤμ��Ф�
+            // 値の取り出し
             e.i = obj_id;
             e.s = (*q)->getObjName();
-            // �и���ꥹ���Ѥξ������
+            // 出現順リスト用の情報作成
             order_list_map[ name ].push_back(e);
-            // ���֥������ȼ��Ȥ�������
+            // オブジェクト自身の値代入
             mproc.set_var( name, obj_id, var_t( 1, e ) );
-            // �ƥ���ƥʤ�������Ϥ��ξ������Ͽ
+            // 親コンテナがある場合はその情報を登録
             if( (*q)->getParent() != NULL )
             {
               e.s = (*q)->getParent()->getObjName();
@@ -369,7 +369,7 @@ namespace toppers
               mproc.set_var( name +".PARENT", obj_id, var_t( 1, e ) );
             }
 
-            // ���֥������ȥ��Ф�������
+            // オブジェクトメンバの値代入
             for(r = (*q)->getParams()->begin() ; r != (*q)->getParams()->end() ; r++)
             {
               name = (*p).first+ string(".") + (*r)->getDefName();
@@ -381,7 +381,7 @@ namespace toppers
                 continue;
               }
 
-              // ���Ф�ID�򸡺�
+              // メンバのIDを検索
               id_iter = id_count.find(name);
               if(id_iter == id_count.end())
               {
@@ -437,7 +437,7 @@ namespace toppers
                 object *obj;
                 string refefence_obj_type;
 
-                // ���֥�������ID��õ��
+                // オブジェクトIDの探索
                 e.i = 0;
                 obj = find_object( (*r)->getValue() , xml_map, cfg1out );
                 if(obj != NULL)
@@ -471,7 +471,7 @@ namespace toppers
               {
                 obj_parameter[name].push_back(e);
 
-                // �ѥ�᡼���������и��������ֹ�
+                // パラメータタグが出現した行番号
                 {
                   element e;
                   e.s = (*q)->getFileName();
@@ -488,7 +488,7 @@ namespace toppers
               mproc.set_var((*s).first , obj_id , (*s).second );
             }
 
-            // ����ƥʥ������и��������ֹ�
+            // コンテナタグが出現した行番号
             {
               element e;
               e.s = (*q)->getFileName();
@@ -496,7 +496,7 @@ namespace toppers
 
               mproc.set_var( (*p).first + ".TEXT_LINE", obj_id, var_t( 1, e ) );
 
-              // ����ƥʤη��拾��ƥʿ�
+              // コンテナの兄弟コンテナ数
               //e.s = (*q)->getSiblings();
               //e.i = (*q)->getSiblings();
               //mproc.set_var( (*p).first + ".SIBLINGS", obj_id, var_t( 1, e ) );
@@ -505,7 +505,7 @@ namespace toppers
           }
 
         }
-        // ����XML�����Ǥ�XPath�ˤ��evalate�ǥޥ����ץ����å����ѿ��Ȥ������ꤹ��
+        // 汎用XMLの要素をXPathによるevalateでマクロプロセッサの変数として設定する
         if( !get_global_string( "XML_XMLEvaluateFile" ).empty() )
         {
           try
@@ -545,15 +545,15 @@ namespace toppers
           boost::split( urifiles, get_global_string( "input-file" ), boost::is_space() );
 
           factory::tf_e tfvalue;
-          // ���ꤷ��XML�ե����뤬ʣ��������ˤ�ʣ��������򷫤��֤�
+          // 指定したXMLファイルが複数ある場合には複数回処理を繰り返す
           BOOST_FOREACH( string urifile, urifiles )
           {
             std::string filebuf;
 
-            // �ե������¸�ߥ����å�
+            // ファイルの存在チェック
             read( urifile, filebuf );
 
-            // XML�ե�����Υѡ���
+            // XMLファイルのパース
             try
             {
               parser->resetDocumentPool();
@@ -574,11 +574,11 @@ namespace toppers
                 warning( _("Message is: '%'\n"), StrX(errText) );
             }
             
-            // CSV�ե�����Υѡ���
+            // CSVファイルのパース
             read( boost::filesystem::absolute( get_global_string( "cfg-directory" ).c_str() ).string() + "/" + get_global_string( "XML_XMLEvaluateFile" ) , filebuf);
             csv data( filebuf.begin(), filebuf.end() );
 
-            // CSV�ե����뤫��XPath�Υꥹ�ȵ���ʬ����XML��DOMõ����Ԥ�
+            // CSVファイルからXPathのリスト記述分だけXMLのDOM探索を行う
             string type = "NORMAL";
             int childnum = 0;
             for ( csv::const_iterator d_iter( data.begin() ), d_last( data.end() );
@@ -591,12 +591,12 @@ namespace toppers
           delete parser;
 
           map<string, int> tf_map;
-          // ��Ǽ���줿���Ǥ�tf�ѿ�̾�Ȥ������ꤹ��
+          // 格納された要素をtf変数名として設定する
           for( std::tr1::int64_t i = 0 ; i < tfvalue.size() ; i++ )
           {
             macro_processor::element e;
             const std::string pathStr= "_PATH";
-            int last_index;   // ʣ���ե������Ʊ�쥳��ƥʤξ�硤���Υ���ǥå����ͤ��ղä���ɬ�פ�����
+            int last_index;   // 複数ファイルで同一コンテナの場合，前のインデックス値を付加する必要がある
 
             if(tfvalue[i].index == 0)
             {
@@ -616,31 +616,31 @@ namespace toppers
             e.s = tfvalue[i].value;
             mproc.set_var( tfvalue[i].name, tfvalue[i].index + last_index, var_t( 1, e ) );
 
-            // PATH���̥��ץ����ˤ�ID_LIST����Ϳ����
+            // PATH種別オプションにはID_LISTを付与する
             string::size_type pathindex = tfvalue[i].name.rfind( pathStr );
             if( pathindex == tfvalue[i].name.length() - pathStr.length() )
             {
-              //ID�ֹ�ꥹ�Ȥ���Ͽ
+              //ID番号リストへ登録
               e.i = tfvalue[i].index + last_index + 1;
               order_list_map[ tfvalue[i].name ].push_back(e);
             }
           }
         }
 
-        // ����ꥹ�Ȥκ���
+        // 順序リストの作成
         for ( std::map< std::string, var_t >::const_iterator iter( order_list_map.begin() ), last( order_list_map.end() );
           iter != last;
           ++iter )
         {
-          // �и���ꥹ�� $OBJ.ORDER_LIST$ -- ID�ֹ���¤�
+          // 出現順リスト $OBJ.ORDER_LIST$ -- ID番号の並び
           mproc.set_var( iter->first + ".ORDER_LIST" , iter->second );
           var_t rorder_list( iter->second );
 
-          // �ս�ꥹ�� $OBJ.RORDER_LIST$ -- ID�ֹ���¤�
+          // 逆順リスト $OBJ.RORDER_LIST$ -- ID番号の並び
           std::reverse( rorder_list.begin(), rorder_list.end() );
           mproc.set_var( iter->first + ".RORDER_LIST" , rorder_list );
 
-          // ID�ֹ�ꥹ�� $OBJ.ID_LIST$ -- ID�ֹ���¤�
+          // ID番号リスト $OBJ.ID_LIST$ -- ID番号の並び
           var_t id_list( iter->second );
           std::sort( id_list.begin(), id_list.end() );
           mproc.set_var( iter->first + ".ID_LIST" , id_list );
@@ -652,7 +652,7 @@ namespace toppers
       }
 
 
-      // �ץ�åȥե����ࡦ����ѥ����¸���ͤ�ޥ����ץ����å����ѿ��Ȥ������ꤹ�롣
+      // プラットフォーム・コンパイラ依存の値をマクロプロセッサの変数として設定する。
       void set_platform_vars( cfg1_out const& cfg1out, macro_processor& mproc )
       {
         typedef macro_processor::element element;
@@ -693,7 +693,7 @@ namespace toppers
           nm_entry = cfg1out.get_syms()->find( "TOPPERS_cfg_" + iter->name );
           if ( nm_entry.type >= 0 )
           {
-            if ( !iter->expression.empty() && iter->expression[ 0 ] == '@' )  // ����'@'�ǻϤޤ���ϥ��ɥ쥹�����
+            if ( !iter->expression.empty() && iter->expression[ 0 ] == '@' )  // 式が'@'で始まる場合はアドレス定数式
             {
               value = cfg1out.get_srec()->get_value( nm_entry.address, sizeof_pointer, cfg1out.is_little_endian() );
               if ( sizeof_signed_t < 8 && iter->is_signed )
@@ -701,15 +701,15 @@ namespace toppers
                 value = cfg1_out::make_signed( static_cast< std::tr1::uint32_t >( value ) );
               }
 
-              // ��ۤɼ��Ф������ɥ쥹��Ȥäƴ��ܻ���
-              value = cfg1out.get_srec()->get_value( value, 8, cfg1out.is_little_endian() );  // ���Ф��ͤϷ��˴ط��ʤ����8�Х���
+              // 先ほど取り出したアドレスを使って間接参照
+              value = cfg1out.get_srec()->get_value( value, 8, cfg1out.is_little_endian() );  // 取り出す値は型に関係なく常に8バイト
               if ( sizeof_signed_t < 8 && iter->is_signed )
               {
                 value = cfg1_out::make_signed( static_cast< std::tr1::uint32_t >( value ) );
               }
-              e.s = iter->expression.c_str() + 1; // ��Ƭ��'@'�����
+              e.s = iter->expression.c_str() + 1; // 先頭の'@'を除去
             }
-            else  // ���ɥ쥹�ǤϤʤ��̾�����������
+            else  // アドレスではない通常の整数定数式
             {
               value = cfg1out.get_srec()->get_value( nm_entry.address, sizeof_signed_t, cfg1out.is_little_endian() );
               if ( sizeof_signed_t < 8 && iter->is_signed )
@@ -723,7 +723,7 @@ namespace toppers
           }
         }
 
-        // �Х��ȥ�������
+        // バイトオーダー
         {
           bool little_endian = cfg1out.is_little_endian();
           element e;
@@ -737,21 +737,21 @@ namespace toppers
 
     }
 
-    //! ���󥹥ȥ饯��
+    //! コンストラクタ
     factory::factory( std::string const& kernel )
       : kernel_( tolower( kernel ) )
     {
     }
 
-    //! �ǥ��ȥ饯��
+    //! デストラクタ
     factory::~factory()
     {
     }
 
-    //! ���ݡ��Ȥ��Ƥ��륪�֥������Ⱦ���μ���
+    //! サポートしているオブジェクト情報の取得
     std::map<std::string, toppers::xml::info> const* factory::get_container_info_map() const
     {
-      // CSV����Container������ɤ߼�ꡢ��Ͽ���뤿��Υ������륯�饹
+      // CSVからContainer情報を読み取り、登録するためのローカルクラス
       struct init_t
       {
         init_t()
@@ -787,7 +787,7 @@ namespace toppers
                 if ( searchFlag > 0 )
                 {
                   csv::size_type len = d_iter->size();
-                  if ( len < 2 )  // container full-path, container rename,��ɬ������
+                  if ( len < 2 )  // container full-path, container rename,は必須要素
                   {
                     toppers::fatal( _( "too little fields in `%1%\'" ), *iter );
                   }
@@ -840,7 +840,7 @@ namespace toppers
                     {
                       if("*" == ( *d_iter )[ 4 ])
                       {
-                        xml_info.multimax = -1;  // unsigned int�κ�����
+                        xml_info.multimax = -1;  // unsigned intの最大値
                       }
                       else
                       {
@@ -895,20 +895,20 @@ namespace toppers
     }
 
     /*!
-     * \brief   cfg1_out.c �ؤν��Ͼ���ơ��֥������
-     * \return  �������� cfg1_out::cfg1_def_table ���֥������ȤؤΥݥ���
-     * \note    ���δؿ����֤��ݥ��󥿤� delete ���ƤϤʤ�ʤ�
+     * \brief   cfg1_out.c への出力情報テーブルの生成
+     * \return  生成した cfg1_out::cfg1_def_table オブジェクトへのポインタ
+     * \note    この関数が返すポインタは delete してはならない
      *
-     * --cfg1-def-table ���ץ����ǻ��ꤷ���ե����뤫�顢cfg1_out.c �ؽ��Ϥ��������ɤ߼�ꡢ
-     * cfg1_out::cfg1_def_table ���֥������Ȥ��������롣
+     * --cfg1-def-table オプションで指定したファイルから、cfg1_out.c へ出力する情報を読み取り、
+     * cfg1_out::cfg1_def_table オブジェクトを生成する。
      *
-     * CSV �η����ϰʲ����̤�
+     * CSV の形式は以下の通り
      *
-     *    ����ܥ�̾,��[,s|signed]
+     *    シンボル名,式[,s|signed]
      *
-     * ������ s �ޤ��� signed �Ͼ�ά��ǽ����ά�������̵�������Ȥߤʤ���s �ޤ��� signed �������
-     * ����դ������Ȥߤʤ���\n
-     * �ּ��פκǽ�� # ����������������Ȥߤʤ���
+     * 末尾の s または signed は省略可能。省略時は符号無し整数とみなす。s または signed 指定時は
+     * 符号付き整数とみなす。\n
+     * 「式」の最初に # があれば前処理式とみなす。
      */
     cfg1_out::cfg1_def_table const* factory::get_cfg1_def_table() const
     {
@@ -964,18 +964,18 @@ namespace toppers
       return result;
     }
 
-    //! ���֥������Ȥθ�
+    //! オブジェクトの交換
     void factory::do_swap( factory& other )
     {
       kernel_.swap( other.kernel_ );
     }
 
     /*!
-     *  \brief  �ޥ����ץ����å�������
-     *  \param[in]  cfg1out cfg1_out ���֥�������
-     *  \param[in]  api_map .cfg �ե�����˵��Ҥ��줿��ŪAPI����
-     *  \return     �ޥ����ץ����å��ؤΥݥ���
-     *  \note   ���Υ��дؿ��Ͻ�����͡ʥ��եȥ������������б��ǡˤβ�¸�Τ���ˤ��Τޤ޻Ĥ���
+     *  \brief  マクロプロセッサの生成
+     *  \param[in]  cfg1out cfg1_out オブジェクト
+     *  \param[in]  api_map .cfg ファイルに記述された静的API情報
+     *  \return     マクロプロセッサへのポインタ
+     *  \note   このメンバ関数は従来仕様（ソフトウェア部品非対応版）の温存のためにそのまま残す。
      */
     std::auto_ptr< macro_processor > factory::do_create_macro_processor( cfg1_out const& cfg1out, cfg1_out::xml_obj_map const& xml_map ) const
     {
@@ -988,22 +988,22 @@ namespace toppers
       e.s = "\t";   mproc->set_var( "TAB", var_t( 1, e ) );  // $TAB$
       e.s = "\n";   mproc->set_var( "NL",  var_t( 1, e ) );  // $NL$
 
-      // �С���������
+      // バージョン情報
       e.s = toppers::get_global_string( "version" );
       e.i = toppers::get_global< std::tr1::int64_t >( "timestamp" );
       mproc->set_var( "CFG_VERSION", var_t( 1, e ) );   // $CFG_VERSION$
 
-      // �ѥ�����
+      // パス情報
       e.s = boost::lexical_cast< string >( toppers::get_global< int >( "pass" ) );
       e.i = toppers::get_global< int >( "pass" );
       mproc->set_var( "CFG_PASS", var_t( 1, e ) );
 
-      // CFG_XML�ѿ�
+      // CFG_XML変数
       e.s = "1";
       e.i = 1;
       mproc->set_var( "CFG_XML",  var_t( 1, e ) );
 
-      // ����¾���Ȥ߹����ѿ�������
+      // その他の組み込み変数の設定
       set_object_vars( cfg1out, xml_map, *mproc );
       if ( !get_global_bool( "omit-symbol" ) )
       {

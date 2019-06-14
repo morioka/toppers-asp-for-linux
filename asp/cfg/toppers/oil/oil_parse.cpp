@@ -4,34 +4,34 @@
  *
  *  Copyright (C) 2010 by Meika Sugimoto
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  */
 
@@ -67,24 +67,24 @@ int oil_parser::do_parse(oil_impl **impl , oil_def **def)
 }
 
 void eval_tree(tree_match<char const *>::tree_iterator const &iter, int nest) {
-	int size; // �Ρ��ɤλҤθĿ�
+	int size; // ノードの子の個数
 	
-	size = iter->children.size(); // �Ρ��ɤλҤθĿ�����Ф�
+	size = iter->children.size(); // ノードの子の個数を取り出す
 	for(int i=0; i<nest; i++)
 	{
-		cout << "  "; // ���ڡ�������ʬ����ǥ��
+		cout << "  "; // スペース２個分インデント
 	}
 	cout << "Node = '" << string(iter->value.begin(), iter->value.end()) << "'";
 	if (size > 0)
 	{
-		cout << " Child Size = " << size << endl; // �ҤθĿ���ɽ��
+		cout << " Child Size = " << size << endl; // 子の個数を表示
 	} else
 	{
-		cout << endl;                             // �Ҥ�̵����иĿ�ɽ�����ʤ�
+		cout << endl;                             // 子が無ければ個数表示しない
 	}
 	for(int j=0; j<size; j++)
 	{
-		eval_tree(iter->children.begin()+j, nest+1); // �ҤθĿ�ʬ�Ƶ��ƤӽФ�
+		eval_tree(iter->children.begin()+j, nest+1); // 子の個数分再帰呼び出し
 	}
 }
 
@@ -94,7 +94,7 @@ int oil_parser::start_objimpl_analysis(std::string object_name)
 
 	try
 	{
-		// ������Υ��֥������ȼ���������¸
+		// 構成中のオブジェクト実装部を保存
 		current_impl = new oil_object_impl(object_name);
 	}
 	catch( ... )
@@ -117,7 +117,7 @@ int oil_parser::set_nextparam_name(std::string name)
 
 int oil_parser::add_parameter_objimpl(std::string parameter)
 {
-	// �ѥ�᡼�����ϡ��ɲ�
+	// パラメータ解析、追加
 	if(param_addable)
 	{
 		current_impl->add_parameter(next_param_name , parameter);
@@ -132,7 +132,7 @@ int oil_parser::start_objdef_analysis(std::string object_name_type)
 
 	try
 	{
-		// ������Υ��֥������ȼ���������¸
+		// 構成中のオブジェクト実装部を保存
 		current_def = new object_definition(object_name_type);
 	}
 	catch( ... )
@@ -144,7 +144,7 @@ int oil_parser::start_objdef_analysis(std::string object_name_type)
 
 int oil_parser::end_objimpl_analysis(void)
 {
-	// ������λ����Ͽ
+	// 構成完了、登録
 	impl_list.push_back(current_impl);
 	
 	return 0;
@@ -160,18 +160,18 @@ int oil_parser::end_objdef_analysis(void)
 	static std::vector<std::string> defined_object_name;
 	std::string obj_name = current_def->get_name();
 
-	// ����Ʊ�����֥������Ȥ��ʤ��������å�
+	// 既に同じオブジェクトがないかチェック
 	if(find(defined_object_name.begin() , defined_object_name.end() , obj_name)
 			== defined_object_name.end())
 	{
-		// ������λ����Ͽ
+		// 構成完了、登録
 		def_list.push_back(current_def);
-		// ���֥�������̾���ɲá���Ͽ�Ѥߤˤ���
+		// オブジェクト名を追加，登録済みにする
 		defined_object_name.push_back(obj_name);
 	}
 	else
 	{
-		// Ʊ̾�Υ��֥�������̾��¸�ߤ��뤿�ᡤ���顼
+		// 同名のオブジェクト名が存在するため，エラー
 		toppers::error("Object %1% redefined." , obj_name);
 	}
 	

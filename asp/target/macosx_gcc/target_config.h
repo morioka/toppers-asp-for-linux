@@ -6,50 +6,50 @@
  *  Copyright (C) 2006-2014 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  *  $Id: target_config.h 2662 2014-11-16 18:34:28Z ertl-hiro $
  */
 
 /*
- *		�������åȰ�¸�⥸�塼���Mac OS X�ѡ�
+ *		ターゲット依存モジュール（Mac OS X用）
  *
- *  �����ͥ�Υ������åȰ�¸���Υ��󥯥롼�ɥե����롥kernel_impl.h�Υ���
- *  ���åȰ�¸���ΰ����դ��Ȥʤ롥
+ *  カーネルのターゲット依存部のインクルードファイル．kernel_impl.hのター
+ *  ゲット依存部の位置付けとなる．
  */
 
 #ifndef TOPPERS_TARGET_CONFIG_H
 #define TOPPERS_TARGET_CONFIG_H
 
 /*
- *  ɸ��Υ��󥯥롼�ɥե�����
+ *  標準のインクルードファイル
  */
 #ifndef TOPPERS_MACRO_ONLY
 #include <sys/types.h>
@@ -65,36 +65,36 @@
 #endif /* TOPPERS_MACRO_ONLY */
 
 /*
- *  �������åȥ����ƥ��OS��¸�����
+ *  ターゲットシステムのOS依存の定義
  */
 #include "macosx.h"
 
 /*
- *  �������å�����Υ��֥�������°��
+ *  ターゲット定義のオブジェクト属性
  */
-#define TARGET_INHATR	TA_NONKERNEL	/* �����ͥ�������γ���� */
+#define TARGET_INHATR	TA_NONKERNEL	/* カーネル管理外の割込み */
 
 /*
- *  ���顼�����å���ˡ�λ���
+ *  エラーチェック方法の指定
  */
-#define CHECK_STKSZ_ALIGN	16	/* �����å��������Υ��饤��ñ�� */
-#define CHECK_FUNC_ALIGN	4	/* �ؿ��Υ��饤��ñ�� */
-#define CHECK_FUNC_NONNULL		/* �ؿ�����NULL�����å� */
-#define CHECK_STACK_ALIGN	16	/* �����å��ΰ�Υ��饤��ñ�� */
-#define CHECK_STACK_NONNULL		/* �����å��ΰ����NULL�����å� */
-#define CHECK_MPF_ALIGN		4	/* ����Ĺ����ס����ΰ�Υ��饤��ñ�� */
-#define CHECK_MPF_NONNULL		/* ����Ĺ����ס����ΰ����NULL�����å� */
-#define CHECK_MB_ALIGN		4	/* �����ΰ�Υ��饤��ñ�� */
+#define CHECK_STKSZ_ALIGN	16	/* スタックサイズのアライン単位 */
+#define CHECK_FUNC_ALIGN	4	/* 関数のアライン単位 */
+#define CHECK_FUNC_NONNULL		/* 関数の非NULLチェック */
+#define CHECK_STACK_ALIGN	16	/* スタック領域のアライン単位 */
+#define CHECK_STACK_NONNULL		/* スタック領域の非NULLチェック */
+#define CHECK_MPF_ALIGN		4	/* 固定長メモリプール領域のアライン単位 */
+#define CHECK_MPF_NONNULL		/* 固定長メモリプール領域の非NULLチェック */
+#define CHECK_MB_ALIGN		4	/* 管理領域のアライン単位 */
 
 /*
- *  �ȥ졼�������˴ؤ�������
+ *  トレースログに関する設定
  */
 #ifdef TOPPERS_ENABLE_TRACE
 #include "logtrace/trace_config.h"
 #endif /* TOPPERS_ENABLE_TRACE */
 
 /*
- *  �ȥ졼�������ޥ����Υǥե�������
+ *  トレースログマクロのデフォルト定義
  */
 #ifndef LOG_INH_ENTER
 #define LOG_INH_ENTER(inhno)
@@ -113,110 +113,110 @@
 #endif /* LOG_EXC_LEAVE */
 
 /*
- *  �������ƥ�����ʥץ����å��˰�¸�����
+ *  アーキテクチャ（プロセッサ）依存の定義
  */
 #if defined(__ppc__)
 
-#define JMPBUF_PC				21			/* jmp_buf��Ǥ�PC�ΰ��� */
-#define JMPBUF_SP				0			/* jmp_buf��Ǥ�SP�ΰ��� */
+#define JMPBUF_PC				21			/* jmp_buf中でのPCの位置 */
+#define JMPBUF_SP				0			/* jmp_buf中でのSPの位置 */
 #define TASK_STACK_MERGIN		4U
-#define DEFAULT_ISTKSZ			SIGSTKSZ	/* �����ʥ륹���å��Υ����� */
+#define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
 #elif defined(__i386__)
 
-#define JMPBUF_PC				12			/* jmp_buf��Ǥ�PC�ΰ��� */
-#define JMPBUF_SP				9			/* jmp_buf��Ǥ�SP�ΰ��� */
+#define JMPBUF_PC				12			/* jmp_buf中でのPCの位置 */
+#define JMPBUF_SP				9			/* jmp_buf中でのSPの位置 */
 #define TASK_STACK_MERGIN		4U 
-#define DEFAULT_ISTKSZ			SIGSTKSZ	/* �����ʥ륹���å��Υ����� */
+#define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
 #elif defined(__x86_64__)
 
 #error architecture not supported
-#define JMPBUF_PC				7			/* jmp_buf��Ǥ�PC�ΰ��� */
-#define JMPBUF_SP				2			/* jmp_buf��Ǥ�SP�ΰ��� */
+#define JMPBUF_PC				7			/* jmp_buf中でのPCの位置 */
+#define JMPBUF_SP				2			/* jmp_buf中でのSPの位置 */
 #define TASK_STACK_MERGIN		8U 
-#define DEFAULT_ISTKSZ			SIGSTKSZ	/* �����ʥ륹���å��Υ����� */
+#define DEFAULT_ISTKSZ			SIGSTKSZ	/* シグナルスタックのサイズ */
 
 #else
 #error architecture not supported
 #endif
 
 /* 
- *  ɸ��γ���ߴ�����ǽ�ν������Ԥ�ʤ���������
+ *  標準の割込み管理機能の初期化を行わないための定義
  */
 #define OMIT_INITIALIZE_INTERRUPT
 
 #ifndef TOPPERS_MACRO_ONLY
 
 /*
- *  ����������ƥ����ȥ֥��å������
+ *  タスクコンテキストブロックの定義
  */
 typedef struct task_context_block {
-	jmp_buf		env;			/* ����ƥ����Ⱦ��� */
+	jmp_buf		env;			/* コンテキスト情報 */
 } TSKCTXB;
 
 /*
- *  ����ߥϥ�ɥ������֥��å�
+ *  割込みハンドラ初期化ブロック
  *
- *  ɸ��γ���ߥϥ�ɥ������֥��å��ˡ������ͥ���٤��ɲä�����Ρ�
+ *  標準の割込みハンドラ初期化ブロックに，割込み優先度を追加したもの．
  */
 typedef struct interrupt_handler_initialization_block {
-	INHNO		inhno;			/* ����ߥϥ�ɥ��ֹ� */
-	ATR			inhatr;			/* ����ߥϥ�ɥ�°�� */
-	FP			int_entry;		/* ����ߥϥ�ɥ�ν��������������� */
-	PRI			intpri;			/* �����ͥ���� */
+	INHNO		inhno;			/* 割込みハンドラ番号 */
+	ATR			inhatr;			/* 割込みハンドラ属性 */
+	FP			int_entry;		/* 割込みハンドラの出入口処理の番地 */
+	PRI			intpri;			/* 割込み優先度 */
 } INHINIB;
 
 /*
- *  ����ߥϥ�ɥ��ֹ�ο���kernel_cfg.c��
+ *  割込みハンドラ番号の数（kernel_cfg.c）
  */
 extern const uint_t	tnum_inhno;
 
 /*
- *  ����ߥϥ�ɥ������֥��å��Υ��ꥢ��kernel_cfg.c��
+ *  割込みハンドラ初期化ブロックのエリア（kernel_cfg.c）
  */
 extern const INHINIB	inhinib_table[];
 
 /*
- *  �����ʥ륻�å����ޥ���
+ *  シグナルセット操作マクロ
  */
 #define sigequalset(set1, set2)		(*(set1) == *(set2))
 #define sigassignset(set1, set2)	(*(set1) = *(set2))
 #define sigjoinset(set1, set2)		(*(set1) |= *(set2))
 
 /*
- *  �����ͥ���٥ޥ����ˤ�륷���ʥ�ޥ�����kernel_cfg.c��
+ *  割込み優先度マスクによるシグナルマスク（kernel_cfg.c）
  *
- *  �����ͥ���٥ޥ����ˤ�äƥޥ�������Ƥ������ߤȡ������°������
- *  �ꤵ��Ƥ��ʤ�����ߤ��б����륷���ʥ��ޥ������뤿��Υ����ʥ��
- *  �������ݻ�������������Υ���ǥå����ϡ������ͥ���٥ޥ��������
- *  ��ȿž������Ρ�
+ *  割込み優先度マスクによってマスクされている割込みと，割込み属性が設
+ *  定されていない割込みに対応するシグナルをマスクするためのシグナルマ
+ *  スクを保持する配列．配列のインデックスは，割込み優先度マスクの符号
+ *  を反転したもの．
  *
- *  sigmask_table[0]�������°�������ꤵ��Ƥ��ʤ�����ߤ��б����륷��
- *                    �ʥ�Τߤ�ޥ������륷���ʥ�ޥ���
- *  sigmask_table[-TMIN_INTPRI]�������ͥ�����γ���ߤ��٤Ƥȡ������°
- *                    �������ꤵ��Ƥ��ʤ�����ߤ��б����륷���ʥ���
- *                    �������륷���ʥ�ޥ���
- *  sigmask_table[6]��NMI��SIGUSR2��������٤Ƥγ���ߤȡ������°������
- *                    �ꤵ��Ƥ��ʤ�����ߤ��б����륷���ʥ��ޥ�������
- *                    �����ʥ�ޥ���
- *  sigmask_table[7]��sigmask_table[6]��Ʊ����
+ *  sigmask_table[0]：割込み属性が設定されていない割込みに対応するシグ
+ *                    ナルのみをマスクするシグナルマスク
+ *  sigmask_table[-TMIN_INTPRI]：カーネル管理の割込みすべてと，割込み属
+ *                    性が設定されていない割込みに対応するシグナルをマ
+ *                    スクするシグナルマスク
+ *  sigmask_table[6]：NMIとSIGUSR2を除くすべての割込みと，割込み属性が設
+ *                    定されていない割込みに対応するシグナルをマスクする
+ *                    シグナルマスク
+ *  sigmask_table[7]：sigmask_table[6]と同じ値
  */
 extern const sigset_t sigmask_table[8];
 
 /*
- *  ������׵�ػߥե饰�¸��Τ�����ѿ��ν���͡�kernel_cfg.c��
+ *  割込み要求禁止フラグ実現のための変数の初期値（kernel_cfg.c）
  */
 extern const sigset_t sigmask_disint_init;
 
 /*
- *  ����ߥ��å���CPU���å��ؤΰܹԤǥޥ������륷���ʥ���ݻ������ѿ�
+ *  割込みロック／CPUロックへの移行でマスクするシグナルを保持する変数
  */
-extern sigset_t	sigmask_intlock;	/* ����ߥ��å��ǥޥ������륷���ʥ� */
-extern sigset_t	sigmask_cpulock;	/* CPU���å��ǥޥ������륷���ʥ� */
+extern sigset_t	sigmask_intlock;	/* 割込みロックでマスクするシグナル */
+extern sigset_t	sigmask_cpulock;	/* CPUロックでマスクするシグナル */
 
 /*
- *  ����ƥ����Ȥλ���
+ *  コンテキストの参照
  */
 Inline bool_t
 sense_context(void)
@@ -228,27 +228,27 @@ sense_context(void)
 }
 
 /*
- *  CPU���å��ե饰�¸��Τ�����ѿ�
+ *  CPUロックフラグ実現のための変数
  */
-extern volatile bool_t		lock_flag;		/* CPU���å��ե饰��ɽ���ѿ� */
-extern volatile sigset_t	saved_sigmask;	/* �����ʥ�ޥ�������¸�����ѿ� */
+extern volatile bool_t		lock_flag;		/* CPUロックフラグを表す変数 */
+extern volatile sigset_t	saved_sigmask;	/* シグナルマスクを保存する変数 */
 
 /*
- *  �����ͥ���٥ޥ����¸��Τ�����ѿ�
+ *  割込み優先度マスク実現のための変数
  */
-extern volatile PRI			ipm_value;		/* �����ͥ���٥ޥ�����ɽ���ѿ� */
+extern volatile PRI			ipm_value;		/* 割込み優先度マスクを表す変数 */
 
 /*
- *  ������׵�ػߥե饰�¸��Τ�����ѿ�
+ *  割込み要求禁止フラグ実現のための変数
  */
-extern volatile sigset_t	sigmask_disint;	/* ���̤˥ޥ������Ƥ��륷���ʥ� */
+extern volatile sigset_t	sigmask_disint;	/* 個別にマスクしているシグナル */
 
 /*
- *  �����ʥ�ޥ���������
+ *  シグナルマスクの設定
  *
- *  ���ߤξ��֡ʥ���ƥ����ȡ�CPU���å��ե饰�������ͥ���٥ޥ��������
- *  �߶ػߥե饰�ˤ򻲾Ȥ��ơ����ߤΥ����ʥ�ޥ�����saved_sigmask��Ŭ��
- *  ���ͤ����ꤹ�롥
+ *  現在の状態（コンテキスト，CPUロックフラグ，割込み優先度マスク，割込
+ *  み禁止フラグ）を参照して，現在のシグナルマスクとsaved_sigmaskを適切
+ *  な値に設定する．
  */
 Inline void
 set_sigmask(void)
@@ -268,7 +268,7 @@ set_sigmask(void)
 }
 
 /*
- *  CPU���å����֤ؤΰܹ�
+ *  CPUロック状態への移行
  */
 Inline void
 x_lock_cpu(void)
@@ -282,7 +282,7 @@ x_lock_cpu(void)
 #define i_lock_cpu()	x_lock_cpu()
 
 /*
- *  CPU���å����֤β��
+ *  CPUロック状態の解除
  */
 Inline void
 x_unlock_cpu(void)
@@ -296,7 +296,7 @@ x_unlock_cpu(void)
 #define i_unlock_cpu()	x_unlock_cpu()
 
 /*
- *  CPU���å����֤λ���
+ *  CPUロック状態の参照
  */
 Inline bool_t
 x_sense_lock(void)
@@ -308,7 +308,7 @@ x_sense_lock(void)
 #define i_sense_lock()	x_sense_lock()
 
 /*
- *  �����ͥ���٥ޥ���������
+ *  割込み優先度マスクの設定
  */
 Inline void
 x_set_ipm(PRI intpri)
@@ -321,7 +321,7 @@ x_set_ipm(PRI intpri)
 #define i_set_ipm(intpri)	x_set_ipm(intpri)
 
 /*
- *  �����ͥ���٥ޥ����λ���
+ *  割込み優先度マスクの参照
  */
 Inline PRI
 x_get_ipm(void)
@@ -333,7 +333,7 @@ x_get_ipm(void)
 #define i_get_ipm()	x_get_ipm()
 
 /*
- *  ������ֹ���ϰϤ�Ƚ��
+ *  割込み番号の範囲の判定
  */
 #define	VALID_INTNO(intno)	(1 <= (intno) && (intno) <= 30 \
 								&& (intno) != SIGKILL && (intno) != SIGSTOP)
@@ -341,10 +341,10 @@ x_get_ipm(void)
 #define	VALID_INTNO_DISINT(intno)	VALID_INTNO(intno)
 
 /*
- *  ������׵�ػߥե饰�Υ��å�
+ *  割込み要求禁止フラグのセット
  *
- *  �����°�������ꤵ��Ƥ��ʤ�������׵�饤����Ф��Ƴ�����׵�ػ�
- *  �ե饰�򥻥åȤ��褦�Ȥ������ˤϡ�false���֤���
+ *  割込み属性が設定されていない割込み要求ラインに対して割込み要求禁止
+ *  フラグをセットしようとした場合には，falseを返す．
  */
 Inline bool_t
 x_disable_int(INTNO intno)
@@ -362,10 +362,10 @@ x_disable_int(INTNO intno)
 #define i_disable_int(intno)	x_disable_int(intno)
 
 /*
- *  ������׵�ػߥե饰�Υ��ꥢ
+ *  割込み要求禁止フラグのクリア
  *
- *  �����°�������ꤵ��Ƥ��ʤ�������׵�饤����Ф��Ƴ�����׵�ػ�
- *  �ե饰�򥯥ꥢ���褦�Ȥ������ˤϡ�false���֤���
+ *  割込み属性が設定されていない割込み要求ラインに対して割込み要求禁止
+ *  フラグをクリアしようとした場合には，falseを返す．
  */
 Inline bool_t
 x_enable_int(INTNO intno)
@@ -383,7 +383,7 @@ x_enable_int(INTNO intno)
 #define i_enable_int(intno)		x_enable_int(intno)
 
 /*
- *  ������׵�Υ��ꥢ
+ *  割込み要求のクリア
  */
 Inline void
 x_clear_int(INTNO intno)
@@ -394,7 +394,7 @@ x_clear_int(INTNO intno)
 #define i_clear_int(intno)		x_clear_int(intno)
 
 /*
- *  ������׵�Υ����å�
+ *  割込み要求のチェック
  */
 Inline bool_t
 x_probe_int(INTNO intno)
@@ -409,7 +409,7 @@ x_probe_int(INTNO intno)
 #define i_probe_int(intno)		x_probe_int(intno)
 
 /*
- *  ����ߥϥ�ɥ��������ɬ�פ�IRC���
+ *  割込みハンドラの入口で必要なIRC操作
  */
 Inline void
 i_begin_int(INTNO intno)
@@ -417,7 +417,7 @@ i_begin_int(INTNO intno)
 }
 
 /*
- *  ����ߥϥ�ɥ�νи���ɬ�פ�IRC���
+ *  割込みハンドラの出口で必要なIRC操作
  */
 Inline void
 i_end_int(INTNO intno)
@@ -425,63 +425,63 @@ i_end_int(INTNO intno)
 }
 
 /*
- *  �ǹ�ͥ���̥������ؤΥǥ����ѥå�
+ *  最高優先順位タスクへのディスパッチ
  *
- *  dispatch�ϡ�����������ƥ����Ȥ���ƤӽФ��줿�����ӥ������������
- *  ��ƤӽФ��٤���Τǡ�����������ƥ����ȡ�CPU���å����֡��ǥ����ѥ�
- *  �����ľ��֡��ʥ�ǥ��Ρ˳����ͥ���٥ޥ�����������֤ǸƤӽФ���
- *  ����Фʤ�ʤ���
+ *  dispatchは，タスクコンテキストから呼び出されたサービスコール処理か
+ *  ら呼び出すべきもので，タスクコンテキスト・CPUロック状態・ディスパッ
+ *  チ許可状態・（モデル上の）割込み優先度マスク全解除状態で呼び出さな
+ *  ければならない．
  */
 extern void	dispatch(void);
 
 /*
- *  �ǥ����ѥå����ư���
+ *  ディスパッチャの動作開始
  *
- *  start_dispatch��return�˥ޥ���������뤳�Ȥǡ������ͥ�ν������λ
- *  ���sta_ker����main�˥꥿���󤵤��������ʥ륹���å����鸵�Υ����å�
- *  ���᤹��
+ *  start_dispatchをreturnにマクロ定義することで，カーネルの初期化完了
+ *  後にsta_kerからmainにリターンさせ，シグナルスタックから元のスタック
+ *  に戻す．
  */
 #define start_dispatch()	return
 
 /*
- *  ���ߤΥ���ƥ����Ȥ�ΤƤƥǥ����ѥå�
+ *  現在のコンテキストを捨ててディスパッチ
  *
- *  exit_and_dispatch�ϡ�ext_tsk����ƤӽФ��٤���Τǡ�����������ƥ�
- *  ���ȡ�CPU���å����֡��ǥ����ѥå����ľ��֡��ʥ�ǥ��Ρ˳����ͥ��
- *  �٥ޥ�����������֤ǸƤӽФ��ʤ���Фʤ�ʤ���
+ *  exit_and_dispatchは，ext_tskから呼び出すべきもので，タスクコンテキ
+ *  スト・CPUロック状態・ディスパッチ許可状態・（モデル上の）割込み優先
+ *  度マスク全解除状態で呼び出さなければならない．
  */
 extern void	exit_and_dispatch(void);
 
 /*
- *  ����ߥϥ�ɥ�и�����
+ *  割込みハンドラ出口処理
  */
 extern void	ret_int(void);
 
 /*
- *  CPU�㳰�ϥ�ɥ�и�����
+ *  CPU例外ハンドラ出口処理
  */
 extern void	ret_exc(void);
 
 /*
- *  �����ͥ�ν�λ�����θƽФ�
+ *  カーネルの終了処理の呼出し
  *
- *  call_exit_kernel�ϡ������ͥ�ν�λ���˸ƤӽФ��٤���Τǡ��󥿥���
- *  ����ƥ����Ȥ��ڤ괹���ơ������ͥ�ν�λ������exit_kernel�ˤ�Ƥӽ�
- *  ����
+ *  call_exit_kernelは，カーネルの終了時に呼び出すべきもので，非タスク
+ *  コンテキストに切り換えて，カーネルの終了処理（exit_kernel）を呼び出
+ *  す．
  */
 extern void call_exit_kernel(void) NoReturn;
 
 /*
- *  ����������ƥ����Ȥν����
+ *  タスクコンテキストの初期化
  *
- *  ���������ٻ߾��֤���¹ԤǤ�����֤˰ܹԤ�����˸ƤФ�롥���λ���
- *  �ǥ����å��ΰ��ȤäƤϤʤ�ʤ���
+ *  タスクが休止状態から実行できる状態に移行する時に呼ばれる．この時点
+ *  でスタック領域を使ってはならない．
  *
- *  activate_context�򡤥���饤��ؿ��ǤϤʤ��ޥ�������Ȥ��Ƥ���Τϡ�
- *  ���λ����Ǥ�TCB���������Ƥ��ʤ�����Ǥ��롥
+ *  activate_contextを，インライン関数ではなくマクロ定義としているのは，
+ *  この時点ではTCBが定義されていないためである．
  *
- *  Intel�ץ����å��Ǥϡ������å���16�ӥåȶ����˥��饤�󤷤Ƥ��ʤ����
- *  �ʤ�ʤ���
+ *  Intelプロセッサでは，スタックは16ビット境界にアラインしていなければ
+ *  ならない．
  */
 extern void	start_r(void);
 
@@ -496,16 +496,16 @@ extern void	start_r(void);
 }
 
 /*
- *  ����ߥϥ�ɥ��ֹ��CPU�㳰�ϥ�ɥ��ֹ���ϰϤ�Ƚ��
+ *  割込みハンドラ番号とCPU例外ハンドラ番号の範囲の判定
  */
 #define VALID_INHNO_DEFINH(inhno)		VALID_INTNO((INTNO)(inhno))
 #define VALID_EXCNO_DEFEXC(excno)		VALID_INTNO((INTNO)(excno))
 
 /*
- *  ����ߥϥ�ɥ������
+ *  割込みハンドラの設定
  *
- *  �٥��ȥ��ֹ�inhno�γ���ߥϥ�ɥ�ν��������������Ϥ�int_entry�ˡ�
- *  �����ͥ���٤�intpri�����ꤹ�롥
+ *  ベクトル番号inhnoの割込みハンドラの出入口処理の番地をint_entryに，
+ *  割込み優先度をintpriに設定する．
  */
 Inline void
 x_define_inh(INHNO inhno, FP int_entry, PRI intpri)
@@ -521,13 +521,13 @@ x_define_inh(INHNO inhno, FP int_entry, PRI intpri)
 }
 
 /*
- *  CPU�㳰�ϥ�ɥ������
+ *  CPU例外ハンドラの設定
  *
- *  �٥��ȥ��ֹ�excno��CPU�㳰�ϥ�ɥ�ν��������������Ϥ�exc_entry����
- *  �ꤹ�롥
+ *  ベクトル番号excnoのCPU例外ハンドラの出入口処理の番地をexc_entryに設
+ *  定する．
  *
- *  SA_NODEFER�ˤ�ꡤ�����ʥ�ϥ�ɥ�ε�ư���ˡ����Υ����ʥ��ޥ���
- *  ����Τ��޻ߤ��Ƥ��롥
+ *  SA_NODEFERにより，シグナルハンドラの起動時に，そのシグナルをマスク
+ *  するのを抑止している．
  */
 Inline void
 x_define_exc(EXCNO excno, FP exc_entry)
@@ -544,7 +544,7 @@ x_define_exc(EXCNO excno, FP exc_entry)
 }
 
 /*
- *  �����Х��ϥ�ɥ���ߤΤ���Υޥ���
+ *  オーバランハンドラ停止のためのマクロ
  */
 #ifdef TOPPERS_SUPPORT_OVRHDR
 #define OVRTIMER_STOP()	{				\
@@ -557,7 +557,7 @@ x_define_exc(EXCNO excno, FP exc_entry)
 #endif /* TOPPERS_SUPPORT_OVRHDR */
 
 /*
- *  ����ߥϥ�ɥ�����������������ޥ���
+ *  割込みハンドラの入口処理の生成マクロ
  */
 #define INT_ENTRY(inhno, inthdr)	_kernel_##inthdr##_##inhno
 
@@ -570,15 +570,15 @@ void _kernel_##inthdr##_##inhno(void)							\
 	_kernel_ipm_value = intpri;									\
 	OVRTIMER_STOP();											\
 	LOG_INH_ENTER(inhno);										\
-	inthdr();			/* ����ߥϥ�ɥ��ƤӽФ� */			\
+	inthdr();			/* 割込みハンドラを呼び出す */			\
 	LOG_INH_LEAVE(inhno);										\
-	_kernel_ret_int();	/* ����ߥϥ�ɥ�и�������ƤӽФ� */	\
+	_kernel_ret_int();	/* 割込みハンドラ出口処理を呼び出す */	\
 	_kernel_ipm_value = saved_ipm;								\
 	_kernel_lock_flag = false;									\
 }
 
 /*
- *  CPU�㳰�ϥ�ɥ�����������������ޥ���
+ *  CPU例外ハンドラの入口処理の生成マクロ
  */
 #define EXC_ENTRY(excno, exchdr)	_kernel_##exchdr##_##excno
 
@@ -590,25 +590,25 @@ void _kernel_##exchdr##_##excno(int sig,								\
 																		\
 	saved_lock_flag = _kernel_lock_flag;								\
 	if (exc_sense_nonkernel(p_ctx)) {									\
-		/* �����ͥ��������CPU�㳰�ϥ�ɥ�ξ�� */						\
-		exchdr(p_ctx);			/* CPU�㳰�ϥ�ɥ��ƤӽФ� */			\
+		/* カーネル管理外のCPU例外ハンドラの場合 */						\
+		exchdr(p_ctx);			/* CPU例外ハンドラを呼び出す */			\
 	}																	\
 	else {																\
-		/* �����ͥ������CPU�㳰�ϥ�ɥ�ξ�� */						\
+		/* カーネル管理のCPU例外ハンドラの場合 */						\
 		OVRTIMER_STOP();												\
 		LOG_EXC_ENTER(excno);											\
-		exchdr(p_ctx);			/* CPU�㳰�ϥ�ɥ��ƤӽФ� */			\
+		exchdr(p_ctx);			/* CPU例外ハンドラを呼び出す */			\
 		LOG_EXC_LEAVE(excno);											\
-		_kernel_ret_exc();		/* CPU�㳰�ϥ�ɥ�и�������ƤӽФ� */	\
+		_kernel_ret_exc();		/* CPU例外ハンドラ出口処理を呼び出す */	\
 	}																	\
 	_kernel_lock_flag = saved_lock_flag;								\
 }
 
 /*
- *  CPU�㳰��ȯ���������Υ���ƥ����Ȥλ���
+ *  CPU例外の発生した時のコンテキストの参照
  *
- *  CPU�㳰��ȯ���������Υ���ƥ����Ȥ�������������ƥ����Ȥλ���false��
- *  �����Ǥʤ�����true���֤���
+ *  CPU例外の発生した時のコンテキストが，タスクコンテキストの時にfalse，
+ *  そうでない時にtrueを返す．
  */
 Inline bool_t
 exc_sense_context(void *p_excinf)
@@ -617,9 +617,9 @@ exc_sense_context(void *p_excinf)
 }
 
 /*
- *  �����ͥ��������CPU�㳰��Ƚ��
+ *  カーネル管理外のCPU例外の判別
  *
- *  �����ͥ��������CPU�㳰�λ���true�������Ǥʤ�����false���֤���
+ *  カーネル管理外のCPU例外の時にtrue，そうでない時にfalseを返す．
  */
 Inline bool_t
 exc_sense_nonkernel(void *p_excinf)
@@ -631,13 +631,13 @@ exc_sense_nonkernel(void *p_excinf)
 }
 
 /*
- *  CPU�㳰��ȯ���������Υ���ƥ����Ȥȳ���ߤΥޥ������֤λ���
+ *  CPU例外の発生した時のコンテキストと割込みのマスク状態の参照
  *
- *  CPU�㳰��ȯ���������Υ����ƥ���֤��������ͥ�¹���Ǥʤ�����������
- *  ��ƥ����ȤǤ��ꡤ������ߥ��å����֤Ǥʤ���CPU���å����֤Ǥʤ�����
- *  ����ͥ���٥ޥ�����������֤Ǥ������true�������Ǥʤ�����false���֤�
- *  ��CPU�㳰�������ͥ�������γ���߽������ȯ���������ˤ�false����
- *  ���ˡ�
+ *  CPU例外の発生した時のシステム状態が，カーネル実行中でなく，タスクコ
+ *  ンテキストであり，全割込みロック状態でなく，CPUロック状態でなく，割
+ *  込み優先度マスク全解除状態である時にtrue，そうでない時にfalseを返す
+ *  （CPU例外がカーネル管理外の割込み処理中で発生した場合にもfalseを返
+ *  す）．
  */
 Inline bool_t
 exc_sense_intmask(void *p_excinf)
@@ -647,24 +647,24 @@ exc_sense_intmask(void *p_excinf)
 }
 
 /*
- *  �������åȥ����ƥ��¸�ν����
+ *  ターゲットシステム依存の初期化
  */
 extern void	target_initialize(void);
 
 /*
- *  �������åȥ����ƥ�ν�λ
+ *  ターゲットシステムの終了
  *
- *  �����ƥ��λ������˻Ȥ���
+ *  システムを終了する時に使う．
  */
 extern void	target_exit(void) NoReturn;
 
 #endif /* TOPPERS_MACRO_ONLY */
 
 /*
- *  �����ͥ�γ���դ�������ΰ�δ���
+ *  カーネルの割り付けるメモリ領域の管理
  *
- *  target_config.c�ˡ�TLSF�ʥ����ץ󥽡����Υ�������饤�֥��ˤ���
- *  ������������롼�����ޤ�Ƥ��롥
+ *  target_config.cに，TLSF（オープンソースのメモリ管理ライブラリ）を用
+ *  いたメモリ管理ルーチンを含めている．
  */
 #define OMIT_KMM_ALLOCONLY
 

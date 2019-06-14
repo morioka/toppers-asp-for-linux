@@ -5,34 +5,34 @@
  *  Copyright (C) 2007-2012 by TAKAGI Nobuhisa
  *  Copyright (C) 2010 by Meika Sugimoto
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  */
 #include <cstring>
@@ -66,7 +66,7 @@ namespace toppers
       std::map< std::string, std::vector<object_definition*> >::const_iterator p;
       std::vector<object_definition*>::const_iterator q;
     
-      // ̾�������פ��륪�֥������Ȥ򸡺�
+      // 名前が一致するオブジェクトを検索
       for(p = obj_def_map.begin() ; p != obj_def_map.end() ; p++)
       {
         for(q = (*p).second.begin() ; q != (*p).second.end() ; q++)
@@ -80,7 +80,7 @@ namespace toppers
       return NULL;
     }
 
-      // �����ͥ륪�֥��������������������ŪAPI�γƥѥ�᡼����ޥ����ץ����å����ѿ��Ȥ������ꤹ�롣
+      // カーネルオブジェクト生成・定義用静的APIの各パラメータをマクロプロセッサの変数として設定する。
       void set_object_vars( cfg1_out::cfg_obj_map const& obj_def_map, macro_processor& mproc )
       {
         typedef macro_processor::element element;
@@ -103,7 +103,7 @@ namespace toppers
       long obj_id;
       long param_id;
       
-      // �ѥ�᡼����������
+      // パラメータの値代入
       for(q = (*p).second.begin() ; q != (*p).second.end() ; q++)
       {
         std::map< std::string, var_t > obj_parameter;
@@ -113,15 +113,15 @@ namespace toppers
         std::map<std::string , long> id_count;
         std::map<std::string , long>::iterator id_iter;
 
-        // �ͤμ��Ф�
+        // 値の取り出し
         e.i = (*q)->get_id();
         e.s = (*q)->get_name();
-        // �и���ꥹ���Ѥξ������
+        // 出現順リスト用の情報作成
         order_list_map[ name ].push_back(e);
-        // ���֥������ȼ��Ȥ�������
+        // オブジェクト自身の値代入
               mproc.set_var( toppers::toupper(name), obj_id, var_t( 1, e ) );
         
-        // ���֥������ȥ��Ф�������
+        // オブジェクトメンバの値代入
         for(r = (*q)->get_params()->begin() ; r != (*q)->get_params()->end() ; r++)
         {
           name = (*p).first+ string(".") + (*r)->get_parameter_name();
@@ -132,7 +132,7 @@ namespace toppers
             continue;
           }
 
-          // ���Ф�ID�򸡺�
+          // メンバのIDを検索
           id_iter = id_count.find(name);
           if(id_iter == id_count.end())
           {
@@ -155,8 +155,8 @@ namespace toppers
             catch( std::exception& exception)
             {
               uint64_t temp;
-              // 16�ʤξ�礬����Τ��Ѵ�
-              /// ���줤����ʤ��ΤǤʤ�Ȥ�������
+              // 16進の場合があるので変換
+              /// きれいじゃないのでなんとかしたい
               if(value_str.find("0x") == 0)
               {
                                 // modified by takuya 110823
@@ -173,7 +173,7 @@ namespace toppers
               }
               else
               {
-                // ���㥹�Ȥ˼��Ԥ�����0�ˤ��Ƥ���
+                // キャストに失敗したら0にしておく
                 e.i = 0;
               }
 
@@ -189,8 +189,8 @@ namespace toppers
             catch(std::exception& exception)
             {
               int64_t temp;
-              // 16�ʤξ�礬����Τ��Ѵ�
-              /// ���줤����ʤ��ΤǤʤ�Ȥ�������
+              // 16進の場合があるので変換
+              /// きれいじゃないのでなんとかしたい
               if(value_str.find("0x") == 0)
               {
                                 // modified by takuya 110823
@@ -207,7 +207,7 @@ namespace toppers
               }
               else
               {
-                // ���㥹�Ȥ˼��Ԥ�����0�ˤ��Ƥ���
+                // キャストに失敗したら0にしておく
                 e.i = 0;
               }
             }
@@ -217,7 +217,7 @@ namespace toppers
             object_definition *obj;
             string refefence_obj_type;
 
-            // ���֥�������ID��õ��
+            // オブジェクトIDの探索
             e.i = 0;
             obj = find_object((*r)->get_value() , obj_def_map);
             if(obj != NULL)
@@ -239,27 +239,27 @@ namespace toppers
       }
 
     }
-    // ����ꥹ�Ȥκ���
+    // 順序リストの作成
         for ( std::map< std::string, var_t >::const_iterator iter( order_list_map.begin() ), last( order_list_map.end() );
               iter != last;
               ++iter )
         {
-          // �и���ꥹ�� $OBJ.ORDER_LIST$ -- ID�ֹ���¤�
+          // 出現順リスト $OBJ.ORDER_LIST$ -- ID番号の並び
           mproc.set_var( toppers::toupper( iter->first + ".order_list" ), iter->second );
           var_t rorder_list( iter->second );
 
-          // �ս�ꥹ�� $OBJ.RORDER_LIST$ -- ID�ֹ���¤�
+          // 逆順リスト $OBJ.RORDER_LIST$ -- ID番号の並び
           std::reverse( rorder_list.begin(), rorder_list.end() );
           mproc.set_var( toppers::toupper( iter->first + ".rorder_list" ), rorder_list );
 
-          // ID�ֹ�ꥹ�� $OBJ.ID_LIST$ -- ID�ֹ���¤�
+          // ID番号リスト $OBJ.ID_LIST$ -- ID番号の並び
           var_t id_list( iter->second );
           std::sort( id_list.begin(), id_list.end() );
           mproc.set_var( toppers::toupper( iter->first + ".id_list" ), id_list );
         }
     }
 
-      // �����ͥ륪�֥��������������������ŪAPI�γƥѥ�᡼����ޥ����ץ����å����ѿ��Ȥ������ꤹ�롣
+      // カーネルオブジェクト生成・定義用静的APIの各パラメータをマクロプロセッサの変数として設定する。
       void set_object_vars( std::vector< object_definition* > const& obj_array, macro_processor& mproc )
       {
         typedef macro_processor::element element;
@@ -275,33 +275,33 @@ namespace toppers
           var_t args;
 
 #if 0
-          // ��ŪAPI���и��������ֹ�
+          // 静的APIが出現した行番号
           element e;
           // e.s = v_iter->line().file;
           // e.i = v_iter->line().line;
           // mproc.set_var( "API.TEXT_LINE", order, var_t( 1, e ) );
 
-          // ��ŪAPI̾
+          // 静的API名
           e.s = v_iter->get_name();
           e.i = boost::none;
           mproc.set_var( "OBJ.NAME", order, var_t( 1, e ) );
 
-          // ���֥������ȥ����ס�"TSK", "SEM", ...��
+          // オブジェクトタイプ（"TSK", "SEM", ...）
           e.s = toppers::toupper( v_iter->object_type );
           mproc.set_var( "OBJ.TYPE", order, var_t( 1 , e ) );
 
-          // �ƥѥ�᡼��
+          // 各パラメータ
           for ( static_api::const_iterator api_iter( v_iter->begin() ), api_last( v_iter->end() );
                 api_iter != api_last;
                 ++api_iter )
           {
             std::string name( toppers::toupper( ( boost::format( "%s.%s" ) % info->type % ( api_iter->symbol.c_str() + 1 ) ).str() ) );
-            // ������ ? �����
+            // 末尾の ? を除去
             if ( *name.rbegin() == '\?' ) 
             {
               name.resize( name.size() - 1 );
             }
-            // ������ ... ����� & order ���ղ�
+            // 末尾の ... を除去 & order を付加
             if ( name.size() > 3 && name.substr( name.size() - 3 ) == "..." )
             {
               name.resize( name.size() - 3 );
@@ -309,12 +309,12 @@ namespace toppers
             }
 
             element e;
-            e.s = api_iter->text; // �������λ���
-            if ( api_iter->symbol[0] != '&' )   // ����������ѥ�᡼�����ͤ�����Ǥ��ʤ�
+            e.s = api_iter->text; // ソースの字面
+            if ( api_iter->symbol[0] != '&' )   // 一般定数式パラメータは値が特定できない
             {
-              if ( api_iter->symbol[0] == '$' )  // ʸ����������ѥ�᡼��
+              if ( api_iter->symbol[0] == '$' )  // 文字列定数式パラメータ
               {
-                e.v = api_iter->string; // Ÿ�����ʸ����
+                e.v = api_iter->string; // 展開後の文字列
               }
               else
               {
@@ -347,7 +347,7 @@ namespace toppers
         mproc.set_var( "USE_EXTERNAL_ID", var_t( 1, external_id ) );
       }
 
-      // �ץ�åȥե����ࡦ����ѥ����¸���ͤ�ޥ����ץ����å����ѿ��Ȥ������ꤹ�롣
+      // プラットフォーム・コンパイラ依存の値をマクロプロセッサの変数として設定する。
       void set_platform_vars( cfg1_out const& cfg1out, macro_processor& mproc )
       {
         typedef macro_processor::element element;
@@ -362,10 +362,10 @@ namespace toppers
           { false, "TOPPERS_cfg_CHAR_BIT",  "CHAR_BIT" },
           { false, "TOPPERS_cfg_CHAR_MAX",  "CHAR_MAX" },
           { true, "TOPPERS_cfg_CHAR_MIN",  "CHAR_MIN" },
-          { false, "TOPPERS_cfg_SCHAR_MAX", "SCHAR_MAX" },  // ���������դ���������ˤʤ뤳�ȤϤʤ�
-          { false, "TOPPERS_cfg_SHRT_MAX",  "SHRT_MAX" },   // ���������դ���������ˤʤ뤳�ȤϤʤ�
-          { false, "TOPPERS_cfg_INT_MAX",   "INT_MAX" },    // ���������դ���������ˤʤ뤳�ȤϤʤ�
-          { false, "TOPPERS_cfg_LONG_MAX",  "LONG_MAX" },   // ���������դ���������ˤʤ뤳�ȤϤʤ�
+          { false, "TOPPERS_cfg_SCHAR_MAX", "SCHAR_MAX" },  // 本来は符号付きだが、負になることはない
+          { false, "TOPPERS_cfg_SHRT_MAX",  "SHRT_MAX" },   // 本来は符号付きだが、負になることはない
+          { false, "TOPPERS_cfg_INT_MAX",   "INT_MAX" },    // 本来は符号付きだが、負になることはない
+          { false, "TOPPERS_cfg_LONG_MAX",  "LONG_MAX" },   // 本来は符号付きだが、負になることはない
         };
 
         nm_symbol::entry nm_entry = cfg1out.get_syms()->find( "TOPPERS_cfg_sizeof_signed_t" );
@@ -397,7 +397,7 @@ namespace toppers
           nm_entry = cfg1out.get_syms()->find( "TOPPERS_cfg_" + iter->name );
           if ( nm_entry.type >= 0 )
           {
-            if ( !iter->expression.empty() && iter->expression[ 0 ] == '@' )  // ����'@'�ǻϤޤ���ϥ��ɥ쥹�����
+            if ( !iter->expression.empty() && iter->expression[ 0 ] == '@' )  // 式が'@'で始まる場合はアドレス定数式
             {
               value = cfg1out.get_srec()->get_value( nm_entry.address, sizeof_pointer, cfg1out.is_little_endian() );
               if ( sizeof_signed_t < 8 && iter->is_signed )
@@ -405,15 +405,15 @@ namespace toppers
                 value = cfg1_out::make_signed( static_cast< std::tr1::uint32_t >( value ) );
               }
 
-              // ��ۤɼ��Ф������ɥ쥹��Ȥäƴ��ܻ���
-              value = cfg1out.get_srec()->get_value( value, 8, cfg1out.is_little_endian() );  // ���Ф��ͤϷ��˴ط��ʤ����8�Х���
+              // 先ほど取り出したアドレスを使って間接参照
+              value = cfg1out.get_srec()->get_value( value, 8, cfg1out.is_little_endian() );  // 取り出す値は型に関係なく常に8バイト
               if ( sizeof_signed_t < 8 && iter->is_signed )
               {
                 value = cfg1_out::make_signed( static_cast< std::tr1::uint32_t >( value ) );
               }
-              e.s = iter->expression.c_str() + 1; // ��Ƭ��'@'�����
+              e.s = iter->expression.c_str() + 1; // 先頭の'@'を除去
             }
-            else  // ���ɥ쥹�ǤϤʤ��̾�����������
+            else  // アドレスではない通常の整数定数式
             {
               value = cfg1out.get_srec()->get_value( nm_entry.address, sizeof_signed_t, cfg1out.is_little_endian() );
               if ( sizeof_signed_t < 8 && iter->is_signed )
@@ -427,7 +427,7 @@ namespace toppers
           }
         }
 
-        // �Х��ȥ�������
+        // バイトオーダー
         {
           bool little_endian = cfg1out.is_little_endian();
           element e;
@@ -441,21 +441,21 @@ namespace toppers
 
     }
 
-    //! ���󥹥ȥ饯��
+    //! コンストラクタ
     factory::factory( std::string const& kernel )
       : kernel_( tolower( kernel ) )
     {
     }
 
-    //! �ǥ��ȥ饯��
+    //! デストラクタ
     factory::~factory()
     {
     }
 
-    //! ���ݡ��Ȥ��Ƥ��륪�֥������Ⱦ���μ���
+    //! サポートしているオブジェクト情報の取得
   std::vector<std::string> const* factory::get_object_definition_info() const
     {
-      // CSV������ŪAPI������ɤ߼�ꡢ��Ͽ���뤿��Υ������륯�饹
+      // CSVから静的API情報を読み取り、登録するためのローカルクラス
       struct init_t
       {
         init_t()
@@ -502,20 +502,20 @@ namespace toppers
     }
 
     /*!
-     * \brief   cfg1_out.c �ؤν��Ͼ���ơ��֥������
-     * \return  �������� cfg1_out::cfg1_def_table ���֥������ȤؤΥݥ���
-     * \note    ���δؿ����֤��ݥ��󥿤� delete ���ƤϤʤ�ʤ�
+     * \brief   cfg1_out.c への出力情報テーブルの生成
+     * \return  生成した cfg1_out::cfg1_def_table オブジェクトへのポインタ
+     * \note    この関数が返すポインタは delete してはならない
      *
-     * --cfg1-def-table ���ץ����ǻ��ꤷ���ե����뤫�顢cfg1_out.c �ؽ��Ϥ��������ɤ߼�ꡢ
-     * cfg1_out::cfg1_def_table ���֥������Ȥ��������롣
+     * --cfg1-def-table オプションで指定したファイルから、cfg1_out.c へ出力する情報を読み取り、
+     * cfg1_out::cfg1_def_table オブジェクトを生成する。
      *
-     * CSV �η����ϰʲ����̤�
+     * CSV の形式は以下の通り
      *
-     *    ����ܥ�̾,��[,s|signed]
+     *    シンボル名,式[,s|signed]
      *
-     * ������ s �ޤ��� signed �Ͼ�ά��ǽ����ά�������̵�������Ȥߤʤ���s �ޤ��� signed �������
-     * ����դ������Ȥߤʤ���\n
-     * �ּ��פκǽ�� # ����������������Ȥߤʤ���
+     * 末尾の s または signed は省略可能。省略時は符号無し整数とみなす。s または signed 指定時は
+     * 符号付き整数とみなす。\n
+     * 「式」の最初に # があれば前処理式とみなす。
      */
     cfg1_out::cfg1_def_table const* factory::get_cfg1_def_table() const
     {
@@ -571,17 +571,17 @@ namespace toppers
       return result;
     }
 
-    //! ���֥������Ȥθ�
+    //! オブジェクトの交換
     void factory::do_swap( factory& other )
     {
       kernel_.swap( other.kernel_ );
     }
 
     /*!
-     *  \brief  �ޥ����ץ����å�������
-     *  \param[in]  cfg1out cfg1_out ���֥�������
-     *  \param[in]  api_map .cfg �ե�����˵��Ҥ��줿��ŪAPI����
-     *  \return     �ޥ����ץ����å��ؤΥݥ���
+     *  \brief  マクロプロセッサの生成
+     *  \param[in]  cfg1out cfg1_out オブジェクト
+     *  \param[in]  api_map .cfg ファイルに記述された静的API情報
+     *  \return     マクロプロセッサへのポインタ
      */
     std::auto_ptr< macro_processor > factory::do_create_macro_processor( cfg1_out const& cfg1out, cfg1_out::cfg_obj_map const& obj_def_map ) const
     {
@@ -594,18 +594,18 @@ namespace toppers
       e.s = "\t";   mproc->set_var( "TAB", var_t( 1, e ) );  // $TAB$
       e.s = "\n";   mproc->set_var( "NL",  var_t( 1, e ) );  // $NL$
 
-      // �С���������
+      // バージョン情報
       e.s = toppers::get_global_string( "version" );
       e.i = toppers::get_global< std::tr1::int64_t >( "timestamp" );
       mproc->set_var( "CFG_VERSION", var_t( 1, e ) );   // $CFG_VERSION$
 
-      // ����¾���Ȥ߹����ѿ�������
+      // その他の組み込み変数の設定
       set_object_vars( obj_def_map, *mproc );
       set_platform_vars( cfg1out, *mproc );
       e.s = cfg1out.get_includes();
       mproc->set_var( "INCLUDES", var_t( 1, e ) );
 
-      // �ѥ�����
+      // パス情報
       e.s = boost::lexical_cast< std::string >( toppers::get_global< int >( "pass" ) );
       e.i = toppers::get_global< int >( "pass" );
       mproc->set_var( "CFG_PASS", var_t( 1, e ) );
@@ -614,10 +614,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  �ޥ����ץ����å�������
-     *  \param[in]  cfg1out cfg1_out ���֥�������
-     *  \param[in]  api_array .cfg �ե�����˵��Ҥ��줿��ŪAPI����
-     *  \return     �ޥ����ץ����å��ؤΥݥ���
+     *  \brief  マクロプロセッサの生成
+     *  \param[in]  cfg1out cfg1_out オブジェクト
+     *  \param[in]  api_array .cfg ファイルに記述された静的API情報
+     *  \return     マクロプロセッサへのポインタ
      */
     std::auto_ptr< macro_processor > factory::do_create_macro_processor( cfg1_out const& cfg1out, std::vector< object_definition* > const& obj_array ) const
     {
@@ -630,18 +630,18 @@ namespace toppers
       e.s = "\t";   mproc->set_var( "TAB", var_t( 1, e ) );  // $TAB$
       e.s = "\n";   mproc->set_var( "NL",  var_t( 1, e ) );  // $NL$
 
-      // �С���������
+      // バージョン情報
       e.s = toppers::get_global_string( "version" );
       e.i = toppers::get_global< std::tr1::int64_t >( "timestamp" );
       mproc->set_var( "CFG_VERSION", var_t( 1, e ) );   // $CFG_VERSION$
 
-      // ����¾���Ȥ߹����ѿ�������
+      // その他の組み込み変数の設定
       set_object_vars( obj_array, *mproc );
       set_platform_vars( cfg1out, *mproc );
       e.s = cfg1out.get_includes();
       mproc->set_var( "INCLUDES", var_t( 1, e ) );
 
-      // �ѥ�����
+      // パス情報
       e.s = boost::lexical_cast< std::string >( toppers::get_global< int >( "pass" ));
       e.i = toppers::get_global< int >( "pass" );
       mproc->set_var( "CFG_PASS", var_t( 1, e ) );

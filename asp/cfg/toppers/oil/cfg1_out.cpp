@@ -5,34 +5,34 @@
  *  Copyright (C) 2007-2012 by TAKAGI Nobuhisa
  *  Copyright (C) 2010 by Meika Sugimoto
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  */
 #include <cstdlib>
@@ -73,7 +73,7 @@ namespace toppers
       };
     }
 
-    //! cfg_out ���饹�μ����ܺ�
+    //! cfg_out クラスの実装詳細
     struct cfg1_out::implementation
     {
     protected:
@@ -106,7 +106,7 @@ namespace toppers
         ofile_ << "const uint32_t TOPPERS_cfg_magic_number = 0x12345678;\n"
                   "const uint32_t TOPPERS_cfg_sizeof_signed_t = sizeof(signed_t);\n"
                   "const uint32_t TOPPERS_cfg_sizeof_pointer = sizeof(const volatile void*);\n"
-                  "const unsigned_t TOPPERS_cfg_CHAR_BIT = ((unsigned char)~0u == 0xff ? 8 : 16);\n"  // CHAR_BIT��8�ޤ���16�ӥåȤǤ��뤳�Ȥ���
+                  "const unsigned_t TOPPERS_cfg_CHAR_BIT = ((unsigned char)~0u == 0xff ? 8 : 16);\n"  // CHAR_BITが8または16ビットであることを仮定
                   "const unsigned_t TOPPERS_cfg_CHAR_MAX = ((char)-1 < 0 ? (char)((unsigned char)~0u >> 1) : (unsigned char)~0u);\n"
                   "const unsigned_t TOPPERS_cfg_CHAR_MIN = ((char)-1 < 0 ? -((unsigned char)~0u >> 1) - 1 : 0);\n"
                   "const unsigned_t TOPPERS_cfg_SCHAR_MAX = (signed char)((unsigned char)~0u >> 1);\n"
@@ -115,16 +115,16 @@ namespace toppers
                   "const unsigned_t TOPPERS_cfg_LONG_MAX = (long)(~0ul >> 1);\n"
                   "\n";
 
-        if ( def_table_ != 0 )	// ���ͼ�������ܥ�ơ��֥��
+        if ( def_table_ != 0 )	// 「値取得シンボルテーブル」
         {
           for ( cfg1_def_table::const_iterator iter( def_table_->begin() ), last( def_table_->end() );
                 iter != last;
                 ++iter )
           {
-            // ���κǽ�� # ������С�����ϥޥ��������Ƚ��
-            // �����ա� #@ �ǻϤޤ�񼰤��ѻ� 2010/07/23
+            // 式の最初に # があれば、それはマクロ定義の判定
+            // ★注意★ #@ で始まる書式は廃止 2010/07/23
             bool is_pp = ( iter->expression[ 0 ] == '#' );
-            if ( !iter->value1.empty() || !iter->value2.empty() ) // ��CSV�Ρ�4���ܤޤ���5���ܤ��ͤ������...
+            if ( !iter->value1.empty() || !iter->value2.empty() ) // （CSVの）4番目または5番目の値があれば...
             {
               is_pp = true;
             }
@@ -145,7 +145,7 @@ namespace toppers
                           "(" + value2 + ");\n"
                           "#endif\n";
             }
-            else if ( iter->expression[ 0 ] == '@' )  // '@'�ǻϤޤ�Х��ɥ쥹
+            else if ( iter->expression[ 0 ] == '@' )  // '@'で始まればアドレス
             {
               definition = "const volatile void* const TOPPERS_cfg_" + iter->name + " = (" + ( iter->expression.c_str() + 1 ) + ");\n";
             }
@@ -171,9 +171,9 @@ namespace toppers
 
 
     /*!
-     *  \brief  ���󥹥ȥ饯��
-     *  \param[in]  filename    cfg1_out.c �ޤ��� cfg1_out.srec �㤷���Ϥ���������̾
-     *  \param[in]  def_table   cfg1_out.c �����Ѥ�����ơ��֥�
+     *  \brief  コンストラクタ
+     *  \param[in]  filename    cfg1_out.c または cfg1_out.srec 若しくはそれらの代替名
+     *  \param[in]  def_table   cfg1_out.c 生成用の定義テーブル
      */
     cfg1_out::cfg1_out( std::string const& filename, cfg1_def_table const* def_table )
       : pimpl_( new implementation( filename, std::ios_base::out, def_table ) )
@@ -181,15 +181,15 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ���ԡ����󥹥ȥ饯��
-     *  \param[in]  other   ���ԡ���
+     *  \brief  コピーコンストラクタ
+     *  \param[in]  other   コピー元
      */
     cfg1_out::cfg1_out( cfg1_out const& other )
       : pimpl_( other.pimpl_->do_clone() )
     {
     }
 
-    //! �ǥ��ȥ饯��
+    //! デストラクタ
     cfg1_out::~cfg1_out()
     {
       delete pimpl_;
@@ -197,10 +197,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  �����ƥॳ��ե�����졼�����ե�����Υ�����
-     *  \param[in]  input_file  ���ϥե�����̾
-     *  \param[in]  codeset     ʸ��������
-     *  \param[in]  obj_info    ���֥������Ⱦ����Ϣ������
+     *  \brief  システムコンフィギュレーションファイルのロード
+     *  \param[in]  input_file  入力ファイル名
+     *  \param[in]  codeset     文字コード
+     *  \param[in]  obj_info    オブジェクト情報の連想配列
      */
     void cfg1_out::load_cfg( std::string const& input_file, codeset_t codeset, 
         std::vector<std::string> const& obj_info )
@@ -208,7 +208,7 @@ namespace toppers
       return pimpl_->do_load_cfg( input_file, codeset, obj_info );
     }
 
-    //! ������
+    //! 前処理
     void cfg1_out::implementation::preprocess( std::string const& input_file, codeset_t codeset, text& txt )
     {
       boost::any print_depend = global( "print-dependencies" );
@@ -217,7 +217,7 @@ namespace toppers
         std::set< std::string > depend, onces;
         oil::preprocess( input_file, txt, codeset, &depend, &onces );
 
-        // ��¸�ط��ν��ϡ�GNU make��Ŭ����������
+        // 依存関係の出力（GNU makeに適した形式）
         std::string target_file = boost::any_cast< std::string& >( print_depend );
         std::cout << target_file << ": " << input_file << ' ';
         std::copy( depend.begin(), depend.end(), std::ostream_iterator< std::string >( std::cout, " " ) );
@@ -232,29 +232,29 @@ namespace toppers
     }
 
     /*!
-     *  \brief  �����ƥॳ��ե�����졼�����ե�����Υ����ɽ����μ���
-     *  \param[in]  input_file  ���ϥե�����̾
-     *  \param[in]  codeset     ʸ��������
-     *  \param[in]  obj_info    ���֥������Ⱦ����Ϣ������
+     *  \brief  システムコンフィギュレーションファイルのロード処理の実体
+     *  \param[in]  input_file  入力ファイル名
+     *  \param[in]  codeset     文字コード
+     *  \param[in]  obj_info    オブジェクト情報の連想配列
      */
     void cfg1_out::implementation::do_load_cfg( std::string const& input_file, 
                 codeset_t codeset, std::vector<std::string> const& obj_info )
     {
 
       text txt;
-      // �����ƥॳ��ե�����졼�����ե�����β���
+      // システムコンフィギュレーションファイルの解析
       std::ostringstream oss, includes_oss;
 
       preprocess( input_file, codeset, txt );
 
-      // OIL������ɤ߽Ф�
+      // OIL情報の読み出し
       if(oil_configuration.read_configuration(&txt , obj_info) == true)
       {
         oil_def_array = oil_configuration.get_obj_def();
         oil_configuration.validate_and_assign_default_configuration();
       }
 
-      // �ǡ������Фؤ�ȿ��
+      // データメンバへの反映
       std::string cfg1_list_temp( oss.str() );
       std::string includes_temp( includes_oss.str() );
 
@@ -263,8 +263,8 @@ namespace toppers
     }
 
     /*!
-     *  \brief  cfg1_out.c ����������
-     *  \param[in]  type  ���� cfg1_out[] �����Ƿ������ݥ��󥿤ξ��� uint32_t �Ȥ��ư����롣
+     *  \brief  cfg1_out.c の内容生成
+     *  \param[in]  type  配列 cfg1_out[] の要素型。空ポインタの場合は uint32_t として扱われる。
      */
     void cfg1_out::generate( char const* type ) const
     {
@@ -279,8 +279,8 @@ namespace toppers
       pimpl_->do_generate_includes();
       pimpl_->ofile_ << pimpl_->includes_ << '\n';
 
-      // int128_t�ϸΰդ�̵��
-      // int128_t��·����Ƚ������Ť��ʤꤹ���뤿��
+      // int128_tは故意に無視
+      // int128_tに揃えると処理が重くなりすぎるため
       if ( get_global< int >( "atk" ) < 2 )
       {
         pimpl_->ofile_ << "\n#ifdef INT64_MAX\n"
@@ -309,15 +309,15 @@ namespace toppers
     }
 
     /*!
-     *  \brief  #include������¤Ӥ��������
-     *  \return #include������¤�
+     *  \brief  #include指令の並びを取得する
+     *  \return #include指令の並び
      *
-     *  ���Υ��дؿ��ϡ�
+     *  このメンバ関数は、
      *  \code
      *  #include <...>
      *  #include "..."
      *  \endcode
-     *  �Ȥ��ä�#include������¤Ӥ�ʸ����Ȥ����֤���
+     *  といった#include指令の並びを文字列として返す。
      */
     std::string const& cfg1_out::get_includes() const
     {
@@ -325,7 +325,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  S�쥳���ɤΥ�����
+     *  \brief  Sレコードのロード
      */
     void cfg1_out::load_srec()
     {
@@ -370,7 +370,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  "cfg1_out.srec" �����ɤ߼�ä�����λ���
+     *  \brief  "cfg1_out.srec" から読み取った情報の参照
      */
     std::tr1::shared_ptr< s_record > cfg1_out::get_srec() const
     {
@@ -378,7 +378,7 @@ namespace toppers
     }
 
     /*!
-     *  \brief  "cfg1_out.syms" �����ɤ߼�ä�����λ���
+     *  \brief  "cfg1_out.syms" から読み取った情報の参照
      */
     std::tr1::shared_ptr< nm_symbol > cfg1_out::get_syms() const
     {
@@ -391,10 +391,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ���֥������Ȥ��Ȥ�OIL���֥������Ⱦ����ޤȤ��
-     *  \return ��ŪAPI����
+     *  \brief  オブジェクトごとにOILオブジェクト情報をまとめる
+     *  \return 静的API情報
      *
-     *  ���δؿ��ϡ�"tsk"��"sem"�Ȥ��ä����̤򥭡��Ȥ��ơ����μ��̤�ʬ�व�����ŪAPI�����Ϣ��������������롣
+     *  この関数は、"tsk"や"sem"といった種別をキーとして、その種別に分類される静的API情報の連想配列を生成する。
      */
     cfg1_out::cfg_obj_map cfg1_out::merge() const
     {
@@ -404,10 +404,10 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ��ȥ륨��ǥ����󤫤ɤ�����Ƚ��
-     *  \retval     true  ��ȥ륨��ǥ�����
-     *  \retval     false �ӥå�����ǥ�����
-     *  \attention  load_srec �ƤӽФ�������������̤������ʤ���
+     *  \brief  リトルエンディアンかどうかの判定
+     *  \retval     true  リトルエンディアン
+     *  \retval     false ビッグエンディアン
+     *  \attention  load_srec 呼び出し前は正しい結果を得られない。
      */
     bool cfg1_out::is_little_endian() const
     {
@@ -415,15 +415,15 @@ namespace toppers
     }
 
     /*!
-     *  \brief  ��ŪAPI�Υѥ�᡼����S�쥳���ɤ�����������ͤ���������
+     *  \brief  静的APIのパラメータにSレコードから取得した値を代入する
      */
     void cfg1_out::implementation::do_assign_params()
     {
     }
 
     /*!
-     *  \brief  --id-input-file���ץ����ǻ��ꤷ���ե�������ɤ߹���
-     *  \id_map �ɤ߹�����ǡ����γ�Ǽ��
+     *  \brief  --id-input-fileオプションで指定したファイルの読み込み
+     *  \id_map 読み込んだデータの格納先
      */
     void cfg1_out::load_id_input_file( std::map< std::string, std::pair< long, bool > >& id_map )
     {

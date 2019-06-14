@@ -4,34 +4,34 @@
  *
  *  Copyright (C) 2007-2012 by TAKAGI Nobuhisa
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  */
 #include <fstream>
@@ -54,11 +54,11 @@ namespace
   typedef toppers::macro_processor::context context;
 
   /*!
-   *  \brief  ����ܥ���б����륢�ɥ쥹�μ���
-   *  \param[in]  line      ���ֹ�
-   *  \param[in]  arg_list  �ޥ����°����ꥹ��
-   *  \param[in]  p_ctx     �ޥ�������ƥ�����
-   *  \retval     �ޥ����ֵ���
+   *  \brief  シンボルに対応するアドレスの取得
+   *  \param[in]  line      行番号
+   *  \param[in]  arg_list  マクロ実引数リスト
+   *  \param[in]  p_ctx     マクロコンテキスト
+   *  \retval     マクロ返却値
    */
   template < class Checker >
   var_t bf_symbol( text_line const& line, std::vector< var_t > const& arg_list, context* p_ctx )
@@ -81,17 +81,17 @@ namespace
     return var_t();
   }
 
-  // VMA ���ɥ쥹����ѥơ��֥�
+  // VMA アドレス解決用テーブル
   std::vector< std::pair< std::tr1::int64_t, std::vector< unsigned char > > > vma_table;
 
   /*!
-   *  \brief  ���ꤷ�����ɥ쥹�˳�Ǽ����Ƥ����ͤμ���
-   *  \param[in]  line      ���ֹ�
-   *  \param[in]  arg_list  �ޥ����°����ꥹ��
-   *  \param[in]  p_ctx     �ޥ�������ƥ�����
-   *  \retval     �ޥ����ֵ���
+   *  \brief  指定したアドレスに格納されている値の取得
+   *  \param[in]  line      行番号
+   *  \param[in]  arg_list  マクロ実引数リスト
+   *  \param[in]  p_ctx     マクロコンテキスト
+   *  \retval     マクロ返却値
    *
-   *  ��1�����˥��ɥ쥹����2�������ɤ߹���Х��ȿ�����ꤷ�ޤ���
+   *  第1引数にアドレスを、第2引数に読み込むバイト数を指定します。
    */
   template < class Checker >
   var_t bf_peek( text_line const& line, std::vector< var_t > const& arg_list, context* p_ctx )
@@ -121,7 +121,7 @@ namespace
             base = static_cast< long >( address - vma_table[i].first );
           }
         }
-        if ( pos >= 0 )  // VMA �����ɤ߼��
+        if ( pos >= 0 )  // VMA から読み取る
         {
           std::tr1::uint64_t value = 0;
           if ( little_endian )
@@ -150,7 +150,7 @@ namespace
           }
           e.i = value;
         }
-        else  // VMA �ǤϤʤ��Τǡ�S�쥳���ɤ����ɤ߼��
+        else  // VMA ではないので、Sレコードから読み取る
         {
           e.i = chk->get( address, size, !!little_endian );
         }
@@ -161,18 +161,18 @@ namespace
   }
 
   /*!
-   *  \brief  ����֥��å���ž��
-   *  \param[in]  line      ���ֹ�
-   *  \param[in]  arg_list  �ޥ����°����ꥹ��
-   *  \param[in]  p_ctx     �ޥ�������ƥ�����
-   *  \retval     �ޥ����ֵ���
+   *  \brief  メモリブロックの転送
+   *  \param[in]  line      行番号
+   *  \param[in]  arg_list  マクロ実引数リスト
+   *  \param[in]  p_ctx     マクロコンテキスト
+   *  \retval     マクロ返却値
    *
-   *  ��1������ž�������ɥ쥹����2������ž���襢�ɥ쥹����3������ž������Х��ȿ�����ꤷ�ޤ���
-   *  ���ꤷ�����ԡ������ɥ쥹���饳�ԡ��襢�ɥ쥹�ء�����Х��ȿ��Υ���֥��å���ž�����ޤ���
-   *  ���δؿ��ϡ�LMA����VMA�ؤΥ��ɥ쥹�Ѵ�����Ū�Ȥ��ƻ��Ѥ��뤳�Ȥ����ꤷ�Ƥ��ޤ���
+   *  第1引数に転送元アドレス、第2引数に転送先アドレス、第3引数に転送するバイト数を指定します。
+   *  指定したコピー元アドレスからコピー先アドレスへ、指定バイト数のメモリブロックを転送します。
+   *  この関数は、LMAからVMAへのアドレス変換を目的として使用することを想定しています。
    *
-   *  \attention  �����Ȥ߹��ߴؿ��ϡ�LMA����VMA�ؤΥ��ɥ쥹�Ѵ������ꤷ�Ƥ��뤿�ᡢ���ˤ�ž����
-   *              �����֤��褦�ʾ����ˤ��б����Ƥ��ޤ���ʥ�����­��ȯ�����ޤ��ˡ�
+   *  \attention  この組み込み関数は、LMAからVMAへのアドレス変換を想定しているため、頻繁に転送を
+   *              繰り返すような状況には対応していません（メモリ不足が発生します）。
    */
   template < class Checker >
   var_t bf_bcopy( text_line const& line, std::vector< var_t > const& arg_list, context* p_ctx )
@@ -212,7 +212,7 @@ namespace
     Factory factory( kernel );
     global( "factory" ) = &factory;
 
-    // *.cfg��cfg1_out.srec���ɤ߹���
+    // *.cfgとcfg1_out.srecの読み込み
     std::string input_file;
     try
     {
@@ -237,12 +237,12 @@ namespace
     std::string symbol_table( get_global_string( "symbol-table" ) );
     chk->load_rom_image( rom_image, symbol_table );
 
-    // �ƥ�ץ졼�ȥե�����
+    // テンプレートファイル
     boost::any template_file( global( "template-file" ) );
     if ( template_file.empty() )
     {
-      // �ƥ�ץ졼�ȥե����뤬���ꤵ��Ƥ��ʤ���к���¤Υ����å��Τߡʸ����ߴ����Τ����
-      // �ѥ�᡼�������å�
+      // テンプレートファイルが指定されていなければ最低限のチェックのみ（後方互換性のため）
+      // パラメータチェック
       if ( !chk->check( *cfg1_out ) )
       {
         return false;
@@ -252,7 +252,7 @@ namespace
     {
       namespace fs = boost::filesystem;
 
-      // �ƥ�ץ졼�Ƚ���
+      // テンプレート処理
       std::auto_ptr< macro_processor > mproc;
       std::auto_ptr< typename Factory::component > component_ptr;
 
@@ -265,7 +265,7 @@ namespace
         mproc = factory.create_macro_processor( *cfg1_out );
       }
 
-      // �� �ɲ��Ȥ߹��ߴؿ�����Ͽ
+      // ↓ 追加組み込み関数の登録
       toppers::macro_processor::func_t func_info = {};
       func_info.name = "SYMBOL";
       func_info.f = &bf_symbol< typename Factory::checker >;
@@ -278,11 +278,11 @@ namespace
       func_info.name = "BCOPY";
       func_info.f = &bf_bcopy< typename Factory::checker >;
       mproc->add_builtin_function( func_info );
-      // �� �ɲ��Ȥ߹��ߴؿ�����Ͽ
+      // ↑ 追加組み込み関数の登録
 
-      fs::path cfg_dir( get_global_string( "cfg-directory" ) );  // filesystem3�б�
+      fs::path cfg_dir( get_global_string( "cfg-directory" ) );  // filesystem3対応
       std::vector< std::string > include_paths = get_global< std::vector< std::string > >( "include-path" );
-      include_paths.push_back( cfg_dir.empty() ? "." : cfg_dir.string() );  // filesystem3�б�
+      include_paths.push_back( cfg_dir.empty() ? "." : cfg_dir.string() );  // filesystem3対応
 
       toppers::text in_text;
       toppers::text pp_text;
@@ -303,14 +303,14 @@ namespace
       {
         return false;
       }
-      // ���ϥե����뤬���뤫�ɤ���ʬ����ʤ�������������֤��롣
+      // 出力ファイルがあるかどうか分からないが、一応セーブする。
       output_file::save();
     }
 
-    // �ѥ�4�ʹߤ����ή�Ѥ���뤿�ᡢ���߽�����Υѥ���Ĵ�٤롣
+    // パス4以降からも流用されるため、現在処理中のパスを調べる。
     int pass = get_global< int >( "pass" );
     int max_pass = get_global< int >( "max-pass" );
-    if ( max_pass == pass ) // �ǽ��ʳ��Υѥ������������Ȥ���"check complete"��å�������Ф���
+    if ( max_pass == pass ) // 最終段階のパスが成功したときに"check complete"メッセージを出す。
     {
       std::cerr << _( "check complete" ) << std::endl;
     }

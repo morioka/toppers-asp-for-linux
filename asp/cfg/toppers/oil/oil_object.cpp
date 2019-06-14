@@ -4,34 +4,34 @@
  *
  *  Copyright (C) 2010 by Meika Sugimoto
  * 
- *  ¾åµ­Ãøºî¸¢¼Ô¤Ï¡¤°Ê²¼¤Î(1)¡Á(4)¤Î¾ò·ï¤òËş¤¿¤¹¾ì¹ç¤Ë¸Â¤ê¡¤ËÜ¥½¥Õ¥È¥¦¥§
- *  ¥¢¡ÊËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò²şÊÑ¤·¤¿¤â¤Î¤ò´Ş¤à¡¥°Ê²¼Æ±¤¸¡Ë¤ò»ÈÍÑ¡¦Ê£À½¡¦²ş
- *  ÊÑ¡¦ºÆÇÛÉÛ¡Ê°Ê²¼¡¤ÍøÍÑ¤È¸Æ¤Ö¡Ë¤¹¤ë¤³¤È¤òÌµ½ş¤ÇµöÂú¤¹¤ë¡¥
- *  (1) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò¥½¡¼¥¹¥³¡¼¥É¤Î·Á¤ÇÍøÍÑ¤¹¤ë¾ì¹ç¤Ë¤Ï¡¤¾åµ­¤ÎÃøºî
- *      ¸¢É½¼¨¡¤¤³¤ÎÍøÍÑ¾ò·ï¤ª¤è¤Ó²¼µ­¤ÎÌµÊİ¾Úµ¬Äê¤¬¡¤¤½¤Î¤Ş¤Ş¤Î·Á¤Ç¥½¡¼
- *      ¥¹¥³¡¼¥ÉÃæ¤Ë´Ş¤Ş¤ì¤Æ¤¤¤ë¤³¤È¡¥
- *  (2) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò¡¤¥é¥¤¥Ö¥é¥ê·Á¼°¤Ê¤É¡¤Â¾¤Î¥½¥Õ¥È¥¦¥§¥¢³«È¯¤Ë»È
- *      ÍÑ¤Ç¤­¤ë·Á¤ÇºÆÇÛÉÛ¤¹¤ë¾ì¹ç¤Ë¤Ï¡¤ºÆÇÛÉÛ¤ËÈ¼¤¦¥É¥­¥å¥á¥ó¥È¡ÊÍøÍÑ
- *      ¼Ô¥Ş¥Ë¥å¥¢¥ë¤Ê¤É¡Ë¤Ë¡¤¾åµ­¤ÎÃøºî¸¢É½¼¨¡¤¤³¤ÎÍøÍÑ¾ò·ï¤ª¤è¤Ó²¼µ­
- *      ¤ÎÌµÊİ¾Úµ¬Äê¤ò·ÇºÜ¤¹¤ë¤³¤È¡¥
- *  (3) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ò¡¤µ¡´ï¤ËÁÈ¤ß¹ş¤à¤Ê¤É¡¤Â¾¤Î¥½¥Õ¥È¥¦¥§¥¢³«È¯¤Ë»È
- *      ÍÑ¤Ç¤­¤Ê¤¤·Á¤ÇºÆÇÛÉÛ¤¹¤ë¾ì¹ç¤Ë¤Ï¡¤¼¡¤Î¤¤¤º¤ì¤«¤Î¾ò·ï¤òËş¤¿¤¹¤³
- *      ¤È¡¥
- *    (a) ºÆÇÛÉÛ¤ËÈ¼¤¦¥É¥­¥å¥á¥ó¥È¡ÊÍøÍÑ¼Ô¥Ş¥Ë¥å¥¢¥ë¤Ê¤É¡Ë¤Ë¡¤¾åµ­¤ÎÃø
- *        ºî¸¢É½¼¨¡¤¤³¤ÎÍøÍÑ¾ò·ï¤ª¤è¤Ó²¼µ­¤ÎÌµÊİ¾Úµ¬Äê¤ò·ÇºÜ¤¹¤ë¤³¤È¡¥
- *    (b) ºÆÇÛÉÛ¤Î·ÁÂÖ¤ò¡¤ÊÌ¤ËÄê¤á¤ëÊıË¡¤Ë¤è¤Ã¤Æ¡¤TOPPERS¥×¥í¥¸¥§¥¯¥È¤Ë
- *        Êó¹ğ¤¹¤ë¤³¤È¡¥
- *  (4) ËÜ¥½¥Õ¥È¥¦¥§¥¢¤ÎÍøÍÑ¤Ë¤è¤êÄ¾ÀÜÅª¤Ş¤¿¤Ï´ÖÀÜÅª¤ËÀ¸¤¸¤ë¤¤¤«¤Ê¤ëÂ»
- *      ³²¤«¤é¤â¡¤¾åµ­Ãøºî¸¢¼Ô¤ª¤è¤ÓTOPPERS¥×¥í¥¸¥§¥¯¥È¤òÌÈÀÕ¤¹¤ë¤³¤È¡¥
- *      ¤Ş¤¿¡¤ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Î¥æ¡¼¥¶¤Ş¤¿¤Ï¥¨¥ó¥É¥æ¡¼¥¶¤«¤é¤Î¤¤¤«¤Ê¤ëÍı
- *      Í³¤Ë´ğ¤Å¤¯ÀÁµá¤«¤é¤â¡¤¾åµ­Ãøºî¸¢¼Ô¤ª¤è¤ÓTOPPERS¥×¥í¥¸¥§¥¯¥È¤ò
- *      ÌÈÀÕ¤¹¤ë¤³¤È¡¥
+ *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã®(1)ã€œ(4)ã®æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§
+ *  ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼ä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹
+ *  å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œåˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼
+ *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
+ *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
+ *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼
+ *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
+ *      è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
+ *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
+ *      ã¨ï¼
+ *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
+ *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
+ *        å ±å‘Šã™ã‚‹ã“ã¨ï¼
+ *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
+ *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼
+ *      ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®ãƒ¦ãƒ¼ã‚¶ã¾ãŸã¯ã‚¨ãƒ³ãƒ‰ãƒ¦ãƒ¼ã‚¶ã‹ã‚‰ã®ã„ã‹ãªã‚‹ç†
+ *      ç”±ã«åŸºã¥ãè«‹æ±‚ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’
+ *      å…è²¬ã™ã‚‹ã“ã¨ï¼
  * 
- *  ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Ï¡¤ÌµÊİ¾Ú¤ÇÄó¶¡¤µ¤ì¤Æ¤¤¤ë¤â¤Î¤Ç¤¢¤ë¡¥¾åµ­Ãøºî¸¢¼Ô¤ª
- *  ¤è¤ÓTOPPERS¥×¥í¥¸¥§¥¯¥È¤Ï¡¤ËÜ¥½¥Õ¥È¥¦¥§¥¢¤Ë´Ø¤·¤Æ¡¤ÆÃÄê¤Î»ÈÍÑÌÜÅª
- *  ¤ËÂĞ¤¹¤ëÅ¬¹çÀ­¤â´Ş¤á¤Æ¡¤¤¤¤«¤Ê¤ëÊİ¾Ú¤â¹Ô¤ï¤Ê¤¤¡¥¤Ş¤¿¡¤ËÜ¥½¥Õ¥È¥¦¥§
- *  ¥¢¤ÎÍøÍÑ¤Ë¤è¤êÄ¾ÀÜÅª¤Ş¤¿¤Ï´ÖÀÜÅª¤ËÀ¸¤¸¤¿¤¤¤«¤Ê¤ëÂ»³²¤Ë´Ø¤·¤Æ¤â¡¤¤½
- *  ¤ÎÀÕÇ¤¤òÉé¤ï¤Ê¤¤¡¥
+ *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼ä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
+ *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œç‰¹å®šã®ä½¿ç”¨ç›®çš„
+ *  ã«å¯¾ã™ã‚‹é©åˆæ€§ã‚‚å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§
+ *  ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œã
+ *  ã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼
  * 
  */
 
@@ -48,7 +48,7 @@ namespace toppers
 {
 	namespace oil
 	{
-		// ¥Ç¥Ğ¥Ã¥°ÍÑ´Ø¿ô
+		// ãƒ‡ãƒãƒƒã‚°ç”¨é–¢æ•°
 		void dump(boost::smatch *r)
 		{
 			unsigned int i;
@@ -86,7 +86,7 @@ namespace toppers
 					string::const_iterator start = parameter_description.begin();
 					string::const_iterator end = parameter_description.end();
 
-					// [ TRUE , FALSE ]¤¬¤¢¤ë¾ì¹ç¤ÏENUM¤ÈÆ±¤¸°·¤¤¡¢¤Ê¤¤¾ì¹ç¤ÏSTRING¤ÈÆ±¤¸°·¤¤¤È¤¹¤ë
+					// [ TRUE , FALSE ]ãŒã‚ã‚‹å ´åˆã¯ENUMã¨åŒã˜æ‰±ã„ã€ãªã„å ´åˆã¯STRINGã¨åŒã˜æ‰±ã„ã¨ã™ã‚‹
 					if(regex_search(start , end , bool_with_option))
 					{
 						this->params.push_back(
@@ -115,7 +115,7 @@ namespace toppers
 				}
 				else
 				{
-					// ¤¢¤ê¤¨¤Ê¤¤
+					// ã‚ã‚Šãˆãªã„
 				}
 
 				return 0;
@@ -138,8 +138,8 @@ namespace toppers
 				std::vector<object_parameter_impl*>::iterator match;
 				bool result = false;
 
-				// Æ±¤¸Ì¾Á°¤ò»ı¤Ä¥Ñ¥é¥á¡¼¥¿¤¬¤¢¤ë¤«¸¡º÷
-				// ¢¨find_if¤À¤È¥À¥¦¥ó¥­¥ã¥¹¥È¤Ë¼ºÇÔ¤·¤¿
+				// åŒã˜åå‰ã‚’æŒã¤ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒã‚ã‚‹ã‹æ¤œç´¢
+				// â€»find_ifã ã¨ãƒ€ã‚¦ãƒ³ã‚­ãƒ£ã‚¹ãƒˆã«å¤±æ•—ã—ãŸ
 				for(match = params.begin() ; match != params.end() ; match++)
 				{
 					if((*match)->validate_parameter_name(obj_param->get_parameter_name())
@@ -149,7 +149,7 @@ namespace toppers
 					}
 				}
 				
-				// ¥Ñ¥é¥á¡¼¥¿¤ÎÂ°À­¥Á¥§¥Ã¥¯
+				// ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®å±æ€§ãƒã‚§ãƒƒã‚¯
 				if(match != params.end())
 				{
 					parameter_object_ref_impl *ref_param;
@@ -166,7 +166,7 @@ namespace toppers
 					}
 					else 
 					{
-						// enum¤Î¾ì¹ç¡¢»ÒÍ×ÁÇ¤Ç»²¾È¤¬½Ğ¤Æ¤¯¤ë²ÄÇ½À­¤¬¤¢¤ë
+						// enumã®å ´åˆã€å­è¦ç´ ã§å‚ç…§ãŒå‡ºã¦ãã‚‹å¯èƒ½æ€§ãŒã‚ã‚‹
 						enum_param = dynamic_cast<parameter_enum_impl*>(*match);
 						if(enum_param != NULL)
 						{
@@ -177,7 +177,7 @@ namespace toppers
 							}
 							else
 							{
-								// ¥¨¥é¡¼½ĞÎÏ¤Ïvalidate_object_parameter¤Ç¹Ô¤Ã¤Æ¤¤¤ë¤¿¤áÉÔÍ×¡¥
+								// ã‚¨ãƒ©ãƒ¼å‡ºåŠ›ã¯validate_object_parameterã§è¡Œã£ã¦ã„ã‚‹ãŸã‚ä¸è¦ï¼
 								//toppers::error("Object %1%'s parameter %2% can't set %3%." , 
 								//	obj_param->get_parent_name() , obj_param->get_parameter_name() , obj_param->get_value());
 							}
@@ -191,7 +191,7 @@ namespace toppers
 							}
 							else
 							{
-								// ¥¨¥é¡¼½ĞÎÏ¤Ïvalidate_object_parameter¤Ç¹Ô¤Ã¤Æ¤¤¤ë¤¿¤áÉÔÍ×¡¥
+								// ã‚¨ãƒ©ãƒ¼å‡ºåŠ›ã¯validate_object_parameterã§è¡Œã£ã¦ã„ã‚‹ãŸã‚ä¸è¦ï¼
 								//toppers::error("Object %1%'s parameter %2% can't set %3%." , 
 								//	obj_param->get_parent_name() , obj_param->get_parameter_name() , obj_param->get_value());
 							}
@@ -200,7 +200,7 @@ namespace toppers
 				}
 				else
 				{
-					// ¥¨¥é¡¼½èÍı
+					// ã‚¨ãƒ©ãƒ¼å‡¦ç†
 					toppers::error("Object %1% can't define parameter %2%." , 
 						obj_param->get_parent_name() , obj_param->get_parameter_name());
 				}
@@ -208,15 +208,15 @@ namespace toppers
 				return result;
 			}
 
-			// ´ğËÜ¥Ñ¥é¥á¡¼¥¿¤Î¥Á¥§¥Ã¥¯
+			// åŸºæœ¬ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®ãƒã‚§ãƒƒã‚¯
 			bool object_parameter_impl::validate_object_parameter
 					(oil_definition::object_parameter_def *obj , bool *auto_param)
 			{
-				// Ê£¿ôÄêµÁ¤Ï¥ª¥Ö¥¸¥§¥¯¥È²òÀÏÂ¦¤Ç¤·¤«¹Ô¤¨¤Ê¤¤
-				// ¥Ç¥Õ¥©¥ë¥ÈÄêµÁ¤«¤É¤¦¤«¤â¥ª¥Ö¥¸¥§¥¯¥È¤Ç¤·¤«¹Ô¤¨¤Ê¤¤
+				// è¤‡æ•°å®šç¾©ã¯ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè§£æå´ã§ã—ã‹è¡Œãˆãªã„
+				// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå®šç¾©ã‹ã©ã†ã‹ã‚‚ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã§ã—ã‹è¡Œãˆãªã„
 				set_parameter_type(obj);
 								
-				// AUTOÂ°À­¤Î¥Á¥§¥Ã¥¯
+				// AUTOå±æ€§ã®ãƒã‚§ãƒƒã‚¯
 				if(obj->get_value() == "AUTO")
 				{
 					if(assign_auto == false)
@@ -257,7 +257,7 @@ namespace toppers
 					//std::vector<T>::iterator p;
 					typename std::vector<T>::iterator p;
 
-					// ÃÍ¤Î¥ê¥¹¥È¤ËÂ¸ºß¤¹¤ë¤«¤ò¸¡º÷
+					// å€¤ã®ãƒªã‚¹ãƒˆã«å­˜åœ¨ã™ã‚‹ã‹ã‚’æ¤œç´¢
 					p = find(value_list->begin() , value_list->end() , value);
 					if(p >= value_list->end())
 					{
@@ -266,7 +266,7 @@ namespace toppers
 				}
 				else
 				{
-					// ¥Á¥§¥Ã¥¯¤ÏÉ¬Í×¤Ê¤¤
+					// ãƒã‚§ãƒƒã‚¯ã¯å¿…è¦ãªã„
 				}
 
 				return result;
@@ -298,20 +298,20 @@ namespace toppers
 				bool result = false , assign_auto;
 				int64_t value;
 				
-				// ´ğËÜÂ°À­¤Î¥Á¥§¥Ã¥¯
+				// åŸºæœ¬å±æ€§ã®ãƒã‚§ãƒƒã‚¯
 				if(object_parameter_impl::validate_object_parameter(obj , &assign_auto)
 					== false)
 				{
 					return false;
 				}
 
-				// AUTO¥Ñ¥é¥á¡¼¥¿¤Ê¤é¤¹¤°¤ËÈ´¤±¤ë
+				// AUTOãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãªã‚‰ã™ãã«æŠœã‘ã‚‹
 				if(assign_auto == true)
 				{
 					return true;
 				}
 
-				// ÃÍ¤ËÊÑ´¹
+				// å€¤ã«å¤‰æ›
 				if(obj->get_value().find("0x") != string::npos)
 				{
                     // modified by takuya 110823
@@ -377,20 +377,20 @@ namespace toppers
 				bool result = false , assign_auto;
 				uint64_t value;
 				
-				// ´ğËÜÂ°À­¤Î¥Á¥§¥Ã¥¯
+				// åŸºæœ¬å±æ€§ã®ãƒã‚§ãƒƒã‚¯
 				if(object_parameter_impl::validate_object_parameter(obj , &assign_auto)
 					== false)
 				{
 					return false;
 				}
 
-				// AUTO¥Ñ¥é¥á¡¼¥¿¤Ê¤é¤¹¤°¤ËÈ´¤±¤ë
+				// AUTOãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãªã‚‰ã™ãã«æŠœã‘ã‚‹
 				if(assign_auto == true)
 				{
 					return true;
 				}
 
-				// ÃÍ¤ËÊÑ´¹
+				// å€¤ã«å¤‰æ›
 				if(obj->get_value().find("0x") != string::npos)
 				{
                     // modified by takuya 110823
@@ -455,20 +455,20 @@ namespace toppers
 				bool result = false , assign_auto;
 				double value;
 				
-				// ´ğËÜÂ°À­¤Î¥Á¥§¥Ã¥¯
+				// åŸºæœ¬å±æ€§ã®ãƒã‚§ãƒƒã‚¯
 				if(object_parameter_impl::validate_object_parameter(obj , &assign_auto)
 					== false)
 				{
 					return false;
 				}
 
-				// AUTO¥Ñ¥é¥á¡¼¥¿¤Ê¤é¤¹¤°¤ËÈ´¤±¤ë
+				// AUTOãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãªã‚‰ã™ãã«æŠœã‘ã‚‹
 				if(assign_auto == true)
 				{
 					return true;
 				}
 
-				// ÃÍ¤ËÊÑ´¹
+				// å€¤ã«å¤‰æ›
 				try
 				{
 					value = boost::lexical_cast<double>(obj->get_value().c_str());
@@ -519,35 +519,35 @@ namespace toppers
 				std::map<std::string , oil_object_impl*>::iterator p;
 				bool result = true , assign_auto;
 
-				// ´ğËÜÂ°À­¤Î¥Á¥§¥Ã¥¯
+				// åŸºæœ¬å±æ€§ã®ãƒã‚§ãƒƒã‚¯
 				if(object_parameter_impl::validate_object_parameter(obj , &assign_auto)
 					== false)
 				{
 					return false;
 				}
 
-				// AUTO¥Ñ¥é¥á¡¼¥¿¤Ê¤é¤¹¤°¤ËÈ´¤±¤ë
+				// AUTOãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãªã‚‰ã™ãã«æŠœã‘ã‚‹
 				if(assign_auto == true)
 				{
 					return true;
 				}
 
-				// ¥Ñ¥é¥á¡¼¥¿¤¬ENUM¤Î¥ê¥¹¥È¤Ë¤¢¤ë¤«¸¡º÷(ÁíÅö¤¿¤ê¡Ë
+				// ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒENUMã®ãƒªã‚¹ãƒˆã«ã‚ã‚‹ã‹æ¤œç´¢(ç·å½“ãŸã‚Šï¼‰
 				std::vector<oil_definition::object_definition*>::iterator s;
 				std::string str;
 				bool hit = false;
 
 				for(p = sub_params.begin() ; p != sub_params.end(); p++)
 				{
-					// ¥¨¥é¡¼½èÍıÍÑ¤Î¥ê¥¹¥È
+					// ã‚¨ãƒ©ãƒ¼å‡¦ç†ç”¨ã®ãƒªã‚¹ãƒˆ
 					str += (*p).first + " , ";
-					// ¥Ñ¥é¥á¡¼¥¿Ì¾¤¬°ìÃ×¤·¤Æ¤¤¤Ê¤±¤ì¤ĞÀè¤Î½èÍı¤Ï¹Ô¤ï¤Ê¤¤
+					// ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿åãŒä¸€è‡´ã—ã¦ã„ãªã‘ã‚Œã°å…ˆã®å‡¦ç†ã¯è¡Œã‚ãªã„
 					if(obj->get_value() == (*p).first)
 					{
 						hit = true;
 					}
 				}
-				// ¥ê¥¹¥È¤Ë¤Ê¤«¤Ã¤¿¾ì¹ç¤Î½èÍı
+				// ãƒªã‚¹ãƒˆã«ãªã‹ã£ãŸå ´åˆã®å‡¦ç†
 				if(hit == false)
 				{
 					toppers::error("Object %1%'s %2% : %3% is not in range [%4%]" ,
@@ -557,12 +557,12 @@ namespace toppers
 					return false;
 				}
 				
-				// ¥µ¥Ö¥Ñ¥é¥á¡¼¥¿¤Ë¤Ä¤¤¤Æ¤â¥Á¥§¥Ã¥¯
+				// ã‚µãƒ–ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«ã¤ã„ã¦ã‚‚ãƒã‚§ãƒƒã‚¯
 				for(s = obj->get_subparams()->begin() ; s != obj->get_subparams()->end() ; s++)
 				{
 					for(p = sub_params.begin() ; p != sub_params.end(); p++)
 					{
-						/* Æ±Ì¾¤ÎÀßÄê¤ÎÄêµÁÉô¤ò¸«¤Ä¤±¤¿¤éºÆµ¢¤Ç¸¡ºº */
+						/* åŒåã®è¨­å®šã®å®šç¾©éƒ¨ã‚’è¦‹ã¤ã‘ãŸã‚‰å†å¸°ã§æ¤œæŸ» */
 						if((*s)->get_parent()->get_value() == (*p).first)
 						{
 							if((*p).second->validate_object_configuration((*s) , object_refs) == true)
@@ -576,7 +576,7 @@ namespace toppers
 						break;
 					}
 				}
-				// ¸«¤Ä¤«¤é¤Ê¤±¤ì¤Ğ¥¨¥é¡¼
+				// è¦‹ã¤ã‹ã‚‰ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼
 				if((obj->get_subparams()->empty() == false)
 					&& (s == obj->get_subparams()->end()))
 				{
@@ -589,16 +589,16 @@ namespace toppers
 			bool parameter_object_ref_impl::validate_object_parameter
 					(oil_definition::object_parameter_def *obj , std::vector<toppers::oil::object_ref> *object_refs)
 			{
-				// ´ğËÜÂ°À­¤Î¥Á¥§¥Ã¥¯
-				// ¥ê¥Õ¥¡¥ì¥ó¥¹Àè¤Î¥Á¥§¥Ã¥¯¤â¤³¤³¤Ç¹Ô¤¦¤Ù¤­¤À¤¬¡¢
-				// ¥ê¥Õ¥¡¥ì¥ó¥¹Àè¤Î¥ª¥Ö¥¸¥§¥¯¥È¼ïÎà¤ò¼èÆÀ¤Ç¤­¤Ê¤¤¤¿¤á¸å¤Ç¹Ô¤¦
+				// åŸºæœ¬å±æ€§ã®ãƒã‚§ãƒƒã‚¯
+				// ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹å…ˆã®ãƒã‚§ãƒƒã‚¯ã‚‚ã“ã“ã§è¡Œã†ã¹ãã ãŒã€
+				// ãƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹å…ˆã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç¨®é¡ã‚’å–å¾—ã§ããªã„ãŸã‚å¾Œã§è¡Œã†
 				if(object_parameter_impl::validate_object_parameter(obj , &assign_auto)
 					== false)
 				{
 					return false;
 				}
 
-				// ¥Á¥§¥Ã¥¯¤¹¤ë¤Ù¤­¥ê¥Õ¥¡¥ì¥ó¥¹¤ÎÂåÆş
+				// ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã¹ããƒªãƒ•ã‚¡ãƒ¬ãƒ³ã‚¹ã®ä»£å…¥
 				object_ref ref = { reftype_name , obj->get_value() };
 				object_refs->push_back(ref);
 
@@ -639,13 +639,13 @@ namespace toppers
 				bool result = true;
 				bool multiple;
 
-				// ¥ª¥Ö¥¸¥§¥¯¥ÈÌ¾¤¬¹ç¤Ã¤Æ¤¤¤ë¤«¥Á¥§¥Ã¥¯
+				// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆåãŒåˆã£ã¦ã„ã‚‹ã‹ãƒã‚§ãƒƒã‚¯
 				if(name != obj_def->get_object_type())
 				{
 					return false;
 				}
 
-				// ¥Ñ¥é¥á¡¼¥¿¤ÎÀ°¹çÀ­¥Á¥§¥Ã¥¯
+				// ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ•´åˆæ€§ãƒã‚§ãƒƒã‚¯
 				obj_params = obj_def->get_params();
 				for(p = obj_params->begin() ; p != obj_params->end() ; p++)
 				{
@@ -654,7 +654,7 @@ namespace toppers
 						result = false;
 					}
 
-					// Ê£¿ôÄêµÁ²ÄÇ½¤«¤Î¥Á¥§¥Ã¥¯
+					// è¤‡æ•°å®šç¾©å¯èƒ½ã‹ã®ãƒã‚§ãƒƒã‚¯
 					if(((found = find(defined_parameter.begin() , defined_parameter.end() , 
 						(*p)->get_parameter_name())) != defined_parameter.end())
 							&& (multiple == false))
@@ -673,10 +673,10 @@ namespace toppers
 				if(result == true)
 				{
 					//
-					// ¥Ç¥Õ¥©¥ë¥È¥Ñ¥é¥á¡¼¥¿¤ÎÊä´°
+					// ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®è£œå®Œ
 					//
 
-					// ¥ª¥Ö¥¸¥§¥¯¥ÈÄêµÁ¤Ëµ­ºÜ¤µ¤ì¤Æ¤¤¤Ê¤¤¥Ñ¥é¥á¡¼¥¿¤ÎÃµº÷
+					// ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå®šç¾©ã«è¨˜è¼‰ã•ã‚Œã¦ã„ãªã„ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æ¢ç´¢
 					for(q = params.begin() ; q != params.end() ; q++)
 					{
 						s = find(defined_parameter.begin() , 
@@ -688,7 +688,7 @@ namespace toppers
 						}
 					}
 
-					// Ãµº÷¤·¤¿¥Ñ¥é¥á¡¼¥¿¤ËÂĞ¤·¤Æ¤Î¥Ç¥Õ¥©¥ë¥È¥Ñ¥é¥á¡¼¥¿¤ÎÊä´°
+					// æ¢ç´¢ã—ãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã«å¯¾ã—ã¦ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®è£œå®Œ
 					for(q = undefined_parameter.begin() ; q != undefined_parameter.end() ; q++)
 					{
 						string default_value;
@@ -719,14 +719,14 @@ namespace toppers
 			bool parameter_string_impl::validate_object_parameter
 					(oil_definition::object_parameter_def *obj)
 			{
-				// Ê¸»úÂ°À­¤ÏÆÃ¤ËÀ©Ìó¤¬¤Ê¤¤¤¿¤á¾ï¤Ëtrue
+				// æ–‡å­—å±æ€§ã¯ç‰¹ã«åˆ¶ç´„ãŒãªã„ãŸã‚å¸¸ã«true
 				return true;
 			}
 			
 			bool parameter_boolean_impl::validate_object_parameter
 					(oil_definition::object_parameter_def *obj)
 			{
-				// TRUE¤«FALSE¤Ç¤Ê¤¤¤È¤Ê¤é¤Ê¤¤
+				// TRUEã‹FALSEã§ãªã„ã¨ãªã‚‰ãªã„
 				if((obj->get_value() == "TRUE")
 					|| (obj->get_value() == "FALSE"))
 				{
@@ -776,7 +776,7 @@ namespace toppers
 				}
 				catch(...)
 				{
-					// ¥¨¥é¡¼½èÍı
+					// ã‚¨ãƒ©ãƒ¼å‡¦ç†
 				}
 
 				return 0;
@@ -805,8 +805,8 @@ namespace toppers
 
 			
 		/*!
-		 *  \brief  ¥ª¥Ö¥¸¥§¥¯¥ÈIDÈÖ¹æ¤Î³äÉÕ¤±
-		 *  \param[in]  api_map   ¥½¡¼¥¹¤Ëµ­½Ò¤µ¤ì¤¿ÀÅÅªAPI¤òÅĞÏ¿¤·¤¿¥³¥ó¥Æ¥Ê
+		 *  \brief  ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆIDç•ªå·ã®å‰²ä»˜ã‘
+		 *  \param[in]  api_map   ã‚½ãƒ¼ã‚¹ã«è¨˜è¿°ã•ã‚ŒãŸé™çš„APIã‚’ç™»éŒ²ã—ãŸã‚³ãƒ³ãƒ†ãƒŠ
 		 */
 		void assign_id( cfg_obj_map obj_def_map , long fixed_id)
 		{
@@ -822,7 +822,7 @@ namespace toppers
 		  for(p = obj_def_map.begin() ; p != obj_def_map.end() ; p++)
 		  {
 			  serial = 0;
-			  // ¥ª¥Ö¥¸¥§¥¯¥È¤´¤È¤ËID³äÅö¤Æ
+			  // ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã”ã¨ã«IDå‰²å½“ã¦
 			  for(q = (*p).second.begin() ; q != (*p).second.end() ; q++)
 			  {
 				  if(fixed_id == UINT_MAX)
@@ -852,14 +852,14 @@ namespace toppers
 			  out[ s ].push_back(*p);
 		  }
 
-		  // ID¤ò°ìÅÙ³äÉÕ¤±¤ë
+		  // IDã‚’ä¸€åº¦å‰²ä»˜ã‘ã‚‹
 		  assign_id(out , fixed_id);
 
 		  for(p = obj_defs->begin() ; p != obj_defs->end() ; p++)
 		  {
 			  long id;
 			  subparams = (*p)->get_params();
-			  // ¥µ¥Ö¥Ñ¥é¥á¡¼¥¿¤âÅĞÏ¿
+			  // ã‚µãƒ–ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚‚ç™»éŒ²
 			  for(r = subparams->begin() ; r != subparams->end() ; r++)
 			  {
 				  sub_objects = (*r)->get_subparams();
@@ -867,7 +867,7 @@ namespace toppers
 
 				  string s = "." + (*r)->get_value();
 
-				  // ¥µ¥Ö¥Ñ¥é¥á¡¼¥¿¤Î»ı¤ÄÂ°À­¤ÏºÆµ¢¤ÇÅĞÏ¿¤¹¤ë
+				  // ã‚µãƒ–ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®æŒã¤å±æ€§ã¯å†å¸°ã§ç™»éŒ²ã™ã‚‹
 				  if(sub_objects->empty() == false)
 				  {
 					  cfg_obj_map temp;
@@ -875,7 +875,7 @@ namespace toppers
 						  (*p)->get_object_type() + ".";
 					  temp = merge(sub_objects , temp , subparam_name , s , id);
 
-					  // ·ë²Ì¤ò¥³¥Ô¡¼(¤Á¤ç¤¦¤É¤¤¤¤¥á¥½¥Ã¥É¤¬Ìµ¤¤)
+					  // çµæœã‚’ã‚³ãƒ”ãƒ¼(ã¡ã‚‡ã†ã©ã„ã„ãƒ¡ã‚½ãƒƒãƒ‰ãŒç„¡ã„)
                       // modified by takuya 110823
 					  // std::map< std::string, std::vector< object_definition* >>::iterator x;
 					  std::map< std::string, std::vector< object_definition* > >::iterator x;

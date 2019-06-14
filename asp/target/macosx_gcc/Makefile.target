@@ -3,21 +3,21 @@
 # 
 
 #
-#		Makefile �Υ������åȰ�¸����Mac OS X�ѡ�
+#		Makefile のターゲット依存部（Mac OS X用）
 #
 
 #
-#  �����ƥ�̾����ȯ�Ķ�̾�����
+#  システム名，開発環境名の定義
 #
-#  GNU��ȯ�Ķ���ɸ�������Ȥ��ʤ��Τǡ�TOOL��"gcc_"�Ȥ��Ƥ��롥
+#  GNU開発環境の標準設定を使えないので，TOOLを"gcc_"としている．
 #
 SYS = macosx
 TOOL = gcc_
 
 #
-#  ��ȯ�ġ���Υ��ޥ��̾�����
+#  開発ツールのコマンド名の定義
 #
-#  nm��objcopy��objdump�ϡ����줾�졤gnm��gobjcopy��gobjdump���Ѥ��롥
+#  nm，objcopy，objdumpは，それぞれ，gnm，gobjcopy，gobjdumpを用いる．
 #
 CC = gcc
 CXX = g++
@@ -30,12 +30,12 @@ OBJCOPY = gobjcopy
 OBJDUMP = gobjdump
 
 #
-#  makeoffset�ϻ��Ѥ��ʤ�
+#  makeoffsetは使用しない
 #
 OMIT_MAKEOFFSET = true
 
 #
-#  ����ѥ��륪�ץ����
+#  コンパイルオプション
 #
 INCLUDES := $(INCLUDES) -I$(TARGETDIR)
 ifdef KERNEL_FUNCOBJS
@@ -45,23 +45,23 @@ else
 endif
 
 #
-#  �����ͥ�˴ؤ������
+#  カーネルに関する定義
 #
 KERNEL_DIR := $(KERNEL_DIR) $(TARGETDIR)
 KERNEL_COBJS := $(KERNEL_COBJS) target_config.o target_timer.o
 
 #
-#  �����ƥॵ���ӥ��˴ؤ������
+#  システムサービスに関する定義
 #
 SYSSVC_COBJS := $(SYSSVC_COBJS) target_serial.o
 
 #
-#  ����ե�����졼���ط����ѿ������
+#  コンフィギュレータ関係の変数の定義
 #
 CFG_TABS := $(CFG_TABS) --cfg1-def-table $(TARGETDIR)/target_def.csv
 
 #
-#  �ȥ졼��������Ͽ�Υ���ץ륳���ɤ˴ؤ������
+#  トレースログ記録のサンプルコードに関する定義
 #
 ifeq ($(ENABLE_TRACE),true)
 	COPTS := $(COPTS) -DTOPPERS_ENABLE_TRACE
@@ -70,7 +70,7 @@ ifeq ($(ENABLE_TRACE),true)
 endif
 
 #
-#  ��¸�ط������
+#  依存関係の定義
 #
 cfg1_out.c: $(TARGETDIR)/target_def.csv
 kernel_cfg.timestamp: $(TARGETDIR)/target.tf

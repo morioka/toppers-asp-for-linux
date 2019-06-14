@@ -1,42 +1,42 @@
 $ 
-$ 		�ѥ�2�Υ������åȰ�¸�ƥ�ץ졼�ȡ�Mac OS X�ѡ�
+$ 		パス2のターゲット依存テンプレート（Mac OS X用）
 $ 
 
 $ 
-$  ���ѤǤ��������ֹ�Ȥ�����б��������ߥϥ�ɥ��ֹ�
+$  使用できる割込み番号とそれに対応する割込みハンドラ番号
 $ 
-$  ������ֹ�ȳ���ߥϥ�ɥ��ֹ�ϡ������ʥ��ֹ�˰��פ����롥1��31��
-$  �����ʥ��ֹ���⡤SIGKILL�ʡ�9�ˡ�SIGSTOP�ʡ�17�ˡ�SIGUSR2�ʡ�31�˰�
-$  �������ѤǤ��롥
+$  割込み番号と割込みハンドラ番号は，シグナル番号に一致させる．1〜31の
+$  シグナル番号の内，SIGKILL（＝9），SIGSTOP（＝17），SIGUSR2（＝31）以
+$  外が使用できる．
 $ 
 $INTNO_VALID = { 1, 2,..., 8; 10, 11,..., 16; 18, 19,..., 30 }$
 $INHNO_VALID = INTNO_VALID$
 
 $ 
-$  ATT_ISR�ǻ��ѤǤ��������ֹ�Ȥ�����б��������ߥϥ�ɥ��ֹ�
+$  ATT_ISRで使用できる割込み番号とそれに対応する割込みハンドラ番号
 $ 
 $INTNO_ATTISR_VALID = INTNO_VALID$
 $INHNO_ATTISR_VALID = INHNO_VALID$
 
 $ 
-$  DEF_INT��DEF_EXC�ǻ��ѤǤ������ߥϥ�ɥ��ֹ桿CPU�㳰�ϥ�ɥ��ֹ�
+$  DEF_INT／DEF_EXCで使用できる割込みハンドラ番号／CPU例外ハンドラ番号
 $ 
 $INHNO_DEFINH_VALID = INHNO_VALID$
 $EXCNO_DEFEXC_VALID = INHNO_VALID$
 
 $ 
-$  CFG_INT�ǻ��ѤǤ��������ֹ�ȳ����ͥ����
+$  CFG_INTで使用できる割込み番号と割込み優先度
 $ 
-$  �����ͥ���٤ϡ�-1��-7�����ѤǤ��롥-7��NMI�Ȱ�����
+$  割込み優先度は，-1〜-7が使用できる．-7はNMIと扱う．
 $ 
 $INTNO_CFGINT_VALID = INTNO_VALID$
 $INTPRI_CFGINT_VALID = { -1, -2,..., -7 }$
 
 $
-$  �����å��ΰ�γ��ݴؿ�
+$  スタック領域の確保関数
 $
-$  Intel�ץ����å��Ǥϡ������å��ݥ��󥿤�16�Х��ȶ����˥��饤�󤵤���
-$  ɬ�פ����롥
+$  Intelプロセッサでは，スタックポインタを16バイト境界にアラインさせる
+$  必要がある．
 $
 $FUNCTION ALLOC_STACK$
 	static STK_T $ARGV[1]$[COUNT_STK_T($ARGV[2]$)]
@@ -45,7 +45,7 @@ $FUNCTION ALLOC_STACK$
 $END$
 
 $ 
-$  ɸ��ƥ�ץ졼�ȥե�����Υ��󥯥롼��
+$  標準テンプレートファイルのインクルード
 $ 
 $INCLUDE "kernel/kernel.tf"$
 
@@ -55,18 +55,18 @@ $SPC$*/$NL$
 $NL$
 
 $ 
-$  �ޥ����Ǥ��ʤ������ʥ�ȥ����ͥ뤬�Ȥ������ʥ�˴ؤ�������
+$  マスクできないシグナルとカーネルが使うシグナルに関する設定
 $ 
-$  SIGKILL�ʥޥ����Բġ�
-$  SIGSTOP�ʥޥ����Բġ�
-$  SIGUSR2�ʥ����ͥ뤬���ѡ�
+$  SIGKILL（マスク不可）
+$  SIGSTOP（マスク不可）
+$  SIGUSR2（カーネルが利用）
 $ 
 $INT.INTPRI[SIGKILL] = -7$
 $INT.INTPRI[SIGSTOP] = -7$
 $INT.INTPRI[SIGUSR2] = -7$
 
 $ 
-$   CFG_INT�Υ������åȰ�¸�Υ��顼�����å�
+$   CFG_INTのターゲット依存のエラーチェック
 $ 
 $FOREACH intno INT.ORDER_LIST$
 	$IF (INT.INTATR[intno] & TA_EDGE) == 0$
@@ -75,26 +75,26 @@ $FOREACH intno INT.ORDER_LIST$
 $END$
 
 $ 
-$  CPU�㳰�ϥ�ɥ�˴ؤ������
+$  CPU例外ハンドラに関する処理
 $ 
 $FOREACH excno EXC.ORDER_LIST$
-$	// ����ߥϥ�ɥ�Ȥν�ʣ�����å�
+$	// 割込みハンドラとの重複チェック
 	$IF LENGTH(INH.INHNO[excno])$
 		$ERROR EXC.TEXT_LINE[excno]$E_OBJ: $FORMAT(_("%1% `%2%\' in %3% is duplicated with %4% `%5%\'"), "excno", EXC.EXCNO[excno], "DEF_EXC", "inhno", INH.INHNO[excno])$$END$
 	$END$
 
-$	// CPU�㳰�ϥ�ɥ����Ͽ���������ʥ�˴ؤ�������
+$	// CPU例外ハンドラを登録したシグナルに関する設定
 	$IF LENGTH(INTNO[excno])$
 		$INT.INTPRI[INTNO[excno]] = -7$
 	$END$
 $END$
 
 $ 
-$  �ǥХå��Ѥ˥ޥ������ʤ������ʥ�˴ؤ�������
+$  デバッグ用にマスクしないシグナルに関する設定
 $ 
-$  SIGINT�ʥǥХå��ѡ�
-$  SIGBUS�ʥǥХå��ѡ�
-$  SIGSEGV�ʥǥХå��ѡ�
+$  SIGINT（デバッグ用）
+$  SIGBUS（デバッグ用）
+$  SIGSEGV（デバッグ用）
 $ 
 $IF !LENGTH(INT.INTPRI[SIGINT])$
 	$INT.INTPRI[SIGINT] = -7$
@@ -107,10 +107,10 @@ $IF !LENGTH(INT.INTPRI[SIGSEGV])$
 $END$
 
 $ 
-$  ����ߥϥ�ɥ�ν������ɬ�פʾ���
+$  割込みハンドラの初期化に必要な情報
 $ 
 
-$ ����ߥϥ�ɥ��
+$ 割込みハンドラ数
 #define TNUM_INHNO	$LENGTH(INH.ORDER_LIST)$$NL$
 const uint_t _kernel_tnum_inhno = TNUM_INHNO;$NL$
 $NL$
@@ -121,7 +121,7 @@ $FOREACH inhno INH.ORDER_LIST$
 $END$
 $NL$
 
-$ ����ߥϥ�ɥ������ơ��֥�
+$ 割込みハンドラ初期化テーブル
 $IF LENGTH(INH.ORDER_LIST)$
 	const INHINIB _kernel_inhinib_table[TNUM_INHNO] = {$NL$
 	$JOINEACH inhno INH.ORDER_LIST ",\n"$
@@ -138,7 +138,7 @@ $END$
 $NL$
 
 $ 
-$  �����ͥ������Τ���ʲ��γ�����׵��ޥ������뤿��ξ���Υơ��֥�
+$  割込み優先度毎のそれ以下の割込み要求をマスクするための情報のテーブル
 $ 
 const sigset_t _kernel_sigmask_table[8] = {$NL$
 $FOREACH intpri { 0, -1,..., -6 }$
@@ -154,7 +154,7 @@ $TAB$UINT32_C($FORMAT("0x%08x", intmask)$)$NL$
 };$NL$
 
 $ 
-$  ������׵�ػߥե饰�¸��Τ�����ѿ��ν����
+$  割込み要求禁止フラグ実現のための変数の初期値
 $ 
 $sigmask_disint_init = 0$
 $FOREACH intno INT.ORDER_LIST$

@@ -15,8 +15,8 @@ ifndef BOOST_DIR
 	endif
 endif
 
-# ���Ϥʥޥ���ʤɤǥ���ѥ��������Ĺ�����֤������롢�⤷���ϥ���ѥ������
-# �ϥ󥰥��åפ�����ˤϡ�-O0���ѹ����ƤߤƤ���������
+# 非力なマシンなどでコンパイルに非常に長い時間がかかる、もしくはコンパイル時に
+# ハングアップする場合には、-O0に変更してみてください。
 OPTIMIZE = -O2
 
 MODULES = toppers/itronx \

@@ -5,34 +5,34 @@
  *  Copyright (C) 2010 by Meika Sugimoto
  *  Copyright (C) 2012 by TAKAGI Nobuhisa
  * 
- *  �嵭����Ԥϡ��ʲ���(1)��(4)�ξ������������˸¤ꡤ�ܥ��եȥ���
- *  �����ܥ��եȥ���������Ѥ�����Τ�ޤࡥ�ʲ�Ʊ���ˤ���ѡ�ʣ������
- *  �ѡ������ۡʰʲ������ѤȸƤ֡ˤ��뤳�Ȥ�̵���ǵ������롥
- *  (1) �ܥ��եȥ������򥽡��������ɤη������Ѥ�����ˤϡ��嵭������
- *      ��ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ��꤬�����Τޤޤη��ǥ���
- *      ����������˴ޤޤ�Ƥ��뤳�ȡ�
- *  (2) �ܥ��եȥ������򡤥饤�֥������ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ�����Ǻ����ۤ�����ˤϡ������ۤ�ȼ���ɥ�����ȡ�����
- *      �ԥޥ˥奢��ʤɡˤˡ��嵭�����ɽ�����������Ѿ�浪��Ӳ���
- *      ��̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *  (3) �ܥ��եȥ������򡤵�����Ȥ߹���ʤɡ�¾�Υ��եȥ�������ȯ�˻�
- *      �ѤǤ��ʤ����Ǻ����ۤ�����ˤϡ����Τ����줫�ξ�����������
- *      �ȡ�
- *    (a) �����ۤ�ȼ���ɥ�����ȡ����Ѽԥޥ˥奢��ʤɡˤˡ��嵭����
- *        �ɽ�����������Ѿ�浪��Ӳ�����̵�ݾڵ����Ǻܤ��뤳�ȡ�
- *    (b) �����ۤη��֤��̤�������ˡ�ˤ�äơ�TOPPERS�ץ��������Ȥ�
- *        ��𤹤뤳�ȡ�
- *  (4) �ܥ��եȥ����������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������뤤���ʤ�»
- *      ������⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ����դ��뤳�ȡ�
- *      �ޤ����ܥ��եȥ������Υ桼���ޤ��ϥ���ɥ桼������Τ����ʤ���
- *      ͳ�˴�Ť����ᤫ��⡤�嵭����Ԥ����TOPPERS�ץ��������Ȥ�
- *      ���դ��뤳�ȡ�
+ *  上記著作権者は，以下の(1)〜(4)の条件を満たす場合に限り，本ソフトウェ
+ *  ア（本ソフトウェアを改変したものを含む．以下同じ）を使用・複製・改
+ *  変・再配布（以下，利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *      また，本ソフトウェアのユーザまたはエンドユーザからのいかなる理
+ *      由に基づく請求からも，上記著作権者およびTOPPERSプロジェクトを
+ *      免責すること．
  * 
- *  �ܥ��եȥ������ϡ�̵�ݾڤ��󶡤���Ƥ����ΤǤ��롥�嵭����Ԥ�
- *  ���TOPPERS�ץ��������Ȥϡ��ܥ��եȥ������˴ؤ��ơ�����λ�����Ū
- *  ���Ф���Ŭ������ޤ�ơ������ʤ��ݾڤ�Ԥ�ʤ����ޤ����ܥ��եȥ���
- *  �������Ѥˤ��ľ��Ū�ޤ��ϴ���Ū�������������ʤ�»���˴ؤ��Ƥ⡤��
- *  ����Ǥ�����ʤ���
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，特定の使用目的
+ *  に対する適合性も含めて，いかなる保証も行わない．また，本ソフトウェ
+ *  アの利用により直接的または間接的に生じたいかなる損害に関しても，そ
+ *  の責任を負わない．
  * 
  */
 
@@ -60,12 +60,12 @@ namespace toppers
 
     namespace oil_definition
     {
-      // ���饹���������
+      // クラスの前方宣言
       class object_parameter_def;
       class object_definition;
     }
 
-    // �ѥ�᡼��������
+    // パラメータタイプ
     enum PARAMETER_TYPE
     {
       TYPE_UINT = 1 ,
@@ -87,7 +87,7 @@ namespace toppers
     namespace oil_implementation
     {
 
-      // ���饹���������
+      // クラスの前方宣言
       class object_parameter_impl;
       
       class oil_object_impl
@@ -112,14 +112,14 @@ namespace toppers
           std::vector<object_parameter_impl*> params;
       };
 
-      // �����¤μ���
+      // 値制限の種類
       enum VALUE_LIMIT_TYPE
       {
         LIMIT_RANGE = 1 ,
         LIMIT_LIST ,
         LIMIT_NONE
       };
-      // �ǥե�����ͤμ���
+      // デフォルト値の種類
       enum DEFAULT_TYPE
       {
         NO_DEFAULT = 1 ,
@@ -139,7 +139,7 @@ namespace toppers
           {
             name = param_name;
 
-            // AUTO°���β���
+            // AUTO属性の解析
             if(parameter_description.find("WITH_AUTO") != string::npos)
             {
               assign_auto = true;
@@ -149,8 +149,8 @@ namespace toppers
               assign_auto = false;
             }
 
-            /// ENUM�ΤȤ������ꤢ��
-            // ʣ�����̵ͭ�β���
+            /// ENUMのときに問題あり
+            // 複数定義有無の解析
             boost::regex brace("\\[\\s*\\]\\s*(=.+)?;");
             if(boost::regex_search(parameter_description , brace))
             {
@@ -161,7 +161,7 @@ namespace toppers
               multiple = false;
             }
             
-            // �ǥե�����ͤβ���
+            // デフォルト値の解析
             boost::regex default_value("=\\s+(\\S+)\\s*;");
             boost::smatch result;
             string::const_iterator start = parameter_description.begin();
@@ -318,26 +318,26 @@ namespace toppers
             int i;
             T zero = 0;
           
-            // �ꥹ�Ȥ����
+            // リストを解析
             do
             {
               i = 0;
-              // ���ڡ�����ȤФ�
+              // スペースをとばす
               while(*p == ' ')
               {
                 p++;
               }
-              // ������ʬ�β���
+              // 数値部分の解析
               while(*p != ' ' && (*p != '\0'))
               {
                 val[i++] = *p++;
               }
-              // ����Υ��ڡ����ȥ���ޤ�ȤФ�
+              // 後ろのスペースとカンマもとばす
               while((*p == ' ') || (*p == ','))
               {
                 p++;
               }
-              // ���ͤβ��Ϥȥꥹ�Ȥؤ�����
+              // 数値の解析とリストへの挿入
               val[i] = '\0';
               list->push_back((T)str2val(val , zero));
             }while(*p != '\0');
@@ -384,7 +384,7 @@ namespace toppers
           DEFAULT_TYPE default_type;
       };
       
-      // INT����INT32,INT64)
+      // INT型（INT32,INT64)
       class parameter_int_impl : public object_parameter_impl
       {
         friend class object_parameter_impl;
@@ -393,30 +393,30 @@ namespace toppers
           parameter_int_impl(string param_name , string parameter_description)
             : object_parameter_impl(param_name , parameter_description)
           {
-            // �����ͤΥѡ���
+            // 制限値のパース
             boost::regex limit_list("\\[\\s*((\\w)+(\\s*,\\s*\\w+)*)\\s*\\]");
             boost::regex limit_range("\\[\\s*(\\w+)\\s*\\.\\.\\s*(\\w+)\\s*\\]");
             string::const_iterator start = parameter_description.begin();
             string::const_iterator end = parameter_description.end();
             boost::smatch result;
             
-            // �ꥹ�ȷ������Υ����å�
+            // リスト形式かのチェック
             if(boost::regex_search(start , end , result , limit_list))
             {
               limit_type = LIMIT_LIST;
               string str = result.str(1);
               split_number_list(str.c_str() , &value_list);
             }
-            // ��󥸷������Υ����å�
+            // レンジ形式かのチェック
             else if(boost::regex_search(start , end , result , limit_range))
             {
               limit_type = LIMIT_RANGE;
               string str;
 
-              // �Ǿ���
+              // 最小値
               str = result.str(1);
               min = str2val(str.c_str() , (int64_t)0);
-              // ������
+              // 最大値
               str = result.str(2);
               max = str2val(str.c_str() , (int64_t)0);
             }
@@ -434,7 +434,7 @@ namespace toppers
               limit_type = LIMIT_RANGE;
             }
 
-            // �ǥե�����ͤλ���
+            // デフォルト値の算出
             if(default_type == HAVE_DEFAULT)
             {
               default_value = str2val(default_description.c_str() , (int64_t)0);
@@ -456,7 +456,7 @@ namespace toppers
           int64_t min;
       };
 
-      // UINT����UINT32,UINT64)
+      // UINT型（UINT32,UINT64)
       class parameter_uint_impl : public object_parameter_impl
       {
         friend class object_parameter_impl;
@@ -465,30 +465,30 @@ namespace toppers
           parameter_uint_impl(string param_name , string parameter_description)
             : object_parameter_impl(param_name , parameter_description)
           {
-            // �����ͤΥѡ���
+            // 制限値のパース
             boost::regex limit_list("\\[\\s*((\\w)+(\\s*,\\s*\\w+)*)\\s*\\]");
             boost::regex limit_range("\\[\\s*(\\w+)\\s*\\.\\.\\s*(\\w+)\\s*\\]");
             string::const_iterator start = parameter_description.begin();
             string::const_iterator end = parameter_description.end();
             boost::smatch result;
             
-            // �ꥹ�ȷ������Υ����å�
+            // リスト形式かのチェック
             if(boost::regex_search(start , end , result , limit_list))
             {
               limit_type = LIMIT_LIST;
               string str = result.str(1);
               split_number_list(str.c_str() , &value_list);
             }
-            // ��󥸷������Υ����å�
+            // レンジ形式かのチェック
             else if(boost::regex_search(start , end , result , limit_range))
             {
               limit_type = LIMIT_RANGE;
               string str;
 
-              // �Ǿ���
+              // 最小値
               str = result.str(1);
               min = str2val(str.c_str() , (uint64_t)0);
-              // ������
+              // 最大値
               str = result.str(2);
               max = str2val(str.c_str() , (uint64_t)0);
             }
@@ -505,7 +505,7 @@ namespace toppers
               }
               limit_type = LIMIT_RANGE;
             }
-            // �ǥե�����ͤλ���
+            // デフォルト値の算出
             if(default_type == HAVE_DEFAULT)
             {
               default_value = str2val(default_description.c_str() , (uint64_t)0);
@@ -528,7 +528,7 @@ namespace toppers
           uint64_t default_value;
       };
       
-      // FLOAT����FLOAT)
+      // FLOAT型（FLOAT)
       class parameter_float_impl : public object_parameter_impl
       {
         friend class object_parameter_impl;
@@ -537,30 +537,30 @@ namespace toppers
           parameter_float_impl(string param_name , string parameter_description)
               : object_parameter_impl(param_name , parameter_description)
           {
-            // �����ͤΥѡ���
+            // 制限値のパース
             boost::regex limit_list("\\[\\s*((\\w(\\.\\w+)?)+(\\s*,\\s*\\w+(\\.\\w+)?)*)\\s*\\]");
             boost::regex limit_range("\\[\\s*(\\w+(\\.\\w+)?)\\s*\\.\\.\\s*(\\w+(\\.\\w+)?)\\s*\\]");
             string::const_iterator start = parameter_description.begin();
             string::const_iterator end = parameter_description.end();
             boost::smatch result;
             
-            // �ꥹ�ȷ������Υ����å�
+            // リスト形式かのチェック
             if(boost::regex_search(start , end , result , limit_list))
             {
               limit_type = LIMIT_LIST;
               string str = result.str(1);
               split_number_list(str.c_str() , &value_list);
             }
-            // ��󥸷������Υ����å�
+            // レンジ形式かのチェック
             else if(boost::regex_search(start , end , result , limit_range))
             {
               limit_type = LIMIT_RANGE;
               string str;
 
-              // �Ǿ���
+              // 最小値
               str = result.str(1);
               min = str2val(str.c_str() , (double)0);
-              // ������
+              // 最大値
               str = result.str(3);
               max = str2val(str.c_str() , (double)0);
             }
@@ -568,7 +568,7 @@ namespace toppers
             {
               limit_type = LIMIT_NONE;
             }
-            // �ǥե�����ͤλ���
+            // デフォルト値の算出
             if(default_type == HAVE_DEFAULT)
             {
               default_value = str2val(default_description.c_str() , (double)0);
@@ -590,14 +590,14 @@ namespace toppers
           double default_value;
       };
       
-      // STRING��
+      // STRING型
       class parameter_string_impl : public object_parameter_impl
       {
         public:
           parameter_string_impl(string param_name , string parameter_description)
               : object_parameter_impl(param_name , parameter_description)
           {
-            // �ǥե�����ͤ�����
+            // デフォルト値の代入
             if(default_type == HAVE_DEFAULT)
             {
               default_value = default_description;
@@ -620,7 +620,7 @@ namespace toppers
           string default_value;
       };
 
-      // BOOLEAN��
+      // BOOLEAN型
       class parameter_boolean_impl : public parameter_string_impl
       {
         public:
@@ -633,7 +633,7 @@ namespace toppers
           virtual void set_parameter_type(oil_definition::object_parameter_def *obj);
       };
 
-      // ENUM��
+      // ENUM型
       class parameter_enum_impl : public object_parameter_impl
       {
         public:
@@ -650,7 +650,7 @@ namespace toppers
             toppers::oil::oil_implementation::oil_object_impl *sub_impl;
             string name;
 
-            // 1�Ĥ��ĥѥ�᡼�����ڤ�ʬ���ƽ���
+            // 1個ずつパラメータを切り分けて処理
             while(boost::regex_search(start , end , result , enum_parse))
             {
               string temp = result.str(5);
@@ -663,18 +663,18 @@ namespace toppers
                 /// try catch
                 sub_impl = new oil_object_impl(param_name);
                 name = result.str(3);
-                // �ѥ�᡼�����ڤ�ʬ��
+                // パラメータの切り分け
                 while(boost::regex_search(start2 , end2 , result2 , enum_description))
                 {
                   string temp2 = result2.str(1);
                   string::const_iterator start3 = temp2.begin();
                   string::const_iterator end3 = temp2.end();
                   boost::smatch result3;
-                  // �ѥ�᡼��̾�����
+                  // パラメータ名の抽出
                   (void)boost::regex_search(start3 , end3 , result3 , subparam_name);
                   
                   sub_impl->add_parameter(result3.str(5) , result2.str(1) + ";");
-                  // �ѥ�᡼�����ʤ��ʤä���롼�פ�ȴ����
+                  // パラメータがなくなったらループを抜ける
                   if(boost::regex_match(result2.str(3) , space))
                   {
                     break;
@@ -683,10 +683,10 @@ namespace toppers
                   end2 = temp.end();
                 }
 
-                // ����ƥʤؤ���Ͽ
+                // コンテナへの登録
                 sub_params.insert(pair<string , oil_object_impl*>(name , sub_impl));
 
-                // �ѥ�᡼�����ʤ��ʤä���롼�פ�ȴ����
+                // パラメータがなくなったらループを抜ける
                 if(boost::regex_match(result.str(7) , space))
                 {
                   break;
@@ -736,14 +736,14 @@ namespace toppers
           std::map<std::string , oil_object_impl*> sub_params;
       };
 
-      // ���ȷ�
+      // 参照型
       class parameter_object_ref_impl : public object_parameter_impl
       {
         public:
           parameter_object_ref_impl(string param_name , string parameter_description)
               : object_parameter_impl(param_name , parameter_description)
           {
-            // ���Ȥ��륪�֥�������̾�����
+            // 参照するオブジェクト名の抽出
             boost::regex ref_type("(\\w+)_TYPE");
             string::const_iterator start = parameter_description.begin();
             string::const_iterator end = parameter_description.end();
@@ -753,7 +753,7 @@ namespace toppers
             {
               reftype_name = result.str(1);
             }
-            /// �ǥե�����ͤ��ɤ߹���
+            /// デフォルト値の読み込み
           }
           virtual void display_implementation(void)
           {
@@ -772,7 +772,7 @@ namespace toppers
 
     namespace oil_definition
     {
-      // ���֥�����������Υ��饹
+      // オブジェクト定義のクラス
       class object_definition
       {
         public:
@@ -783,9 +783,9 @@ namespace toppers
             string::const_iterator end = object_name_type.end();
             boost::smatch result;
 
-            // ����դ����Ƥ���ѥ�᡼���ؤΥݥ��󥿤��Ǽ
+            // 結び付けられているパラメータへのポインタを格納
             parent_parameter = parent;
-            // �����פȥ͡����ѡ������Ƴ�Ǽ
+            // タイプとネームをパースして格納
             if(boost::regex_match(start , end , result , object_declaration))
             {
               object_type = result.str(1);
@@ -793,7 +793,7 @@ namespace toppers
             }
             else
             {
-              /* ���ꤨ�ʤ� */
+              /* ありえない */
             }
           }
 
@@ -836,7 +836,7 @@ namespace toppers
           object_parameter_def* parent_parameter;
       };
 
-      // ���֥�����������ѥ�᡼���δ��ܥ��饹
+      // オブジェクト定義パラメータの基本クラス
       class object_parameter_def
       {
         public:
@@ -850,7 +850,7 @@ namespace toppers
             name = def_name;
             parent_name = parent;
 
-            // ���֥ѥ�᡼����������Ϥ����ʬ��
+            // サブパラメータがある場合はさらに分解
             if(boost::regex_search(start , end , result , have_subparam))
             {
               string type_name;
@@ -860,7 +860,7 @@ namespace toppers
 
               type_name = result.str(1) + " SUBPARAM";
 
-              // ���֥ѥ�᡼�����Ǽ���륪�֥������Ȥ�����
+              // サブパラメータを格納するオブジェクトを生成
               try
               {
                 subparam = new object_definition(name + " " + name , this);
@@ -881,7 +881,7 @@ namespace toppers
               {
                 subparam->add_parameter(result2.str(2) , result2.str(3));
 
-                // ʬ�򤷽���ä���ȴ����
+                // 分解し終わったら抜ける
                 if(boost::regex_match(result2.str(5) , space))
                 {
                   break;
@@ -889,7 +889,7 @@ namespace toppers
                 temp.erase(0 , temp.find(result2.str(5)));
                 end2 = temp.end();
               }
-              // ����ƥʤ��ɲ�
+              // コンテナに追加
               subparams.push_back(subparam);
             }
             else
